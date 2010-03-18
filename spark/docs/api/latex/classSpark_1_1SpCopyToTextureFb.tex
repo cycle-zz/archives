@@ -1,0 +1,239 @@
+\section{Spark::Sp\-Copy\-To\-Texture\-Fb Class Reference}
+\label{classSpark_1_1SpCopyToTextureFb}\index{Spark::SpCopyToTextureFb@{Spark::SpCopyToTextureFb}}
+{\tt \#include $<$Sp\-Copy\-To\-Texture\-Fb.h$>$}
+
+Inheritance diagram for Spark::Sp\-Copy\-To\-Texture\-Fb:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=88pt]{classSpark_1_1SpCopyToTextureFb__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for Spark::Sp\-Copy\-To\-Texture\-Fb:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=88pt]{classSpark_1_1SpCopyToTextureFb__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Copy To Texture (CTT) feedback mechanism via Open\-GL. 
+
+Definition at line 33 of file Sp\-Copy\-To\-Texture\-Fb.h.\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Copy\-To\-Texture\-Fb} (GLuint ui\-Texture\-Id=0, GLenum e\-Texture\-Mode=0, int i\-X=0, int i\-Y=0, int i\-Width=0, int i\-Height=0, int i\-Offset\-X=0, int i\-Offset\-Y=0, bool b\-Enable\-Copy=true)
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+virtual {\bf $\sim$Sp\-Copy\-To\-Texture\-Fb} ()
+\item 
+virtual void {\bf set\-Output\-Texture} (unsigned int ui\-Texture\-Id, int e\-Texture\-Mode, int i\-Width, int i\-Height)
+\begin{CompactList}\small\item\em Inherited Methods:. \item\end{CompactList}\item 
+virtual void {\bf update\-Output} ()
+\item 
+void {\bf set\-Output\-Rectangle} (int i\-X, int i\-Y, int i\-Width, int i\-Height, int i\-Offset\-X, int i\-Offset\-Y)
+\begin{CompactList}\small\item\em Operations:. \item\end{CompactList}\item 
+void {\bf setup\-Viewport} ()
+\item 
+void {\bf bind\-Output\-Texture} () const
+\item 
+void {\bf restore\-Viewport} () const
+\item 
+void {\bf set\-Enable\-Copy} (bool b\-Enable)
+\begin{CompactList}\small\item\em Access Methods:. \item\end{CompactList}\item 
+bool {\bf get\-Enable\-Copy} () const
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+GLenum {\bf m\_\-e\-Output\-Texture\-Mode}
+\begin{CompactList}\small\item\em Internal Data:. \item\end{CompactList}\item 
+GLuint {\bf m\_\-ui\-Output\-Texture\-Id}
+\item 
+int {\bf m\_\-i\-Offset\-X}
+\item 
+int {\bf m\_\-i\-Offset\-Y}
+\item 
+int {\bf m\_\-i\-X}
+\item 
+int {\bf m\_\-i\-Y}
+\item 
+int {\bf m\_\-i\-Width}
+\item 
+int {\bf m\_\-i\-Height}
+\item 
+int {\bf m\_\-i\-Old\-Viewport} [4]
+\item 
+bool {\bf m\_\-b\-Enable\-Copy}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!SpCopyToTextureFb@{SpCopyToTextureFb}}
+\index{SpCopyToTextureFb@{SpCopyToTextureFb}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Spark::Sp\-Copy\-To\-Texture\-Fb::Sp\-Copy\-To\-Texture\-Fb (GLuint {\em ui\-Texture\-Id} = {\tt 0}, GLenum {\em e\-Texture\-Mode} = {\tt 0}, int {\em i\-X} = {\tt 0}, int {\em i\-Y} = {\tt 0}, int {\em i\-Width} = {\tt 0}, int {\em i\-Height} = {\tt 0}, int {\em i\-Offset\-X} = {\tt 0}, int {\em i\-Offset\-Y} = {\tt 0}, bool {\em b\-Enable\-Copy} = {\tt true})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpCopyToTextureFb_a0}
+
+
+Construction:. 
+
+Definition at line 39 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-b\-Enable\-Copy, m\_\-e\-Output\-Texture\-Mode, m\_\-i\-Height, m\_\-i\-Offset\-X, m\_\-i\-Offset\-Y, m\_\-i\-Width, m\_\-i\-X, m\_\-i\-Y, and m\_\-ui\-Output\-Texture\-Id.\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!~SpCopyToTextureFb@{$\sim$SpCopyToTextureFb}}
+\index{~SpCopyToTextureFb@{$\sim$SpCopyToTextureFb}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual Spark::Sp\-Copy\-To\-Texture\-Fb::$\sim${\bf Sp\-Copy\-To\-Texture\-Fb} ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSpark_1_1SpCopyToTextureFb_a1}
+
+
+Definition at line 57 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!bindOutputTexture@{bindOutputTexture}}
+\index{bindOutputTexture@{bindOutputTexture}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Copy\-To\-Texture\-Fb::bind\-Output\-Texture () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpCopyToTextureFb_a6}
+
+
+Definition at line 113 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-e\-Output\-Texture\-Mode, and m\_\-ui\-Output\-Texture\-Id.\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!getEnableCopy@{getEnableCopy}}
+\index{getEnableCopy@{getEnableCopy}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Spark::Sp\-Copy\-To\-Texture\-Fb::get\-Enable\-Copy () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpCopyToTextureFb_a9}
+
+
+Definition at line 132 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-b\-Enable\-Copy.\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!restoreViewport@{restoreViewport}}
+\index{restoreViewport@{restoreViewport}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Copy\-To\-Texture\-Fb::restore\-Viewport () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpCopyToTextureFb_a7}
+
+
+Definition at line 118 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-i\-Old\-Viewport.\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!setEnableCopy@{setEnableCopy}}
+\index{setEnableCopy@{setEnableCopy}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Copy\-To\-Texture\-Fb::set\-Enable\-Copy (bool {\em b\-Enable})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpCopyToTextureFb_a8}
+
+
+Access Methods:. 
+
+Definition at line 129 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-b\-Enable\-Copy.\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!setOutputRectangle@{setOutputRectangle}}
+\index{setOutputRectangle@{setOutputRectangle}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Copy\-To\-Texture\-Fb::set\-Output\-Rectangle (int {\em i\-X}, int {\em i\-Y}, int {\em i\-Width}, int {\em i\-Height}, int {\em i\-Offset\-X}, int {\em i\-Offset\-Y})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpCopyToTextureFb_a4}
+
+
+Operations:. 
+
+Definition at line 94 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-i\-Height, m\_\-i\-Offset\-X, m\_\-i\-Offset\-Y, m\_\-i\-Width, m\_\-i\-X, and m\_\-i\-Y.\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!setOutputTexture@{setOutputTexture}}
+\index{setOutputTexture@{setOutputTexture}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Spark::Sp\-Copy\-To\-Texture\-Fb::set\-Output\-Texture (unsigned int {\em ui\-Texture\-Id}, int {\em e\-Texture\-Mode}, int {\em i\-Width}, int {\em i\-Height})\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSpark_1_1SpCopyToTextureFb_a2}
+
+
+Inherited Methods:. 
+
+
+
+Implements {\bf Spark::Sp\-Stream\-Feedback} {\rm (p.\,\pageref{classSpark_1_1SpStreamFeedback_a0})}.
+
+Definition at line 65 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-e\-Output\-Texture\-Mode, m\_\-i\-Height, m\_\-i\-Width, and m\_\-ui\-Output\-Texture\-Id.\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!setupViewport@{setupViewport}}
+\index{setupViewport@{setupViewport}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Copy\-To\-Texture\-Fb::setup\-Viewport ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpCopyToTextureFb_a5}
+
+
+Definition at line 107 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-i\-Height, m\_\-i\-Old\-Viewport, m\_\-i\-Width, m\_\-i\-X, and m\_\-i\-Y.\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!updateOutput@{updateOutput}}
+\index{updateOutput@{updateOutput}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Spark::Sp\-Copy\-To\-Texture\-Fb::update\-Output ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSpark_1_1SpCopyToTextureFb_a3}
+
+
+
+
+Implements {\bf Spark::Sp\-Stream\-Feedback} {\rm (p.\,\pageref{classSpark_1_1SpStreamFeedback_a1})}.
+
+Definition at line 76 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+References m\_\-b\-Enable\-Copy, m\_\-e\-Output\-Texture\-Mode, m\_\-i\-Height, m\_\-i\-Offset\-X, m\_\-i\-Offset\-Y, m\_\-i\-Width, m\_\-i\-X, m\_\-i\-Y, and m\_\-ui\-Output\-Texture\-Id.
+
+Referenced by Spark::Sp\-Vertex\-Noise\-Sb::send\-Output\-To\-Buffer().
+
+\subsection{Member Data Documentation}
+\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_bEnableCopy@{m\_\-bEnableCopy}}
+\index{m_bEnableCopy@{m\_\-bEnableCopy}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-b\-Enable\-Copy}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p9}
+
+
+Definition at line 151 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by get\-Enable\-Copy(), set\-Enable\-Copy(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_eOutputTextureMode@{m\_\-eOutputTextureMode}}
+\index{m_eOutputTextureMode@{m\_\-eOutputTextureMode}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}GLenum {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-e\-Output\-Texture\-Mode}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p0}
+
+
+Internal Data:. 
+
+Definition at line 139 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by bind\-Output\-Texture(), set\-Output\-Texture(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_iHeight@{m\_\-iHeight}}
+\index{m_iHeight@{m\_\-iHeight}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-i\-Height}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p7}
+
+
+Definition at line 147 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by set\-Output\-Rectangle(), set\-Output\-Texture(), setup\-Viewport(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_iOffsetX@{m\_\-iOffsetX}}
+\index{m_iOffsetX@{m\_\-iOffsetX}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-i\-Offset\-X}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p2}
+
+
+Definition at line 142 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by set\-Output\-Rectangle(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_iOffsetY@{m\_\-iOffsetY}}
+\index{m_iOffsetY@{m\_\-iOffsetY}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-i\-Offset\-Y}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p3}
+
+
+Definition at line 143 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by set\-Output\-Rectangle(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_iOldViewport@{m\_\-iOldViewport}}
+\index{m_iOldViewport@{m\_\-iOldViewport}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-i\-Old\-Viewport}[4]\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p8}
+
+
+Definition at line 149 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by restore\-Viewport(), and setup\-Viewport().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_iWidth@{m\_\-iWidth}}
+\index{m_iWidth@{m\_\-iWidth}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-i\-Width}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p6}
+
+
+Definition at line 146 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by set\-Output\-Rectangle(), set\-Output\-Texture(), setup\-Viewport(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_iX@{m\_\-iX}}
+\index{m_iX@{m\_\-iX}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-i\-X}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p4}
+
+
+Definition at line 144 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by set\-Output\-Rectangle(), setup\-Viewport(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_iY@{m\_\-iY}}
+\index{m_iY@{m\_\-iY}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-i\-Y}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p5}
+
+
+Definition at line 145 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by set\-Output\-Rectangle(), setup\-Viewport(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().\index{Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}!m_uiOutputTextureId@{m\_\-uiOutputTextureId}}
+\index{m_uiOutputTextureId@{m\_\-uiOutputTextureId}!Spark::SpCopyToTextureFb@{Spark::Sp\-Copy\-To\-Texture\-Fb}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}GLuint {\bf Spark::Sp\-Copy\-To\-Texture\-Fb::m\_\-ui\-Output\-Texture\-Id}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpCopyToTextureFb_p1}
+
+
+Definition at line 140 of file Sp\-Copy\-To\-Texture\-Fb.h.
+
+Referenced by bind\-Output\-Texture(), set\-Output\-Texture(), Sp\-Copy\-To\-Texture\-Fb(), and update\-Output().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+{\bf Sp\-Copy\-To\-Texture\-Fb.h}\end{CompactItemize}

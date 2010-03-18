@@ -1,0 +1,241 @@
+\section{Spark::Sp\-String Class Reference}
+\label{classSpark_1_1SpString}\index{Spark::SpString@{Spark::SpString}}
+{\tt \#include $<$Sp\-String.h$>$}
+
+Collaboration diagram for Spark::Sp\-String:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=88pt]{classSpark_1_1SpString__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+String utility class for character data. 
+
+Definition at line 56 of file Sp\-String.h.\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef size\_\-type {\bf Size\-Type}
+\begin{CompactList}\small\item\em Typedefs:. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-String} ()
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+{\bf Sp\-String} (const {\bf Sp\-String} \&rk\-Str)
+\item 
+{\bf Sp\-String} (const string \&rk\-Str)
+\item 
+{\bf Sp\-String} (const char $\ast$ac\-Str)
+\item 
+{\bf Sp\-String} (const char $\ast$ac\-Str, {\bf Size\-Type} k\-Length)
+\item 
+{\bf Sp\-String} (const {\bf Sp\-String} \&rk\-Str, {\bf Size\-Type} k\-Start, {\bf Size\-Type} k\-End)
+\item 
+{\bf Sp\-String} ({\bf Size\-Type} k\-Length, char c)
+\item 
+{\bf Sp\-String} \& {\bf operator=} (const {\bf Sp\-String} \&rk\-Str)
+\begin{CompactList}\small\item\em Operations:. \item\end{CompactList}\item 
+{\bf Sp\-String} \& {\bf operator=} (const std::string \&rk\-Str)
+\item 
+{\bf Sp\-String} \& {\bf operator=} (const char $\ast$ac\-Str)
+\item 
+{\bf Sp\-String} \& {\bf operator=} (char c)
+\item 
+{\bf Sp\-String} \& {\bf operator+=} (const {\bf Sp\-String} \&rk\-Str)
+\item 
+{\bf Sp\-String} \& {\bf operator+=} (const std::string \&rk\-Str)
+\item 
+{\bf Sp\-String} \& {\bf operator+=} (const char $\ast$ac\-Str)
+\item 
+{\bf Sp\-String} \& {\bf operator+=} (char c)
+\item 
+{\bf Sp\-String} \& {\bf operator+} (const {\bf Sp\-String} \&rk\-Str)
+\item 
+{\bf Sp\-String} \& {\bf operator+} (const std::string \&rk\-Str)
+\item 
+{\bf Sp\-String} \& {\bf operator+} (const char $\ast$ac\-Str)
+\item 
+{\bf Sp\-String} \& {\bf operator+} (char c)
+\item 
+void {\bf clear} ()
+\begin{CompactList}\small\item\em Utilites:. \item\end{CompactList}\item 
+template$<$class Class$>$ {\bf Sp\-String} \& {\bf add} (const Class \&rt\-Value)
+\item 
+{\bf operator const char $\ast$} () const
+\item 
+bool {\bf operator$<$} (const {\bf Sp\-String} \&rk\-Str)
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+const {\bf Sp\-String} {\bf EMPTY} = \char`\"{}\char`\"{}
+\end{CompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{Spark::SpString@{Spark::Sp\-String}!SizeType@{SizeType}}
+\index{SizeType@{SizeType}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef size\_\-type {\bf Spark::Sp\-String::Size\-Type}}\label{classSpark_1_1SpString_w0}
+
+
+Typedefs:. 
+
+Definition at line 62 of file Sp\-String.h.
+
+Referenced by Spark::Sp\-Resource\-Path::get\-File(), Spark::Sp\-Resource\-Path::get\-Path(), Spark::Sp\-Stream\-Buffer::parse\-Bit\-Vector(), and Sp\-String().
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpString@{Spark::Sp\-String}!SpString@{SpString}}
+\index{SpString@{SpString}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-String::Sp\-String ()}\label{classSpark_1_1SpString_a0}
+
+
+Construction:. 
+
+Definition at line 16 of file Sp\-String.cpp.
+
+References Spark::Sp\-String\-Base.\index{Spark::SpString@{Spark::Sp\-String}!SpString@{SpString}}
+\index{SpString@{SpString}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-String::Sp\-String (const {\bf Sp\-String} \& {\em rk\-Str})}\label{classSpark_1_1SpString_a1}
+
+
+Definition at line 21 of file Sp\-String.cpp.
+
+References Spark::Sp\-String\-Base.\index{Spark::SpString@{Spark::Sp\-String}!SpString@{SpString}}
+\index{SpString@{SpString}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Spark::Sp\-String::Sp\-String (const string \& {\em rk\-Str})}\label{classSpark_1_1SpString_a2}
+
+
+\index{Spark::SpString@{Spark::Sp\-String}!SpString@{SpString}}
+\index{SpString@{SpString}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-String::Sp\-String (const char $\ast$ {\em ac\-Str})}\label{classSpark_1_1SpString_a3}
+
+
+Definition at line 33 of file Sp\-String.cpp.
+
+References Spark::Sp\-String\-Base.\index{Spark::SpString@{Spark::Sp\-String}!SpString@{SpString}}
+\index{SpString@{SpString}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-String::Sp\-String (const char $\ast$ {\em ac\-Str}, {\bf Size\-Type} {\em k\-Length})}\label{classSpark_1_1SpString_a4}
+
+
+Definition at line 39 of file Sp\-String.cpp.
+
+References Size\-Type, and Spark::Sp\-String\-Base.\index{Spark::SpString@{Spark::Sp\-String}!SpString@{SpString}}
+\index{SpString@{SpString}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-String::Sp\-String (const {\bf Sp\-String} \& {\em rk\-Str}, {\bf Size\-Type} {\em k\-Start}, {\bf Size\-Type} {\em k\-End})}\label{classSpark_1_1SpString_a5}
+
+
+Definition at line 45 of file Sp\-String.cpp.
+
+References Size\-Type, and Spark::Sp\-String\-Base.\index{Spark::SpString@{Spark::Sp\-String}!SpString@{SpString}}
+\index{SpString@{SpString}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-String::Sp\-String ({\bf Size\-Type} {\em k\-Length}, char {\em c})}\label{classSpark_1_1SpString_a6}
+
+
+Definition at line 51 of file Sp\-String.cpp.
+
+References Size\-Type, and Spark::Sp\-String\-Base.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpString@{Spark::Sp\-String}!add@{add}}
+\index{add@{add}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Class$>$ {\bf Sp\-String} \& Spark::Sp\-String::add (const Class \& {\em rt\-Value})}\label{classSpark_1_1SpString_a20}
+
+
+Definition at line 216 of file Sp\-String.h.
+
+Referenced by Spark::Sp\-Turbulence\-Op::update\-Output\-Stream().\index{Spark::SpString@{Spark::Sp\-String}!clear@{clear}}
+\index{clear@{clear}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-String::clear ()}\label{classSpark_1_1SpString_a19}
+
+
+Utilites:. 
+
+Definition at line 57 of file Sp\-String.cpp.\index{Spark::SpString@{Spark::Sp\-String}!operator const char *@{operator const char $\ast$}}
+\index{operator const char *@{operator const char $\ast$}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Spark::Sp\-String::operator const char $\ast$ () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a21}
+
+
+Definition at line 210 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator+ (char {\em c})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a18}
+
+
+Definition at line 199 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator+ (const char $\ast$ {\em ac\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a17}
+
+
+Definition at line 193 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator+ (const std::string \& {\em rk\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a16}
+
+
+Definition at line 187 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator+@{operator+}}
+\index{operator+@{operator+}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator+ (const {\bf Sp\-String} \& {\em rk\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a15}
+
+
+Definition at line 181 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator+= (char {\em c})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a14}
+
+
+Definition at line 175 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator+= (const char $\ast$ {\em ac\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a13}
+
+
+Definition at line 169 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator+= (const std::string \& {\em rk\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a12}
+
+
+Definition at line 163 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator+= (const {\bf Sp\-String} \& {\em rk\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a11}
+
+
+Definition at line 157 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator<@{operator$<$}}
+\index{operator<@{operator$<$}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Spark::Sp\-String::operator$<$ (const {\bf Sp\-String} \& {\em rk\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a22}
+
+
+Definition at line 205 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator= (char {\em c})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a10}
+
+
+Definition at line 151 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator= (const char $\ast$ {\em ac\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a9}
+
+
+Definition at line 145 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator= (const std::string \& {\em rk\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a8}
+
+
+Definition at line 139 of file Sp\-String.h.\index{Spark::SpString@{Spark::Sp\-String}!operator=@{operator=}}
+\index{operator=@{operator=}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-String} \& Spark::Sp\-String::operator= (const {\bf Sp\-String} \& {\em rk\-Str})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpString_a7}
+
+
+Operations:. 
+
+Definition at line 133 of file Sp\-String.h.
+
+\subsection{Member Data Documentation}
+\index{Spark::SpString@{Spark::Sp\-String}!EMPTY@{EMPTY}}
+\index{EMPTY@{EMPTY}!Spark::SpString@{Spark::Sp\-String}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sp\-String} {\bf Sp\-String::EMPTY} = \char`\"{}\char`\"{}\hspace{0.3cm}{\tt  [static]}}\label{classSpark_1_1SpString_s0}
+
+
+Definition at line 11 of file Sp\-String.cpp.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Sp\-String.h}\item 
+{\bf Sp\-String.cpp}\end{CompactItemize}

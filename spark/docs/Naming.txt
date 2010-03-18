@@ -1,0 +1,52 @@
+ -----------------------------------------------------------------
+                     V I S U A L I Z E R
+ -----------------------------------------------------------------
+                        Version 1.0
+	      Copyright 2004, Derek Gerstmann
+ -----------------------------------------------------------------
+
+ NAMING CONVENTIONS:
+
+ I use strict (usually) naming conventions for variables.  These
+ have evolved from multiple sources, and allow me to write better
+ code since I can instantly recognize the type and scope of each
+ variable.
+
+ If you don't like it, don't use it.  I find it's extremly helpful.
+
+ Anyway, here's the breakdown:
+
+ GENERAL FORMAT:
+
+	 scope_typeVariableName
+
+ Where 'scope' and 'type' are defined by an unseparated list of
+ single characters outlined below.
+
+ SCOPE MODIFIERS:
+
+ g = global
+ m = member
+ s = static
+
+ TYPE MODIFIERS:
+
+ a = array
+ b = boolean
+ c = char
+ d = double (rarely used, use f instead)
+ e = enumeration (enum)
+ f = floating point value
+ i = integer value
+ k = complex type (class, struct, etc)
+ o = void type (function pointers, etc)
+ p = pointer type (*)
+ r = reference type (&)
+ t = templated type
+ u = unsigned type
+
+ EXAMPLES:
+
+ Static Integer Member to a Class named Count:		ms_iCount
+ Pointer to Unsigned Character named Byte Buffer: 	pucByteBuffer;
+

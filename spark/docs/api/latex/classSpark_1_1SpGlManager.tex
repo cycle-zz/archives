@@ -1,0 +1,74 @@
+\section{Spark::Sp\-Gl\-Manager Class Reference}
+\label{classSpark_1_1SpGlManager}\index{Spark::SpGlManager@{Spark::SpGlManager}}
+{\tt \#include $<$Sp\-Gl\-Manager.h$>$}
+
+
+
+\subsection{Detailed Description}
+Static manager class for interfacing with Open\-GL. 
+
+Definition at line 30 of file Sp\-Gl\-Manager.h.\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf $\sim$Sp\-Gl\-Manager} ()
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf delete\-Texture} (unsigned int ui\-Texture\-Id)
+\begin{CompactList}\small\item\em Operations:. \item\end{CompactList}\item 
+unsigned int {\bf create\-Texture} (int i\-Width, int i\-Height, GLenum e\-Texture\-Mode=GL\_\-TEXTURE\_\-2D, GLenum e\-Image\-Format=GL\_\-RGBA8, GLenum e\-Pixel\-Format=GL\_\-RGBA, GLenum e\-Component\-Format=GL\_\-FLOAT, void $\ast$pv\-Data=NULL)
+\item 
+unsigned int {\bf create\-Filtered\-Texture} (int i\-Width, int i\-Height, GLenum e\-Texture\-Mode=GL\_\-TEXTURE\_\-2D, GLenum e\-Image\-Format=GL\_\-RGBA8, GLenum e\-Pixel\-Format=GL\_\-RGBA, GLenum e\-Component\-Format=GL\_\-FLOAT, GLenum e\-Min\-Filter\-Mode=GL\_\-NEAREST, GLenum e\-Mag\-Filter\-Mode=GL\_\-NEAREST, GLenum e\-SWrap\-Mode=GL\_\-CLAMP\_\-TO\_\-EDGE, GLenum e\-TWrap\-Mode=GL\_\-CLAMP\_\-TO\_\-EDGE, void $\ast$pv\-Data=NULL)
+\item 
+void {\bf print\-On\-Error} (char $\ast$ac\-Msg)
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}!~SpGlManager@{$\sim$SpGlManager}}
+\index{~SpGlManager@{$\sim$SpGlManager}!Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Spark::Sp\-Gl\-Manager::$\sim${\bf Sp\-Gl\-Manager} ()}\label{classSpark_1_1SpGlManager_a0}
+
+
+Construction:. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}!createFilteredTexture@{createFilteredTexture}}
+\index{createFilteredTexture@{createFilteredTexture}!Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Sp\-Gl\-Manager::create\-Filtered\-Texture (int {\em i\-Width}, int {\em i\-Height}, GLenum {\em e\-Texture\-Mode} = {\tt GL\_\-TEXTURE\_\-2D}, GLenum {\em e\-Image\-Format} = {\tt GL\_\-RGBA8}, GLenum {\em e\-Pixel\-Format} = {\tt GL\_\-RGBA}, GLenum {\em e\-Component\-Format} = {\tt GL\_\-FLOAT}, GLenum {\em e\-Min\-Filter\-Mode} = {\tt GL\_\-NEAREST}, GLenum {\em e\-Mag\-Filter\-Mode} = {\tt GL\_\-NEAREST}, GLenum {\em e\-SWrap\-Mode} = {\tt GL\_\-CLAMP\_\-TO\_\-EDGE}, GLenum {\em e\-TWrap\-Mode} = {\tt GL\_\-CLAMP\_\-TO\_\-EDGE}, void $\ast$ {\em pv\-Data} = {\tt NULL})\hspace{0.3cm}{\tt  [static]}}\label{classSpark_1_1SpGlManager_e2}
+
+
+Definition at line 42 of file Sp\-Gl\-Manager.cpp.
+
+References create\-Texture().
+
+Referenced by Spark::Sp\-Turbulence\-Op::initialize().\index{Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}!createTexture@{createTexture}}
+\index{createTexture@{createTexture}!Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Sp\-Gl\-Manager::create\-Texture (int {\em i\-Width}, int {\em i\-Height}, GLenum {\em e\-Texture\-Mode} = {\tt GL\_\-TEXTURE\_\-2D}, GLenum {\em e\-Image\-Format} = {\tt GL\_\-RGBA8}, GLenum {\em e\-Pixel\-Format} = {\tt GL\_\-RGBA}, GLenum {\em e\-Component\-Format} = {\tt GL\_\-FLOAT}, void $\ast$ {\em pv\-Data} = {\tt NULL})\hspace{0.3cm}{\tt  [static]}}\label{classSpark_1_1SpGlManager_e1}
+
+
+Definition at line 15 of file Sp\-Gl\-Manager.cpp.
+
+Referenced by create\-Filtered\-Texture().\index{Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}!deleteTexture@{deleteTexture}}
+\index{deleteTexture@{deleteTexture}!Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Gl\-Manager::delete\-Texture (unsigned int {\em ui\-Texture\-Id})\hspace{0.3cm}{\tt  [static]}}\label{classSpark_1_1SpGlManager_e0}
+
+
+Operations:. 
+
+Definition at line 10 of file Sp\-Gl\-Manager.cpp.
+
+Referenced by Spark::Sp\-Turbulence\-Op::initialize(), and Spark::Sp\-Turbulence\-Op::$\sim$Sp\-Turbulence\-Op().\index{Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}!printOnError@{printOnError}}
+\index{printOnError@{printOnError}!Spark::SpGlManager@{Spark::Sp\-Gl\-Manager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Gl\-Manager::print\-On\-Error (char $\ast$ {\em ac\-Msg})\hspace{0.3cm}{\tt  [static]}}\label{classSpark_1_1SpGlManager_e3}
+
+
+Definition at line 88 of file Sp\-Gl\-Manager.cpp.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Sp\-Gl\-Manager.h}\item 
+{\bf Sp\-Gl\-Manager.cpp}\end{CompactItemize}

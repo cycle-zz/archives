@@ -1,0 +1,193 @@
+\section{Spark::Sp\-Stream\-Operator Class Reference}
+\label{classSpark_1_1SpStreamOperator}\index{Spark::SpStreamOperator@{Spark::SpStreamOperator}}
+{\tt \#include $<$Sp\-Stream\-Operator.h$>$}
+
+Inheritance diagram for Spark::Sp\-Stream\-Operator:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classSpark_1_1SpStreamOperator__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for Spark::Sp\-Stream\-Operator:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=111pt]{classSpark_1_1SpStreamOperator__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Abstract base class for a stream operator which modifies an input stream. 
+
+Definition at line 34 of file Sp\-Stream\-Operator.h.\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Stream\-Operator} ()
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+virtual {\bf $\sim$Sp\-Stream\-Operator} ()
+\item 
+virtual void {\bf set\-Input\-Stream} ({\bf Sp\-Stream\-Input} $\ast$pk\-Input\-Stream)
+\begin{CompactList}\small\item\em Operations:. \item\end{CompactList}\item 
+virtual bool {\bf has\-Changed} ()
+\begin{CompactList}\small\item\em Methods:. \item\end{CompactList}\item 
+virtual bool {\bf send\-Output\-To\-Buffer} ({\bf Sp\-Stream\-Buffer} $\ast$pk\-Buffer, {\bf Sp\-Stream\-Feedback} $\ast$pk\-Output)
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+virtual bool {\bf compute} ({\bf Sp\-Stream\-Buffer} $\ast$pk\-Buffer, {\bf Sp\-Stream\-Feedback} $\ast$pk\-Copy)
+\begin{CompactList}\small\item\em Internal Methods:. \item\end{CompactList}\item 
+virtual bool {\bf enable\-Output\-Stream} ({\bf Sp\-Stream\-Buffer} $\ast$pk\-Buffer, {\bf Sp\-Stream\-Feedback} $\ast$pk\-Copy)
+\item 
+virtual bool {\bf setup\-State} ({\bf Sp\-Stream\-Buffer} $\ast$pk\-Buffer, {\bf Sp\-Stream\-Feedback} $\ast$pk\-Copy)
+\item 
+virtual bool {\bf process\-Stream} ({\bf Sp\-Stream\-Buffer} $\ast$pk\-Buffer, {\bf Sp\-Stream\-Feedback} $\ast$pk\-Copy)
+\item 
+virtual bool {\bf update\-Output\-Stream} ({\bf Sp\-Stream\-Buffer} $\ast$pk\-Buffer, {\bf Sp\-Stream\-Feedback} $\ast$pk\-Copy)
+\item 
+virtual bool {\bf reset\-State} ({\bf Sp\-Stream\-Buffer} $\ast$pk\-Buffer, {\bf Sp\-Stream\-Feedback} $\ast$pk\-Copy)
+\item 
+virtual bool {\bf disable\-Output\-Stream} ({\bf Sp\-Stream\-Buffer} $\ast$pk\-Buffer, {\bf Sp\-Stream\-Feedback} $\ast$pk\-Copy)
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!SpStreamOperator@{SpStreamOperator}}
+\index{SpStreamOperator@{SpStreamOperator}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Stream\-Operator::Sp\-Stream\-Operator ()}\label{classSpark_1_1SpStreamOperator_a0}
+
+
+Construction:. 
+
+Definition at line 7 of file Sp\-Stream\-Operator.cpp.\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!~SpStreamOperator@{$\sim$SpStreamOperator}}
+\index{~SpStreamOperator@{$\sim$SpStreamOperator}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Stream\-Operator::$\sim${\bf Sp\-Stream\-Operator} ()\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpStreamOperator_a1}
+
+
+Definition at line 13 of file Sp\-Stream\-Operator.cpp.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!compute@{compute}}
+\index{compute@{compute}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::compute ({\bf Sp\-Stream\-Buffer} $\ast$ {\em pk\-Buffer}, {\bf Sp\-Stream\-Feedback} $\ast$ {\em pk\-Copy})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classSpark_1_1SpStreamOperator_b0}
+
+
+Internal Methods:. 
+
+Definition at line 45 of file Sp\-Stream\-Operator.cpp.
+
+References disable\-Output\-Stream(), enable\-Output\-Stream(), process\-Stream(), reset\-State(), setup\-State(), and update\-Output\-Stream().
+
+Referenced by send\-Output\-To\-Buffer().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!disableOutputStream@{disableOutputStream}}
+\index{disableOutputStream@{disableOutputStream}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::disable\-Output\-Stream ({\bf Sp\-Stream\-Buffer} $\ast$ {\em pk\-Buffer}, {\bf Sp\-Stream\-Feedback} $\ast$ {\em pk\-Copy})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classSpark_1_1SpStreamOperator_b6}
+
+
+
+
+Reimplemented in {\bf Spark::Sp\-Turbulence\-Op} {\rm (p.\,\pageref{classSpark_1_1SpTurbulenceOp_b5})}.
+
+Definition at line 101 of file Sp\-Stream\-Operator.cpp.
+
+Referenced by compute().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!enableOutputStream@{enableOutputStream}}
+\index{enableOutputStream@{enableOutputStream}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::enable\-Output\-Stream ({\bf Sp\-Stream\-Buffer} $\ast$ {\em pk\-Buffer}, {\bf Sp\-Stream\-Feedback} $\ast$ {\em pk\-Copy})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classSpark_1_1SpStreamOperator_b1}
+
+
+
+
+Reimplemented in {\bf Spark::Sp\-Turbulence\-Op} {\rm (p.\,\pageref{classSpark_1_1SpTurbulenceOp_b0})}.
+
+Definition at line 76 of file Sp\-Stream\-Operator.cpp.
+
+Referenced by compute().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!hasChanged@{hasChanged}}
+\index{hasChanged@{hasChanged}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::has\-Changed ()\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpStreamOperator_a3}
+
+
+Methods:. 
+
+
+
+Implements {\bf Spark::Sp\-Stream\-Input} {\rm (p.\,\pageref{classSpark_1_1SpStreamInput_a2})}.
+
+Definition at line 24 of file Sp\-Stream\-Operator.cpp.
+
+References Spark::Sp\-Stream\-Input::has\-Changed().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!processStream@{processStream}}
+\index{processStream@{processStream}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::process\-Stream ({\bf Sp\-Stream\-Buffer} $\ast$ {\em pk\-Buffer}, {\bf Sp\-Stream\-Feedback} $\ast$ {\em pk\-Copy})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classSpark_1_1SpStreamOperator_b3}
+
+
+
+
+Reimplemented in {\bf Spark::Sp\-Turbulence\-Op} {\rm (p.\,\pageref{classSpark_1_1SpTurbulenceOp_b2})}.
+
+Definition at line 86 of file Sp\-Stream\-Operator.cpp.
+
+Referenced by compute().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!resetState@{resetState}}
+\index{resetState@{resetState}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::reset\-State ({\bf Sp\-Stream\-Buffer} $\ast$ {\em pk\-Buffer}, {\bf Sp\-Stream\-Feedback} $\ast$ {\em pk\-Copy})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classSpark_1_1SpStreamOperator_b5}
+
+
+
+
+Reimplemented in {\bf Spark::Sp\-Turbulence\-Op} {\rm (p.\,\pageref{classSpark_1_1SpTurbulenceOp_b4})}.
+
+Definition at line 96 of file Sp\-Stream\-Operator.cpp.
+
+Referenced by compute().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!sendOutputToBuffer@{sendOutputToBuffer}}
+\index{sendOutputToBuffer@{sendOutputToBuffer}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::send\-Output\-To\-Buffer ({\bf Sp\-Stream\-Buffer} $\ast$ {\em pk\-Buffer}, {\bf Sp\-Stream\-Feedback} $\ast$ {\em pk\-Output})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpStreamOperator_a4}
+
+
+
+
+Implements {\bf Spark::Sp\-Stream\-Input} {\rm (p.\,\pageref{classSpark_1_1SpStreamInput_a3})}.
+
+Definition at line 37 of file Sp\-Stream\-Operator.cpp.
+
+References compute().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!setInputStream@{setInputStream}}
+\index{setInputStream@{setInputStream}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Stream\-Operator::set\-Input\-Stream ({\bf Sp\-Stream\-Input} $\ast$ {\em pk\-Input\-Stream})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpStreamOperator_a2}
+
+
+Operations:. 
+
+
+
+Reimplemented from {\bf Spark::Sp\-Stream\-Output} {\rm (p.\,\pageref{classSpark_1_1SpStreamOutput_a2})}.
+
+
+
+Reimplemented in {\bf Spark::Sp\-Turbulence\-Op} {\rm (p.\,\pageref{classSpark_1_1SpTurbulenceOp_a4})}.
+
+Definition at line 18 of file Sp\-Stream\-Operator.cpp.
+
+Referenced by Spark::Sp\-Turbulence\-Op::set\-Input\-Stream().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!setupState@{setupState}}
+\index{setupState@{setupState}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::setup\-State ({\bf Sp\-Stream\-Buffer} $\ast$ {\em pk\-Buffer}, {\bf Sp\-Stream\-Feedback} $\ast$ {\em pk\-Copy})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classSpark_1_1SpStreamOperator_b2}
+
+
+
+
+Reimplemented in {\bf Spark::Sp\-Turbulence\-Op} {\rm (p.\,\pageref{classSpark_1_1SpTurbulenceOp_b1})}.
+
+Definition at line 81 of file Sp\-Stream\-Operator.cpp.
+
+Referenced by compute().\index{Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}!updateOutputStream@{updateOutputStream}}
+\index{updateOutputStream@{updateOutputStream}!Spark::SpStreamOperator@{Spark::Sp\-Stream\-Operator}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Stream\-Operator::update\-Output\-Stream ({\bf Sp\-Stream\-Buffer} $\ast$ {\em pk\-Buffer}, {\bf Sp\-Stream\-Feedback} $\ast$ {\em pk\-Copy})\hspace{0.3cm}{\tt  [protected, virtual]}}\label{classSpark_1_1SpStreamOperator_b4}
+
+
+
+
+Reimplemented in {\bf Spark::Sp\-Turbulence\-Op} {\rm (p.\,\pageref{classSpark_1_1SpTurbulenceOp_b3})}.
+
+Definition at line 91 of file Sp\-Stream\-Operator.cpp.
+
+Referenced by compute().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Sp\-Stream\-Operator.h}\item 
+{\bf Sp\-Stream\-Operator.cpp}\end{CompactItemize}

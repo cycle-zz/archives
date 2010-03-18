@@ -1,0 +1,4 @@
+base referer
+rect $SpWindow_8h.html 101,82 197,109
+rect $SpGlutWindow_8cpp.html 8,8 144,34
+rect $SpWindow_8cpp.html 168,8 280,34

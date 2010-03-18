@@ -1,0 +1,1217 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		000041A710D63AF160B7ACDA = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			generatedFileNames = (
+			);
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Qmake";
+			neededFileNames = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/dg/Workspace/visualizer/build -f visualizer.debug.pbproj/qt_makeqmake.mak";
+		};
+		000041A710D63AF260B7ACDA = {
+			isa = PBXFileReference;
+			name = "Camera.h";
+			path = "../source/Camera.h";
+			refType = 4;
+		};
+		000041A810D63AF260B7ACDD = {
+			fileRef = 000041A710D63AF260B7ACDA;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041A810D63AF360B7ACDD = {
+			isa = PBXFileReference;
+			name = "Color.h";
+			path = "../source/Color.h";
+			refType = 4;
+		};
+		000041A910D63AF360B7ACDD = {
+			fileRef = 000041A810D63AF360B7ACDD;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041A910D63AF360B7ACDE = {
+			isa = PBXFileReference;
+			name = "CubeTables.h";
+			path = "../source/CubeTables.h";
+			refType = 4;
+		};
+		000041AA10D63AF360B7ACDE = {
+			fileRef = 000041A910D63AF360B7ACDE;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041AA10D63AF360B7ACDF = {
+			isa = PBXFileReference;
+			name = "DataTypes.h";
+			path = "../source/DataTypes.h";
+			refType = 4;
+		};
+		000041AB10D63AF360B7ACDF = {
+			fileRef = 000041AA10D63AF360B7ACDF;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041AB10D63AF360B7ACE0 = {
+			isa = PBXFileReference;
+			name = "GlutHeaders.h";
+			path = "../source/GlutHeaders.h";
+			refType = 4;
+		};
+		000041AB10D63AF460B7ACE0 = {
+			fileRef = 000041AB10D63AF360B7ACE0;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041AB10D63AF560B7ACE0 = {
+			isa = PBXFileReference;
+			name = "GlutKeyBindings.h";
+			path = "../source/GlutKeyBindings.h";
+			refType = 4;
+		};
+		000041AB10D63AF660B7ACE0 = {
+			fileRef = 000041AB10D63AF560B7ACE0;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041AB10D63AF760B7ACE0 = {
+			isa = PBXFileReference;
+			name = "Hypertexture.h";
+			path = "../source/Hypertexture.h";
+			refType = 4;
+		};
+		000041AC10D63AF760B7ACE0 = {
+			fileRef = 000041AB10D63AF760B7ACE0;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041AC10D63AF860B7ACE0 = {
+			isa = PBXFileReference;
+			name = "Image.h";
+			path = "../source/Image.h";
+			refType = 4;
+		};
+		000041AD10D63AF860B7ACE0 = {
+			fileRef = 000041AC10D63AF860B7ACE0;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041AD10D63AF860B7ACE1 = {
+			isa = PBXFileReference;
+			name = "Implicits.h";
+			path = "../source/Implicits.h";
+			refType = 4;
+		};
+		000041AD10D63AF960B7ACE1 = {
+			fileRef = 000041AD10D63AF860B7ACE1;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041AE10D63AF960B7ACE1 = {
+			isa = PBXFileReference;
+			name = "KeyBindings.h";
+			path = "../source/KeyBindings.h";
+			refType = 4;
+		};
+		000041AF10D63AF960B7ACE1 = {
+			fileRef = 000041AE10D63AF960B7ACE1;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B010D63AF960B7ACE1 = {
+			isa = PBXFileReference;
+			name = "Maths.h";
+			path = "../source/Maths.h";
+			refType = 4;
+		};
+		000041B010D63AF960B7ACE2 = {
+			fileRef = 000041B010D63AF960B7ACE1;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B010D63AFA60B7ACE2 = {
+			isa = PBXFileReference;
+			name = "Matrix.h";
+			path = "../source/Matrix.h";
+			refType = 4;
+		};
+		000041B010D63AFB60B7ACE2 = {
+			fileRef = 000041B010D63AFA60B7ACE2;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B010D63AFB60B7ACE3 = {
+			isa = PBXFileReference;
+			name = "Messages.h";
+			path = "../source/Messages.h";
+			refType = 4;
+		};
+		000041B010D63AFB60B7ACE4 = {
+			fileRef = 000041B010D63AFB60B7ACE3;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B010D63AFC60B7ACE4 = {
+			isa = PBXFileReference;
+			name = "OpenGLHeaders.h";
+			path = "../source/OpenGLHeaders.h";
+			refType = 4;
+		};
+		000041B010D63AFC60B7ACE5 = {
+			fileRef = 000041B010D63AFC60B7ACE4;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B110D63AFC60B7ACE5 = {
+			isa = PBXFileReference;
+			name = "Operators.h";
+			path = "../source/Operators.h";
+			refType = 4;
+		};
+		000041B110D63AFD60B7ACE5 = {
+			fileRef = 000041B110D63AFC60B7ACE5;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B110D63AFE60B7ACE5 = {
+			isa = PBXFileReference;
+			name = "Polygonizer.h";
+			path = "../source/Polygonizer.h";
+			refType = 4;
+		};
+		000041B210D63AFE60B7ACE5 = {
+			fileRef = 000041B110D63AFE60B7ACE5;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B310D63AFE60B7ACE5 = {
+			isa = PBXFileReference;
+			name = "Procedural.h";
+			path = "../source/Procedural.h";
+			refType = 4;
+		};
+		000041B310D63AFF60B7ACE5 = {
+			fileRef = 000041B310D63AFE60B7ACE5;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B310D63AFF60B7ACE6 = {
+			isa = PBXFileReference;
+			name = "RandTables.h";
+			path = "../source/RandTables.h";
+			refType = 4;
+		};
+		000041B310D63B0060B7ACE6 = {
+			fileRef = 000041B310D63AFF60B7ACE6;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B410D63B0060B7ACE6 = {
+			isa = PBXFileReference;
+			name = "Random.h";
+			path = "../source/Random.h";
+			refType = 4;
+		};
+		000041B410D63B0060B7ACE7 = {
+			fileRef = 000041B410D63B0060B7ACE6;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B410D63B0060B7ACE8 = {
+			isa = PBXFileReference;
+			name = "RayTracer.h";
+			path = "../source/RayTracer.h";
+			refType = 4;
+		};
+		000041B410D63B0060B7ACE9 = {
+			fileRef = 000041B410D63B0060B7ACE8;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B410D63B0160B7ACE9 = {
+			isa = PBXFileReference;
+			name = "Set.h";
+			path = "../source/Set.h";
+			refType = 4;
+		};
+		000041B510D63B0160B7ACE9 = {
+			fileRef = 000041B410D63B0160B7ACE9;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B510D63B0260B7ACE9 = {
+			isa = PBXFileReference;
+			name = "Shading.h";
+			path = "../source/Shading.h";
+			refType = 4;
+		};
+		000041B510D63B0260B7ACEA = {
+			fileRef = 000041B510D63B0260B7ACE9;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B510D63B0260B7ACEB = {
+			isa = PBXFileReference;
+			name = "Timer.h";
+			path = "../source/Timer.h";
+			refType = 4;
+		};
+		000041B510D63B0360B7ACEB = {
+			fileRef = 000041B510D63B0260B7ACEB;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B510D63B0460B7ACEB = {
+			isa = PBXFileReference;
+			name = "Transform.h";
+			path = "../source/Transform.h";
+			refType = 4;
+		};
+		000041B510D63B0560B7ACEB = {
+			fileRef = 000041B510D63B0460B7ACEB;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B510D63B0560B7ACEC = {
+			isa = PBXFileReference;
+			name = "Vector.h";
+			path = "../source/Vector.h";
+			refType = 4;
+		};
+		000041B610D63B0560B7ACEC = {
+			fileRef = 000041B510D63B0560B7ACEC;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B610D63B0560B7ACED = {
+			isa = PBXFileReference;
+			name = "Visualizer.h";
+			path = "../source/Visualizer.h";
+			refType = 4;
+		};
+		000041B710D63B0560B7ACED = {
+			fileRef = 000041B610D63B0560B7ACED;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B710D63B0660B7ACED = {
+			isa = PBXFileReference;
+			name = "Volumes.h";
+			path = "../source/Volumes.h";
+			refType = 4;
+		};
+		000041B710D63B0760B7ACED = {
+			fileRef = 000041B710D63B0660B7ACED;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B710D63B0860B7ACED = {
+			isa = PBXFileReference;
+			name = "Window.h";
+			path = "../source/Window.h";
+			refType = 4;
+		};
+		000041B810D63B0860B7ACED = {
+			fileRef = 000041B710D63B0860B7ACED;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041B810D63B0860B7ACEE = {
+			children = (
+				000041A710D63AF260B7ACDB
+			);
+			isa = PBXGroup;
+			name = "Headers";
+			refType = 4;
+		};
+		000041B810D63B0860B7ACEF = {
+			isa = PBXFileReference;
+			name = "Camera.cpp";
+			path = "../source/Camera.cpp";
+			refType = 4;
+		};
+		000041BB10D63B0960B7ACEF = {
+			fileRef = 000041B810D63B0860B7ACEF;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BB10D63B0A60B7ACEF = {
+			isa = PBXFileReference;
+			name = "Color.cpp";
+			path = "../source/Color.cpp";
+			refType = 4;
+		};
+		000041BB10D63B0B60B7ACEF = {
+			fileRef = 000041BB10D63B0A60B7ACEF;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BB10D63B0C60B7ACEF = {
+			isa = PBXFileReference;
+			name = "GlutWindow.cpp";
+			path = "../source/GlutWindow.cpp";
+			refType = 4;
+		};
+		000041BB10D63B0D60B7ACEF = {
+			fileRef = 000041BB10D63B0C60B7ACEF;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BB10D63B0E60B7ACEF = {
+			isa = PBXFileReference;
+			name = "Hypertexture.cpp";
+			path = "../source/Hypertexture.cpp";
+			refType = 4;
+		};
+		000041BC10D63B0E60B7ACEF = {
+			fileRef = 000041BB10D63B0E60B7ACEF;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BC10D63B0F60B7ACEF = {
+			isa = PBXFileReference;
+			name = "Image.cpp";
+			path = "../source/Image.cpp";
+			refType = 4;
+		};
+		000041BC10D63B0F60B7ACF0 = {
+			fileRef = 000041BC10D63B0F60B7ACEF;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BD10D63B0F60B7ACF0 = {
+			isa = PBXFileReference;
+			name = "Implicits.cpp";
+			path = "../source/Implicits.cpp";
+			refType = 4;
+		};
+		000041BD10D63B0F60B7ACF1 = {
+			fileRef = 000041BD10D63B0F60B7ACF0;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BD10D63B0F60B7ACF2 = {
+			isa = PBXFileReference;
+			name = "Maths.cpp";
+			path = "../source/Maths.cpp";
+			refType = 4;
+		};
+		000041BE10D63B0F60B7ACF2 = {
+			fileRef = 000041BD10D63B0F60B7ACF2;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BE10D63B1060B7ACF2 = {
+			isa = PBXFileReference;
+			name = "Matrix.cpp";
+			path = "../source/Matrix.cpp";
+			refType = 4;
+		};
+		000041BF10D63B1060B7ACF2 = {
+			fileRef = 000041BE10D63B1060B7ACF2;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BF10D63B1160B7ACF2 = {
+			isa = PBXFileReference;
+			name = "Messages.cpp";
+			path = "../source/Messages.cpp";
+			refType = 4;
+		};
+		000041BF10D63B1160B7ACF3 = {
+			fileRef = 000041BF10D63B1160B7ACF2;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041BF10D63B1160B7ACF4 = {
+			isa = PBXFileReference;
+			name = "Polygonizer.cpp";
+			path = "../source/Polygonizer.cpp";
+			refType = 4;
+		};
+		000041C010D63B1160B7ACF4 = {
+			fileRef = 000041BF10D63B1160B7ACF4;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C010D63B1160B7ACF5 = {
+			isa = PBXFileReference;
+			name = "Procedural.cpp";
+			path = "../source/Procedural.cpp";
+			refType = 4;
+		};
+		000041C110D63B1160B7ACF5 = {
+			fileRef = 000041C010D63B1160B7ACF5;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C210D63B1160B7ACF5 = {
+			isa = PBXFileReference;
+			name = "Random.cpp";
+			path = "../source/Random.cpp";
+			refType = 4;
+		};
+		000041C310D63B1160B7ACF5 = {
+			fileRef = 000041C210D63B1160B7ACF5;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C310D63B1160B7ACF6 = {
+			isa = PBXFileReference;
+			name = "RayTracer.cpp";
+			path = "../source/RayTracer.cpp";
+			refType = 4;
+		};
+		000041C310D63B1160B7ACF7 = {
+			fileRef = 000041C310D63B1160B7ACF6;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C310D63B1260B7ACF7 = {
+			isa = PBXFileReference;
+			name = "Set.cpp";
+			path = "../source/Set.cpp";
+			refType = 4;
+		};
+		000041C410D63B1260B7ACF7 = {
+			fileRef = 000041C310D63B1260B7ACF7;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C410D63B1260B7ACF8 = {
+			isa = PBXFileReference;
+			name = "Shading.cpp";
+			path = "../source/Shading.cpp";
+			refType = 4;
+		};
+		000041C410D63B1360B7ACF8 = {
+			fileRef = 000041C410D63B1260B7ACF8;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C510D63B1360B7ACF8 = {
+			isa = PBXFileReference;
+			name = "Timer.cpp";
+			path = "../source/Timer.cpp";
+			refType = 4;
+		};
+		000041C510D63B1360B7ACF9 = {
+			fileRef = 000041C510D63B1360B7ACF8;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C610D63B1360B7ACF9 = {
+			isa = PBXFileReference;
+			name = "Transform.cpp";
+			path = "../source/Transform.cpp";
+			refType = 4;
+		};
+		000041C710D63B1360B7ACF9 = {
+			fileRef = 000041C610D63B1360B7ACF9;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C810D63B1360B7ACF9 = {
+			isa = PBXFileReference;
+			name = "Vector.cpp";
+			path = "../source/Vector.cpp";
+			refType = 4;
+		};
+		000041C810D63B1360B7ACFA = {
+			fileRef = 000041C810D63B1360B7ACF9;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C810D63B1360B7ACFB = {
+			isa = PBXFileReference;
+			name = "Visualizer.cpp";
+			path = "../source/Visualizer.cpp";
+			refType = 4;
+		};
+		000041C810D63B1360B7ACFC = {
+			fileRef = 000041C810D63B1360B7ACFB;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C810D63B1360B7ACFD = {
+			isa = PBXFileReference;
+			name = "Window.cpp";
+			path = "../source/Window.cpp";
+			refType = 4;
+		};
+		000041C810D63B1460B7ACFD = {
+			fileRef = 000041C810D63B1360B7ACFD;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		000041C910D63B1460B7ACFD = {
+			children = (
+				000041B810D63B0960B7ACEF
+			);
+			isa = PBXGroup;
+			name = "Sources";
+			refType = 4;
+		};
+		000041A710D63AF260B7ACDB = {
+			isa = PBXGroup;
+			children = (
+				000041A810D63AF260B7ACDC
+			);
+			name = "..";
+			refType = 4;
+		};
+		000041A810D63AF260B7ACDC = {
+			isa = PBXGroup;
+			children = (
+				000041A710D63AF260B7ACDA,
+				000041A810D63AF360B7ACDD,
+				000041A910D63AF360B7ACDE,
+				000041AA10D63AF360B7ACDF,
+				000041AB10D63AF360B7ACE0,
+				000041AB10D63AF560B7ACE0,
+				000041AB10D63AF760B7ACE0,
+				000041AC10D63AF860B7ACE0,
+				000041AD10D63AF860B7ACE1,
+				000041AE10D63AF960B7ACE1,
+				000041B010D63AF960B7ACE1,
+				000041B010D63AFA60B7ACE2,
+				000041B010D63AFB60B7ACE3,
+				000041B010D63AFC60B7ACE4,
+				000041B110D63AFC60B7ACE5,
+				000041B110D63AFE60B7ACE5,
+				000041B310D63AFE60B7ACE5,
+				000041B310D63AFF60B7ACE6,
+				000041B410D63B0060B7ACE6,
+				000041B410D63B0060B7ACE8,
+				000041B410D63B0160B7ACE9,
+				000041B510D63B0260B7ACE9,
+				000041B510D63B0260B7ACEB,
+				000041B510D63B0460B7ACEB,
+				000041B510D63B0560B7ACEC,
+				000041B610D63B0560B7ACED,
+				000041B710D63B0660B7ACED,
+				000041B710D63B0860B7ACED
+			);
+			name = "source";
+			refType = 4;
+		};
+		000041B810D63B0960B7ACEF = {
+			isa = PBXGroup;
+			children = (
+				000041BA10D63B0960B7ACEF
+			);
+			name = "..";
+			refType = 4;
+		};
+		000041BA10D63B0960B7ACEF = {
+			isa = PBXGroup;
+			children = (
+				000041B810D63B0860B7ACEF,
+				000041BB10D63B0A60B7ACEF,
+				000041BB10D63B0C60B7ACEF,
+				000041BB10D63B0E60B7ACEF,
+				000041BC10D63B0F60B7ACEF,
+				000041BD10D63B0F60B7ACF0,
+				000041BD10D63B0F60B7ACF2,
+				000041BE10D63B1060B7ACF2,
+				000041BF10D63B1160B7ACF2,
+				000041BF10D63B1160B7ACF4,
+				000041C010D63B1160B7ACF5,
+				000041C210D63B1160B7ACF5,
+				000041C310D63B1160B7ACF6,
+				000041C310D63B1260B7ACF7,
+				000041C410D63B1260B7ACF8,
+				000041C510D63B1360B7ACF8,
+				000041C610D63B1360B7ACF9,
+				000041C810D63B1360B7ACF9,
+				000041C810D63B1360B7ACFB,
+				000041C810D63B1360B7ACFD
+			);
+			name = "source";
+			refType = 4;
+		};
+		000041CA10D63B1460B7ACFD = {
+			buildActionMask = 2147483647;
+			files = (
+				000041A810D63AF260B7ACDD,
+				000041A910D63AF360B7ACDD,
+				000041AA10D63AF360B7ACDE,
+				000041AB10D63AF360B7ACDF,
+				000041AB10D63AF460B7ACE0,
+				000041AB10D63AF660B7ACE0,
+				000041AC10D63AF760B7ACE0,
+				000041AD10D63AF860B7ACE0,
+				000041AD10D63AF960B7ACE1,
+				000041AF10D63AF960B7ACE1,
+				000041B010D63AF960B7ACE2,
+				000041B010D63AFB60B7ACE2,
+				000041B010D63AFB60B7ACE4,
+				000041B010D63AFC60B7ACE5,
+				000041B110D63AFD60B7ACE5,
+				000041B210D63AFE60B7ACE5,
+				000041B310D63AFF60B7ACE5,
+				000041B310D63B0060B7ACE6,
+				000041B410D63B0060B7ACE7,
+				000041B410D63B0060B7ACE9,
+				000041B510D63B0160B7ACE9,
+				000041B510D63B0260B7ACEA,
+				000041B510D63B0360B7ACEB,
+				000041B510D63B0560B7ACEB,
+				000041B610D63B0560B7ACEC,
+				000041B710D63B0560B7ACED,
+				000041B710D63B0760B7ACED,
+				000041B810D63B0860B7ACED,
+				000041BB10D63B0960B7ACEF,
+				000041BB10D63B0B60B7ACEF,
+				000041BB10D63B0D60B7ACEF,
+				000041BC10D63B0E60B7ACEF,
+				000041BC10D63B0F60B7ACF0,
+				000041BD10D63B0F60B7ACF1,
+				000041BE10D63B0F60B7ACF2,
+				000041BF10D63B1060B7ACF2,
+				000041BF10D63B1160B7ACF3,
+				000041C010D63B1160B7ACF4,
+				000041C110D63B1160B7ACF5,
+				000041C310D63B1160B7ACF5,
+				000041C310D63B1160B7ACF7,
+				000041C410D63B1260B7ACF7,
+				000041C410D63B1360B7ACF8,
+				000041C510D63B1360B7ACF9,
+				000041C710D63B1360B7ACF9,
+				000041C810D63B1360B7ACFA,
+				000041C810D63B1360B7ACFC,
+				000041C810D63B1460B7ACFD
+			);
+			isa = PBXSourcesBuildPhase;
+			name = "Build Sources";
+		};
+		000041CB10D63B1460B7ACFD = {
+			isa = PBXFileReference;
+			name = "";
+			path = "GLUT";
+			refType = 4;
+		};
+		000041CB10D63B1460B7ACFE = {
+			fileRef = 000041CB10D63B1460B7ACFD;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041CB10D63B1460B7ACFF = {
+			isa = PBXFileReference;
+			name = "objc";
+			path = "/usr/lib/libobjc.A.dylib";
+			refType = 0;
+		};
+		000041CB10D63B1460B7AD00 = {
+			fileRef = 000041CB10D63B1460B7ACFF;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041CC10D63B1460B7AD00 = {
+			isa = PBXFileReference;
+			name = "X11";
+			path = "/usr/X11R6/lib/libX11.6.2.dylib";
+			refType = 0;
+		};
+		000041CD10D63B1460B7AD00 = {
+			fileRef = 000041CC10D63B1460B7AD00;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041CD10D63B1460B7AD01 = {
+			isa = PBXFileReference;
+			name = "Xext";
+			path = "/usr/X11R6/lib/libXext.6.4.dylib";
+			refType = 0;
+		};
+		000041CD10D63B1560B7AD01 = {
+			fileRef = 000041CD10D63B1460B7AD01;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041CD10D63B1660B7AD01 = {
+			isa = PBXFileReference;
+			name = "Xmu";
+			path = "/usr/X11R6/lib/libXmu.6.2.dylib";
+			refType = 0;
+		};
+		000041CD10D63B1660B7AD02 = {
+			fileRef = 000041CD10D63B1660B7AD01;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041CD10D63B1660B7AD03 = {
+			isa = PBXFileReference;
+			name = "Xt";
+			path = "/usr/X11R6/lib/libXt.6.0.dylib";
+			refType = 0;
+		};
+		000041CE10D63B1660B7AD03 = {
+			fileRef = 000041CD10D63B1660B7AD03;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041CE10D63B1760B7AD03 = {
+			isa = PBXFileReference;
+			name = "Xi";
+			path = "/usr/X11R6/lib/libXi.6.0.dylib";
+			refType = 0;
+		};
+		000041CF10D63B1760B7AD03 = {
+			fileRef = 000041CE10D63B1760B7AD03;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041CF10D63B1860B7AD03 = {
+			isa = PBXFileReference;
+			name = "SM";
+			path = "/usr/X11R6/lib/libSM.6.0.dylib";
+			refType = 0;
+		};
+		000041CF10D63B1960B7AD03 = {
+			fileRef = 000041CF10D63B1860B7AD03;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D010D63B1960B7AD03 = {
+			isa = PBXFileReference;
+			name = "ICE";
+			path = "/usr/X11R6/lib/libICE.6.3.dylib";
+			refType = 0;
+		};
+		000041D010D63B1960B7AD04 = {
+			fileRef = 000041D010D63B1960B7AD03;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D010D63B1A60B7AD04 = {
+			isa = PBXFileReference;
+			name = "Imath";
+			path = "/usr/local/lib/libImath.1.0.0.dylib";
+			refType = 0;
+		};
+		000041D010D63B1B60B7AD04 = {
+			fileRef = 000041D010D63B1A60B7AD04;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D110D63B1B60B7AD04 = {
+			isa = PBXFileReference;
+			name = "IlmImf";
+			path = "/usr/local/lib/libIlmImf.1.0.0.dylib";
+			refType = 0;
+		};
+		000041D110D63B1C60B7AD04 = {
+			fileRef = 000041D110D63B1B60B7AD04;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D110D63B1D60B7AD04 = {
+			isa = PBXFileReference;
+			name = "Half";
+			path = "/usr/local/lib/libHalf.1.0.0.dylib";
+			refType = 0;
+		};
+		000041D110D63B1E60B7AD04 = {
+			fileRef = 000041D110D63B1D60B7AD04;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D110D63B1F60B7AD04 = {
+			isa = PBXFileReference;
+			name = "Iex";
+			path = "/usr/local/lib/libIex.1.0.0.dylib";
+			refType = 0;
+		};
+		000041D110D63B2060B7AD04 = {
+			fileRef = 000041D110D63B1F60B7AD04;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D210D63B2060B7AD04 = {
+			isa = PBXFileReference;
+			name = "qt-mt";
+			path = "/Packages/lib/libqt-mt.3.2.3.dylib";
+			refType = 0;
+		};
+		000041D310D63B2060B7AD04 = {
+			fileRef = 000041D210D63B2060B7AD04;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D310D63B2160B7AD04 = {
+			isa = PBXFileReference;
+			name = "";
+			path = "OpenGL";
+			refType = 4;
+		};
+		000041D410D63B2160B7AD04 = {
+			fileRef = 000041D310D63B2160B7AD04;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D410D63B2160B7AD05 = {
+			isa = PBXFrameworkReference;
+			name = "AGL.framework";
+			path = "/System/Library/Frameworks/AGL.framework";
+			refType = 0;
+		};
+		000041D410D63B2160B7AD06 = {
+			fileRef = 000041D410D63B2160B7AD05;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		000041D510D63B2160B7AD06 = {
+			children = (
+				000041CB10D63B1460B7ACFD,
+				000041CB10D63B1460B7ACFF,
+				000041CC10D63B1460B7AD00,
+				000041CD10D63B1460B7AD01,
+				000041CD10D63B1660B7AD01,
+				000041CD10D63B1660B7AD03,
+				000041CE10D63B1760B7AD03,
+				000041CF10D63B1860B7AD03,
+				000041D010D63B1960B7AD03,
+				000041D010D63B1A60B7AD04,
+				000041D110D63B1B60B7AD04,
+				000041D110D63B1D60B7AD04,
+				000041D110D63B1F60B7AD04,
+				000041D210D63B2060B7AD04,
+				000041D310D63B2160B7AD04,
+				000041D410D63B2160B7AD05
+			);
+			isa = PBXGroup;
+			name = "External Frameworks and Libraries";
+			path = "";
+			refType = 4;
+		};
+		000041D510D63B2160B7AD07 = {
+			buildActionMask = 2147483647;
+			files = (
+				000041CB10D63B1460B7ACFE,
+				000041CB10D63B1460B7AD00,
+				000041CD10D63B1460B7AD00,
+				000041CD10D63B1560B7AD01,
+				000041CD10D63B1660B7AD02,
+				000041CE10D63B1660B7AD03,
+				000041CF10D63B1760B7AD03,
+				000041CF10D63B1960B7AD03,
+				000041D010D63B1960B7AD04,
+				000041D010D63B1B60B7AD04,
+				000041D110D63B1C60B7AD04,
+				000041D110D63B1E60B7AD04,
+				000041D110D63B2060B7AD04,
+				000041D310D63B2060B7AD04,
+				000041D410D63B2160B7AD04,
+				000041D410D63B2160B7AD06
+			);
+			isa = PBXFrameworksBuildPhase;
+			name = "Frameworks & Libraries";
+		};
+		000041D610D63B2160B7AD07 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXResourcesBuildPhase;
+			name = "Bundle Resources";
+		};
+		000041D610D63B2260B7AD07 = {
+			children = (
+				000041D610D63B2260B7AD08
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+		000041D610D63B2260B7AD09 = {
+			buildActionMask = 8;
+			files = (
+			);
+			generatedFileNames = (
+			);
+			isa = PBXShellScriptBuildPhase;
+			name = "Qt Install";
+			neededFileNames = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "visualizer.debug.pbproj/qt_install.sh";
+		};
+		000041D610D63B2360B7AD09 = {
+			children = (
+				000041B810D63B0860B7ACEE,
+				000041C910D63B1460B7ACFD,
+				000041D510D63B2160B7AD06,
+				000041D610D63B2260B7AD07
+			);
+			isa = PBXGroup;
+			name = visualizer.debug;
+			path = "";
+			refType = 4;
+		};
+		000041D610D63B2260B7AD08 = {
+			isa = PBXApplicationReference;
+			name = visualizer.debug.app;
+			path = "visualizer.debug.app";
+			refType = 4;
+		};
+		000041D610D63B2360B7AD0A = {
+			buildPhases = (
+				000041A710D63AF160B7ACDA,
+				000041CA10D63B1460B7ACFD,
+				000041D510D63B2160B7AD07,
+				000041D610D63B2160B7AD07,
+				000041D610D63B2260B7AD09
+			);
+			buildSettings = {
+				CC = "$(TB)cc";
+				CPLUSPLUS = "$(TB)c++";
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers /System/Library/Frameworks/GLUT.framework/Versions/A/Headers /usr/include /usr/local/include ../source /usr/local/include/OpenEXR . ../source /usr/local/include /System/Library/Frameworks/CarbonCore.framework/Headers $(QTDIR)/include /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers /System/Library/Frameworks/AGL.framework/Versions/A/Headers /Packages/share/qt3/mkspecs/macx-pbuilder";
+				LIBRARY_SEARCH_PATHS = "/Packages/lib /usr/lib/ /usr/X11R6/lib/ /usr/local/lib";
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "-pipe -Wall -W -g -DDEBUG -DQT_SHARED -DQT_NO_DEBUG -DQT_THREAD_SUPPORT";
+				LEXFLAGS = "";
+				YACCFLAGS = "-d";
+				OTHER_CPLUSPLUSFLAGS = "-pipe -Wall -W -g -DDEBUG -DQT_SHARED -DQT_NO_DEBUG -DQT_THREAD_SUPPORT";
+				OTHER_REZFLAGS = "";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				PREBINDING = YES;
+				BUILD_ROOT = "/Users/dg/Workspace/visualizer/build";
+				OTHER_LDFLAGS = "  -L$(QTDIR)/lib -L/usr/lib/ -L/usr/X11R6/lib/ -L/usr/local/lib";
+				INSTALL_PATH = "../bin/visualizer.debug.app/Contents/MacOS/";
+				DYLIB_CURRENT_VERSION = "1.0.0";
+				DYLIB_COMPATIBILITY_VERSION = "1.0";
+				WRAPPER_EXTENSION = app;
+				PRODUCT_NAME = visualizer.debug;
+				TB = "";
+				QTDIR = "/Packages";
+			};
+			conditionalBuildSettings = {
+			};
+			dependencies = (
+			);
+			productReference = 000041D610D63B2260B7AD08;
+			shouldUseHeadermap = 1;
+			isa = PBXApplicationTarget;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+				<!DOCTYPE plist SYSTEM \"file://localhost/System/Library/DTDs/PropertyList.dtd\">
+				<plist version=\"0.9\">
+				<dict>
+					<key>CFBundleDevelopmentRegion</key>
+					<string>English</string>
+					<key>CFBundleExecutable</key>
+					<string>visualizer.debug</string>
+					<key>CFBundleIconFile</key>
+					<string></string>
+					<key>CFBundleInfoDictionaryVersion</key>
+					<string>6.0</string>
+					<key>CFBundlePackageType</key>
+					<string>APPL</string>
+					<key>CFBundleSignature</key>
+					<string>????</string>
+					<key>CFBundleVersion</key>
+					<string>0.1</string>
+					<key>CSResourcesFileMapped</key>
+					<true/>
+				</dict>
+				</plist>";
+			name = "visualizer.debug";
+			productName = visualizer.debug;
+			startupPath = "<<ProjectDirectory>>";
+			productInstallPath = "../bin/visualizer.debug.app/Contents/MacOS/";
+		};
+		000041D610D63B2460B7AD0A = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		000041D610D63B2460B7AD0B = {
+			buildStyles = (
+				000041D610D63B2460B7AD0A
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 000041D610D63B2360B7AD09;
+			projectDirPath = "";
+			targets = (
+				000041D610D63B2360B7AD0A
+			);
+		};
+	};
+	rootObject = 000041D610D63B2460B7AD0B;
+}

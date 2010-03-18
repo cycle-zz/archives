@@ -1,0 +1,117 @@
+\section{Spark::Sp\-Parameter\-Set Class Reference}
+\label{classSpark_1_1SpParameterSet}\index{Spark::SpParameterSet@{Spark::SpParameterSet}}
+{\tt \#include $<$Sp\-Parameter\-Set.h$>$}
+
+
+
+\subsection{Detailed Description}
+Container class for parameters used with GPU programs. 
+
+Definition at line 34 of file Sp\-Parameter\-Set.h.\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Parameter\-Set} ()
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+{\bf Sp\-Parameter\-Set} (const {\bf Sp\-Parameter\-Set} \&rk\-Constants)
+\item 
+virtual {\bf $\sim$Sp\-Parameter\-Set} ()
+\item 
+void {\bf insert} (const {\bf Sp\-Parameter} \&rk\-Param)
+\begin{CompactList}\small\item\em Insertion:. \item\end{CompactList}\item 
+void {\bf insert} (const {\bf Sp\-Parameter} $\ast$pk\-Param)
+\item 
+{\bf Sp\-Parameter\-Ptr} {\bf retrieve} (const char $\ast$ac\-Name) const
+\begin{CompactList}\small\item\em Retrieval:. \item\end{CompactList}\item 
+{\bf Sp\-Parameter\-Ptr} {\bf retrieve} (int i\-Index) const
+\item 
+int {\bf size} () const
+\begin{CompactList}\small\item\em Attributes:. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+std::vector$<$ {\bf Sp\-Parameter\-Ptr} $>$ {\bf m\_\-k\-Sp\-Parameters}
+\begin{CompactList}\small\item\em Internal Data:. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!SpParameterSet@{SpParameterSet}}
+\index{SpParameterSet@{SpParameterSet}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter\-Set::Sp\-Parameter\-Set ()}\label{classSpark_1_1SpParameterSet_a0}
+
+
+Construction:. 
+
+Definition at line 6 of file Sp\-Parameter\-Set.cpp.\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!SpParameterSet@{SpParameterSet}}
+\index{SpParameterSet@{SpParameterSet}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter\-Set::Sp\-Parameter\-Set (const {\bf Sp\-Parameter\-Set} \& {\em rk\-Constants})}\label{classSpark_1_1SpParameterSet_a1}
+
+
+Definition at line 11 of file Sp\-Parameter\-Set.cpp.
+
+References m\_\-k\-Sp\-Parameters, retrieve(), and size().\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!~SpParameterSet@{$\sim$SpParameterSet}}
+\index{~SpParameterSet@{$\sim$SpParameterSet}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter\-Set::$\sim${\bf Sp\-Parameter\-Set} ()\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpParameterSet_a2}
+
+
+Definition at line 18 of file Sp\-Parameter\-Set.cpp.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!insert@{insert}}
+\index{insert@{insert}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter\-Set::insert (const {\bf Sp\-Parameter} $\ast$ {\em pk\-Param})}\label{classSpark_1_1SpParameterSet_a4}
+
+
+Definition at line 39 of file Sp\-Parameter\-Set.cpp.
+
+References Spark::Sp\-Parameter::get\-Name(), and m\_\-k\-Sp\-Parameters.\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!insert@{insert}}
+\index{insert@{insert}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter\-Set::insert (const {\bf Sp\-Parameter} \& {\em rk\-Param})}\label{classSpark_1_1SpParameterSet_a3}
+
+
+Insertion:. 
+
+Definition at line 23 of file Sp\-Parameter\-Set.cpp.
+
+References Spark::Sp\-Parameter::get\-Name(), and m\_\-k\-Sp\-Parameters.\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-Parameter\-Ptr} Spark::Sp\-Parameter\-Set::retrieve (int {\em i\-Index}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameterSet_a6}
+
+
+Definition at line 74 of file Sp\-Parameter\-Set.h.\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-Parameter\-Ptr} Sp\-Parameter\-Set::retrieve (const char $\ast$ {\em ac\-Name}) const}\label{classSpark_1_1SpParameterSet_a5}
+
+
+Retrieval:. 
+
+Definition at line 55 of file Sp\-Parameter\-Set.cpp.
+
+References m\_\-k\-Sp\-Parameters, and Spark::Sp\-Parameter\-Ptr.
+
+Referenced by Sp\-Parameter\-Set().\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!size@{size}}
+\index{size@{size}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Spark::Sp\-Parameter\-Set::size () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameterSet_a7}
+
+
+Attributes:. 
+
+Definition at line 79 of file Sp\-Parameter\-Set.h.
+
+Referenced by Sp\-Parameter\-Set().
+
+\subsection{Member Data Documentation}
+\index{Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}!m_kSpParameters@{m\_\-kSpParameters}}
+\index{m_kSpParameters@{m\_\-kSpParameters}!Spark::SpParameterSet@{Spark::Sp\-Parameter\-Set}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf Sp\-Parameter\-Ptr}$>$ {\bf Spark::Sp\-Parameter\-Set::m\_\-k\-Sp\-Parameters}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameterSet_p0}
+
+
+Internal Data:. 
+
+Definition at line 67 of file Sp\-Parameter\-Set.h.
+
+Referenced by insert(), retrieve(), and Sp\-Parameter\-Set().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Sp\-Parameter\-Set.h}\item 
+{\bf Sp\-Parameter\-Set.cpp}\end{CompactItemize}

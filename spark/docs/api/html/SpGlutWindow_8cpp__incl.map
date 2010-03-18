@@ -1,0 +1,9 @@
+base referer
+rect $SpWindow_8h.html 342,231 438,258
+rect $SpTimer_8h.html 116,157 198,183
+rect $SpTuple_8h.html 222,157 305,183
+rect $SpMaths_8h.html 218,82 304,109
+rect $SpKeyBindings_8h.html 329,157 452,183
+rect $SpGlHeaders_8h.html 722,82 834,109
+rect $SpGlutKeyBindings_8h.html 633,231 782,258
+rect $SpGlutHeaders_8h.html 606,157 732,183

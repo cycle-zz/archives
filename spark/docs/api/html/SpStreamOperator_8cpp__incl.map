@@ -1,0 +1,8 @@
+base referer
+rect $SpStreamOperator_8h.html 253,306 397,333
+rect $SpStreamOutput_8h.html 105,232 238,258
+rect $SpStreamInput_8h.html 313,232 436,258
+rect $SpStreamBuffer_8h.html 178,157 306,184
+rect $SpString_8h.html 186,82 272,109
+rect $SpGlHeaders_8h.html 477,82 589,109
+rect $SpStreamFeedback_8h.html 330,157 482,184

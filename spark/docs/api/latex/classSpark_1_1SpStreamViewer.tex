@@ -1,0 +1,93 @@
+\section{Spark::Sp\-Stream\-Viewer Class Reference}
+\label{classSpark_1_1SpStreamViewer}\index{Spark::SpStreamViewer@{Spark::SpStreamViewer}}
+{\tt \#include $<$Sp\-Stream\-Viewer.h$>$}
+
+Inheritance diagram for Spark::Sp\-Stream\-Viewer:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=80pt]{classSpark_1_1SpStreamViewer__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for Spark::Sp\-Stream\-Viewer:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classSpark_1_1SpStreamViewer__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Stream viewer output class for visualizing a data stream. 
+
+Definition at line 34 of file Sp\-Stream\-Viewer.h.\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Stream\-Viewer} ()
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+virtual {\bf $\sim$Gpu\-Stream\-Viewer} ()
+\item 
+virtual void {\bf set\-Viewport} (int i\-X, int i\-Y, int i\-Width, int i\-Height)=0
+\begin{CompactList}\small\item\em Operations:. \item\end{CompactList}\item 
+virtual void {\bf on\-Resize} (int i\-Width, int i\-Height)=0
+\item 
+virtual void {\bf on\-Display} ()=0
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Textured\-Quad\-Sg} $\ast$ {\bf m\_\-pk\-Quad}
+\begin{CompactList}\small\item\em Internal Data:. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}!SpStreamViewer@{SpStreamViewer}}
+\index{SpStreamViewer@{SpStreamViewer}!Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Spark::Sp\-Stream\-Viewer::Sp\-Stream\-Viewer ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpStreamViewer_a0}
+
+
+Construction:. 
+
+Definition at line 40 of file Sp\-Stream\-Viewer.h.
+
+References m\_\-pk\-Quad.\index{Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}!~GpuStreamViewer@{$\sim$GpuStreamViewer}}
+\index{~GpuStreamViewer@{$\sim$GpuStreamViewer}!Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual Spark::Sp\-Stream\-Viewer::$\sim$Gpu\-Stream\-Viewer ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSpark_1_1SpStreamViewer_a1}
+
+
+Definition at line 45 of file Sp\-Stream\-Viewer.h.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}!onDisplay@{onDisplay}}
+\index{onDisplay@{onDisplay}!Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Spark::Sp\-Stream\-Viewer::on\-Display ()\hspace{0.3cm}{\tt  [pure virtual]}}\label{classSpark_1_1SpStreamViewer_a4}
+
+
+\index{Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}!onResize@{onResize}}
+\index{onResize@{onResize}!Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Spark::Sp\-Stream\-Viewer::on\-Resize (int {\em i\-Width}, int {\em i\-Height})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classSpark_1_1SpStreamViewer_a3}
+
+
+\index{Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}!setViewport@{setViewport}}
+\index{setViewport@{setViewport}!Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Spark::Sp\-Stream\-Viewer::set\-Viewport (int {\em i\-X}, int {\em i\-Y}, int {\em i\-Width}, int {\em i\-Height})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classSpark_1_1SpStreamViewer_a2}
+
+
+Operations:. 
+
+
+
+\subsection{Member Data Documentation}
+\index{Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}!m_pkQuad@{m\_\-pkQuad}}
+\index{m_pkQuad@{m\_\-pkQuad}!Spark::SpStreamViewer@{Spark::Sp\-Stream\-Viewer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-Textured\-Quad\-Sg}$\ast$ {\bf Spark::Sp\-Stream\-Viewer::m\_\-pk\-Quad}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpStreamViewer_p0}
+
+
+Internal Data:. 
+
+Definition at line 60 of file Sp\-Stream\-Viewer.h.
+
+Referenced by Sp\-Stream\-Viewer().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+{\bf Sp\-Stream\-Viewer.h}\end{CompactItemize}

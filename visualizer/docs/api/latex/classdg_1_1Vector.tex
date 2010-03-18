@@ -1,0 +1,454 @@
+\section{dg::Vector Class Reference}
+\label{classdg_1_1Vector}\index{dg::Vector@{dg::Vector}}
+{\tt \#include $<$Vector.h$>$}
+
+
+
+\subsection{Detailed Description}
+{\bf Vector} {\rm (p.\,\pageref{classdg_1_1Vector})} - Generic 3D mathematical {\bf Vector} {\rm (p.\,\pageref{classdg_1_1Vector})} class.
+
+
+
+Definition at line 25 of file Vector.h.\subsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+{\bf Vector} ({\bf Real} x=0.0f, {\bf Real} y=0.0f, {\bf Real} z=0.0f)
+\item 
+{\bf Vector} (const Vector \&rk\-V)
+\item 
+{\bf Real} {\bf x} () const
+\item 
+{\bf Real} {\bf y} () const
+\item 
+{\bf Real} {\bf z} () const
+\item 
+{\bf Real} \& {\bf x} ()
+\item 
+{\bf Real} \& {\bf y} ()
+\item 
+{\bf Real} \& {\bf z} ()
+\item 
+{\bf operator const Real $\ast$} () const
+\item 
+{\bf operator Real $\ast$} ()
+\item 
+const {\bf Real} $\ast$ {\bf values} () const
+\item 
+const Vector \& {\bf value} () const
+\item 
+{\bf Real} {\bf operator[$\,$]} (int i) const
+\item 
+{\bf Real} \& {\bf operator[$\,$]} (int i)
+\item 
+Vector {\bf operator+} (const Vector \&rk\-Vector) const
+\item 
+void {\bf operator+=} (const Vector \&rk\-Vector)
+\item 
+void {\bf operator++} (void)
+\item 
+Vector {\bf operator-} () const
+\item 
+Vector {\bf operator-} (const Vector \&rk\-Vector) const
+\item 
+void {\bf operator-=} (const Vector \&rk\-Vector)
+\item 
+void {\bf operator--} (void)
+\item 
+Vector {\bf operator $\ast$} (const Vector \&rk\-Vector) const
+\item 
+void {\bf operator $\ast$=} (const Vector \&rk\-Vector)
+\item 
+Vector {\bf operator $\ast$} (const int scalar) const
+\item 
+void {\bf operator $\ast$=} (const int scalar)
+\item 
+Vector {\bf operator $\ast$} (const {\bf Real} scalar) const
+\item 
+void {\bf operator $\ast$=} (const {\bf Real} scalar)
+\item 
+void {\bf operator=} (const Vector \&rk\-Vector)
+\item 
+bool {\bf operator==} (const Vector \&rk\-Vector) const
+\item 
+bool {\bf operator!=} (const Vector \&Value) const
+\item 
+void {\bf zero} ()
+\item 
+void {\bf negate} ()
+\item 
+{\bf Real} {\bf length} () const
+\item 
+{\bf Real} {\bf length\-Squared} () const
+\item 
+void {\bf normalize} ()
+\item 
+{\bf Real} {\bf dot} (const Vector \&rk\-Vector) const
+\item 
+Vector {\bf cross} (const Vector \&rk\-Vector) const
+\item 
+void {\bf cross} (const Vector \&rk\-LHS, const Vector \&rk\-RHS)
+\item 
+{\bf Real} {\bf angle} (const Vector rk\-Vector) const
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+const Vector {\bf ZERO} = Vector( 0.0f, 0.0f, 0.0f )
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{dg::Vector@{dg::Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector::Vector ({\bf Real} {\em x} = 0.0f, {\bf Real} {\em y} = 0.0f, {\bf Real} {\em z} = 0.0f)}\label{classdg_1_1Vector_a0}
+
+
+
+
+Definition at line 24 of file Vector.cpp.
+
+References dg::Real, x(), y(), and z().
+
+Referenced by cross(), operator $\ast$(), operator+(), and operator-().\index{dg::Vector@{dg::Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector::Vector (const Vector \& {\em rk\-V})}\label{classdg_1_1Vector_a1}
+
+
+
+
+Definition at line 31 of file Vector.cpp.
+
+References x(), y(), and z().
+
+\subsection{Member Function Documentation}
+\index{dg::Vector@{dg::Vector}!angle@{angle}}
+\index{angle@{angle}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Vector::angle (const Vector {\em rk\-Vector}) const}\label{classdg_1_1Vector_a38}
+
+
+
+
+Definition at line 205 of file Vector.cpp.
+
+References dot(), length(), and dg::Real.\index{dg::Vector@{dg::Vector}!cross@{cross}}
+\index{cross@{cross}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::cross (const Vector \& {\em rk\-LHS}, const Vector \& {\em rk\-RHS})}\label{classdg_1_1Vector_a37}
+
+
+
+
+Definition at line 198 of file Vector.cpp.
+
+References x(), y(), and z().\index{dg::Vector@{dg::Vector}!cross@{cross}}
+\index{cross@{cross}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector Vector::cross (const Vector \& {\em rk\-Vector}) const}\label{classdg_1_1Vector_a36}
+
+
+
+
+Definition at line 190 of file Vector.cpp.
+
+References Vector(), x(), y(), and z().
+
+Referenced by dg::Matrix::build\-Rotation().\index{dg::Vector@{dg::Vector}!dot@{dot}}
+\index{dot@{dot}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Vector::dot (const Vector \& {\em rk\-Vector}) const}\label{classdg_1_1Vector_a35}
+
+
+
+
+Definition at line 182 of file Vector.cpp.
+
+References m\_\-ad\-C, and dg::Real.
+
+Referenced by angle(), and dg::Matrix::build\-Rotation().\index{dg::Vector@{dg::Vector}!length@{length}}
+\index{length@{length}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Vector::length ()}\label{classdg_1_1Vector_a32}
+
+
+
+
+Definition at line 158 of file Vector.cpp.
+
+References dg::Real, x(), y(), and z().
+
+Referenced by angle(), and dg::Visualizer::setup\-Camera().\index{dg::Vector@{dg::Vector}!lengthSquared@{lengthSquared}}
+\index{lengthSquared@{lengthSquared}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Vector::length\-Squared ()}\label{classdg_1_1Vector_a33}
+
+
+
+
+Definition at line 163 of file Vector.cpp.
+
+References dg::Real, x(), y(), and z().
+
+Referenced by dg::Normalize().\index{dg::Vector@{dg::Vector}!negate@{negate}}
+\index{negate@{negate}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::negate ()}\label{classdg_1_1Vector_a31}
+
+
+
+
+Definition at line 138 of file Vector.cpp.\index{dg::Vector@{dg::Vector}!normalize@{normalize}}
+\index{normalize@{normalize}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::normalize ()}\label{classdg_1_1Vector_a34}
+
+
+
+
+Definition at line 168 of file Vector.cpp.
+
+References dg::Real, x(), y(), and z().
+
+Referenced by dg::Matrix::build\-Rotation(), dg::Polygonizer::get\-Normal(), and dg::Camera::get\-Ray\-Dir().\index{dg::Vector@{dg::Vector}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector Vector::operator $\ast$ (const {\bf Real} {\em scalar}) const}\label{classdg_1_1Vector_a25}
+
+
+
+
+Definition at line 114 of file Vector.cpp.
+
+References dg::Real, and Vector().\index{dg::Vector@{dg::Vector}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector Vector::operator $\ast$ (const int {\em scalar}) const}\label{classdg_1_1Vector_a23}
+
+
+
+
+Definition at line 102 of file Vector.cpp.
+
+References Vector().\index{dg::Vector@{dg::Vector}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector Vector::operator $\ast$ (const Vector \& {\em rk\-Vector}) const}\label{classdg_1_1Vector_a21}
+
+
+
+
+Definition at line 87 of file Vector.cpp.
+
+References m\_\-ad\-C, and Vector().\index{dg::Vector@{dg::Vector}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::operator $\ast$= (const {\bf Real} {\em scalar})}\label{classdg_1_1Vector_a26}
+
+
+
+
+Definition at line 119 of file Vector.cpp.
+
+References dg::Real.\index{dg::Vector@{dg::Vector}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::operator $\ast$= (const int {\em scalar})}\label{classdg_1_1Vector_a24}
+
+
+
+
+Definition at line 107 of file Vector.cpp.\index{dg::Vector@{dg::Vector}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::operator $\ast$= (const Vector \& {\em rk\-Vector})}\label{classdg_1_1Vector_a22}
+
+
+
+
+Definition at line 95 of file Vector.cpp.
+
+References m\_\-ad\-C.\index{dg::Vector@{dg::Vector}!operator const Real *@{operator const Real $\ast$}}
+\index{operator const Real *@{operator const Real $\ast$}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}dg::Vector::operator const {\bf Real} $\ast$ ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a8}
+
+
+
+
+Definition at line 127 of file Vector.h.\index{dg::Vector@{dg::Vector}!operator Real *@{operator Real $\ast$}}
+\index{operator Real *@{operator Real $\ast$}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}dg::Vector::operator {\bf Real} $\ast$ ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a9}
+
+
+
+
+Definition at line 132 of file Vector.h.\index{dg::Vector@{dg::Vector}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Vector::operator!= (const Vector \& {\em Value}) const}\label{classdg_1_1Vector_a29}
+
+
+
+
+Definition at line 153 of file Vector.cpp.\index{dg::Vector@{dg::Vector}!operator+@{operator+}}
+\index{operator+@{operator+}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector Vector::operator+ (const Vector \& {\em rk\-Vector}) const}\label{classdg_1_1Vector_a14}
+
+
+
+
+Definition at line 38 of file Vector.cpp.
+
+References m\_\-ad\-C, and Vector().\index{dg::Vector@{dg::Vector}!operator++@{operator++}}
+\index{operator++@{operator++}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::operator++ (void)}\label{classdg_1_1Vector_a16}
+
+
+
+
+Definition at line 53 of file Vector.cpp.\index{dg::Vector@{dg::Vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::operator+= (const Vector \& {\em rk\-Vector})}\label{classdg_1_1Vector_a15}
+
+
+
+
+Definition at line 46 of file Vector.cpp.
+
+References m\_\-ad\-C.\index{dg::Vector@{dg::Vector}!operator-@{operator-}}
+\index{operator-@{operator-}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector Vector::operator- (const Vector \& {\em rk\-Vector}) const}\label{classdg_1_1Vector_a18}
+
+
+
+
+Definition at line 65 of file Vector.cpp.
+
+References m\_\-ad\-C, and Vector().\index{dg::Vector@{dg::Vector}!operator-@{operator-}}
+\index{operator-@{operator-}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Vector Vector::operator- ()}\label{classdg_1_1Vector_a17}
+
+
+
+
+Definition at line 60 of file Vector.cpp.
+
+References Vector().\index{dg::Vector@{dg::Vector}!operator--@{operator--}}
+\index{operator--@{operator--}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::operator-- (void)}\label{classdg_1_1Vector_a20}
+
+
+
+
+Definition at line 80 of file Vector.cpp.\index{dg::Vector@{dg::Vector}!operator-=@{operator-=}}
+\index{operator-=@{operator-=}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::operator-= (const Vector \& {\em rk\-Vector})}\label{classdg_1_1Vector_a19}
+
+
+
+
+Definition at line 73 of file Vector.cpp.
+
+References m\_\-ad\-C.\index{dg::Vector@{dg::Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::operator= (const Vector \& {\em rk\-Vector})}\label{classdg_1_1Vector_a27}
+
+
+
+
+Definition at line 126 of file Vector.cpp.
+
+References m\_\-ad\-C.\index{dg::Vector@{dg::Vector}!operator==@{operator==}}
+\index{operator==@{operator==}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Vector::operator== (const Vector \& {\em rk\-Vector}) const}\label{classdg_1_1Vector_a28}
+
+
+
+
+Definition at line 145 of file Vector.cpp.
+
+References m\_\-ad\-C.\index{dg::Vector@{dg::Vector}!operator[]@{operator[]}}
+\index{operator[]@{operator[]}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Vector::operator[$\,$] (int {\em i})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a13}
+
+
+
+
+Definition at line 152 of file Vector.h.\index{dg::Vector@{dg::Vector}!operator[]@{operator[]}}
+\index{operator[]@{operator[]}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Vector::operator[$\,$] (int {\em i}) const\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a12}
+
+
+
+
+Definition at line 147 of file Vector.h.\index{dg::Vector@{dg::Vector}!value@{value}}
+\index{value@{value}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const Vector \& dg::Vector::value ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a11}
+
+
+
+
+Definition at line 142 of file Vector.h.\index{dg::Vector@{dg::Vector}!values@{values}}
+\index{values@{values}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf Real} $\ast$ dg::Vector::values ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a10}
+
+
+
+
+Definition at line 137 of file Vector.h.\index{dg::Vector@{dg::Vector}!x@{x}}
+\index{x@{x}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Vector::x ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a5}
+
+
+
+
+Definition at line 112 of file Vector.h.\index{dg::Vector@{dg::Vector}!x@{x}}
+\index{x@{x}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Vector::x ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a2}
+
+
+
+
+Definition at line 97 of file Vector.h.
+
+References dg::Real.
+
+Referenced by dg::Matrix::build\-Rotation(), dg::Matrix::build\-Scale(), dg::Matrix::build\-Transform(), dg::Matrix::build\-Translation(), dg::Cross(), cross(), dg::Dot(), dg::Visualizer::draw\-Polygons(), dg::Matrix::from\-Axis\-To\-Angle(), dg::Polygonizer::get\-Normal(), dg::Camera::get\-Ray\-Dir(), length(), length\-Squared(), dg::Polygonizer::march\-Cube(), dg::Polygonizer::march\-Tetra(), dg::Polygonizer::march\-Tetra\-Cube(), dg::Matrix::Matrix(), dg::Max(), dg::Min(), dg::Normalize(), normalize(), dg::operator $\ast$(), dg::Matrix::operator $\ast$(), dg::Camera::setup(), and Vector().\index{dg::Vector@{dg::Vector}!y@{y}}
+\index{y@{y}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Vector::y ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a6}
+
+
+
+
+Definition at line 117 of file Vector.h.\index{dg::Vector@{dg::Vector}!y@{y}}
+\index{y@{y}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Vector::y ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a3}
+
+
+
+
+Definition at line 102 of file Vector.h.
+
+Referenced by dg::Matrix::build\-Rotation(), dg::Matrix::build\-Scale(), dg::Matrix::build\-Transform(), dg::Matrix::build\-Translation(), dg::Cross(), cross(), dg::Dot(), dg::Visualizer::draw\-Polygons(), dg::Matrix::from\-Axis\-To\-Angle(), dg::Polygonizer::get\-Normal(), dg::Camera::get\-Ray\-Dir(), length(), length\-Squared(), dg::Polygonizer::march\-Cube(), dg::Polygonizer::march\-Tetra(), dg::Polygonizer::march\-Tetra\-Cube(), dg::Matrix::Matrix(), dg::Max(), dg::Min(), dg::Normalize(), normalize(), dg::operator $\ast$(), dg::Matrix::operator $\ast$(), dg::Camera::setup(), and Vector().\index{dg::Vector@{dg::Vector}!z@{z}}
+\index{z@{z}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Vector::z ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a7}
+
+
+
+
+Definition at line 122 of file Vector.h.\index{dg::Vector@{dg::Vector}!z@{z}}
+\index{z@{z}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Vector::z ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Vector_a4}
+
+
+
+
+Definition at line 107 of file Vector.h.
+
+Referenced by dg::Matrix::build\-Rotation(), dg::Matrix::build\-Scale(), dg::Matrix::build\-Transform(), dg::Matrix::build\-Translation(), dg::Cross(), cross(), dg::Dot(), dg::Visualizer::draw\-Polygons(), dg::Matrix::from\-Axis\-To\-Angle(), dg::Polygonizer::get\-Normal(), dg::Camera::get\-Ray\-Dir(), length(), length\-Squared(), dg::Polygonizer::march\-Cube(), dg::Polygonizer::march\-Tetra(), dg::Polygonizer::march\-Tetra\-Cube(), dg::Matrix::Matrix(), dg::Max(), dg::Min(), dg::Normalize(), normalize(), dg::operator $\ast$(), dg::Matrix::operator $\ast$(), dg::Camera::setup(), and Vector().\index{dg::Vector@{dg::Vector}!zero@{zero}}
+\index{zero@{zero}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Vector::zero ()}\label{classdg_1_1Vector_a30}
+
+
+
+
+Definition at line 133 of file Vector.cpp.
+
+\subsection{Member Data Documentation}
+\index{dg::Vector@{dg::Vector}!ZERO@{ZERO}}
+\index{ZERO@{ZERO}!dg::Vector@{dg::Vector}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const Vector Vector::ZERO = Vector( 0.0f, 0.0f, 0.0f )\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Vector_p0}
+
+
+
+
+Definition at line 283 of file Vector.cpp.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Vector.h}\item 
+{\bf Vector.cpp}\end{CompactItemize}

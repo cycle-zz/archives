@@ -1,0 +1,477 @@
+\section{dg::Color Class Reference}
+\label{classdg_1_1Color}\index{dg::Color@{dg::Color}}
+{\tt \#include $<$Color.h$>$}
+
+\subsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+{\bf Color} ()
+\item 
+{\bf Color} ({\bf Real} d\-R, {\bf Real} d\-G, {\bf Real} d\-B, {\bf Real} d\-A=1.0)
+\item 
+{\bf Color} (const Color \&rk\-Color)
+\item 
+{\bf Real} {\bf r} () const
+\item 
+{\bf Real} {\bf g} () const
+\item 
+{\bf Real} {\bf b} () const
+\item 
+{\bf Real} {\bf a} () const
+\item 
+{\bf Real} \& {\bf r} ()
+\item 
+{\bf Real} \& {\bf g} ()
+\item 
+{\bf Real} \& {\bf b} ()
+\item 
+{\bf Real} \& {\bf a} ()
+\item 
+{\bf Real} {\bf operator()} ({\bf UInt} ui\-C) const
+\item 
+{\bf Real} {\bf operator[$\,$]} ({\bf UInt} ui\-C) const
+\item 
+{\bf Real} \& {\bf operator()} ({\bf UInt} ui\-C)
+\item 
+{\bf Real} \& {\bf operator[$\,$]} ({\bf UInt} ui\-C)
+\item 
+{\bf Real} {\bf get\-Component} ({\bf UInt} ui\-C) const
+\item 
+const Color \& {\bf value} ()
+\item 
+{\bf Real} $\ast$ {\bf values} ()
+\item 
+void {\bf set} (const Color \&v)
+\item 
+void {\bf set} ({\bf Real} r, {\bf Real} g, {\bf Real} b, {\bf Real} a=1.0)
+\item 
+void {\bf set\-Red} ({\bf Real} r)
+\item 
+void {\bf set\-Green} ({\bf Real} g)
+\item 
+void {\bf set\-Blue} ({\bf Real} b)
+\item 
+void {\bf set\-Alpha} ({\bf Real} a)
+\item 
+void {\bf set\-Component} ({\bf Real} n, {\bf UInt} c)
+\item 
+void {\bf operator=} (const Color \&rk\-Color)
+\item 
+{\bf Bool} {\bf operator==} (const Color \&rk\-Color) const
+\item 
+{\bf Bool} {\bf operator!=} (const Color \&rk\-Color) const
+\item 
+Color {\bf operator+} (const Color \&rk\-Color) const
+\item 
+void {\bf operator++} (void)
+\item 
+void {\bf operator+=} (const Color \&rk\-Color)
+\item 
+Color {\bf operator-} () const
+\item 
+Color {\bf operator-} (const Color \&rk\-Color) const
+\item 
+void {\bf operator--} (void)
+\item 
+void {\bf operator-=} (const Color \&rk\-Color)
+\item 
+Color {\bf operator $\ast$} (const Color \&rk\-Color) const
+\item 
+void {\bf operator $\ast$=} (const Color \&rk\-Color)
+\item 
+Color {\bf operator $\ast$} (const {\bf Int} scalar) const
+\item 
+void {\bf operator $\ast$=} (const {\bf Int} scalar)
+\item 
+Color {\bf operator $\ast$} (const {\bf Real} scalar) const
+\item 
+void {\bf operator $\ast$=} (const {\bf Real} scalar)
+\item 
+void {\bf zero} ()
+\item 
+void {\bf negate} ()
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+const Color {\bf BLACK} = Color(0.0f, 0.0f, 0.0f)
+\item 
+const Color {\bf GRAY} = Color(0.5f, 0.5f, 0.5f)
+\item 
+const Color {\bf WHITE} = Color(1.0f, 1.0f, 1.0f)
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{dg::Color@{dg::Color}!Color@{Color}}
+\index{Color@{Color}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color::Color ()}\label{classdg_1_1Color_a0}
+
+
+
+
+Definition at line 20 of file Color.cpp.\index{dg::Color@{dg::Color}!Color@{Color}}
+\index{Color@{Color}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color::Color ({\bf Real} {\em d\-R}, {\bf Real} {\em d\-G}, {\bf Real} {\em d\-B}, {\bf Real} {\em d\-A} = 1.0)}\label{classdg_1_1Color_a1}
+
+
+
+
+Definition at line 28 of file Color.cpp.
+
+References dg::Real.\index{dg::Color@{dg::Color}!Color@{Color}}
+\index{Color@{Color}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color::Color (const Color \& {\em rk\-Color})}\label{classdg_1_1Color_a2}
+
+
+
+
+Definition at line 36 of file Color.cpp.
+
+References m\_\-ad\-C.
+
+\subsection{Member Function Documentation}
+\index{dg::Color@{dg::Color}!a@{a}}
+\index{a@{a}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Color::a ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a10}
+
+
+
+
+Definition at line 134 of file Color.h.\index{dg::Color@{dg::Color}!a@{a}}
+\index{a@{a}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Color::a ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a6}
+
+
+
+
+Definition at line 114 of file Color.h.
+
+Referenced by dg::Window::draw\-String(), and dg::Visualizer::draw\-Text().\index{dg::Color@{dg::Color}!b@{b}}
+\index{b@{b}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Color::b ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a9}
+
+
+
+
+Definition at line 129 of file Color.h.\index{dg::Color@{dg::Color}!b@{b}}
+\index{b@{b}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Color::b ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a5}
+
+
+
+
+Definition at line 109 of file Color.h.
+
+Referenced by dg::Clamp(), dg::Window::draw\-String(), dg::Visualizer::draw\-Text(), and dg::operator $\ast$().\index{dg::Color@{dg::Color}!g@{g}}
+\index{g@{g}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Color::g ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a8}
+
+
+
+
+Definition at line 124 of file Color.h.\index{dg::Color@{dg::Color}!g@{g}}
+\index{g@{g}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Color::g ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a4}
+
+
+
+
+Definition at line 104 of file Color.h.
+
+Referenced by dg::Clamp(), dg::Window::draw\-String(), dg::Visualizer::draw\-Text(), and dg::operator $\ast$().\index{dg::Color@{dg::Color}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Color::get\-Component ({\bf UInt} {\em ui\-C}) const\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a15}
+
+
+
+
+Definition at line 171 of file Color.h.\index{dg::Color@{dg::Color}!negate@{negate}}
+\index{negate@{negate}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::negate ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a42}
+
+
+
+
+Definition at line 239 of file Color.h.\index{dg::Color@{dg::Color}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color Color::operator $\ast$ (const {\bf Real} {\em scalar}) const}\label{classdg_1_1Color_a39}
+
+
+
+
+Definition at line 142 of file Color.cpp.
+
+References dg::Real.\index{dg::Color@{dg::Color}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color Color::operator $\ast$ (const {\bf Int} {\em scalar}) const}\label{classdg_1_1Color_a37}
+
+
+
+
+Definition at line 124 of file Color.cpp.
+
+References dg::Int.\index{dg::Color@{dg::Color}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color Color::operator $\ast$ (const Color \& {\em rk\-Color}) const}\label{classdg_1_1Color_a35}
+
+
+
+
+Definition at line 106 of file Color.cpp.
+
+References m\_\-ad\-C.\index{dg::Color@{dg::Color}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Color::operator $\ast$= (const {\bf Real} {\em scalar})}\label{classdg_1_1Color_a40}
+
+
+
+
+Definition at line 152 of file Color.cpp.
+
+References dg::Real.\index{dg::Color@{dg::Color}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Color::operator $\ast$= (const {\bf Int} {\em scalar})}\label{classdg_1_1Color_a38}
+
+
+
+
+Definition at line 134 of file Color.cpp.
+
+References dg::Int.\index{dg::Color@{dg::Color}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Color::operator $\ast$= (const Color \& {\em rk\-Color})}\label{classdg_1_1Color_a36}
+
+
+
+
+Definition at line 116 of file Color.cpp.
+
+References m\_\-ad\-C.\index{dg::Color@{dg::Color}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Bool} Color::operator!= (const Color \& {\em rk\-Color}) const}\label{classdg_1_1Color_a27}
+
+
+
+
+Definition at line 178 of file Color.cpp.
+
+References dg::Bool.\index{dg::Color@{dg::Color}!operator()@{operator()}}
+\index{operator()@{operator()}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Color::operator() ({\bf UInt} {\em ui\-C})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a13}
+
+
+
+
+Definition at line 163 of file Color.h.\index{dg::Color@{dg::Color}!operator()@{operator()}}
+\index{operator()@{operator()}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Color::operator() ({\bf UInt} {\em ui\-C}) const\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a11}
+
+
+
+
+Definition at line 147 of file Color.h.\index{dg::Color@{dg::Color}!operator+@{operator+}}
+\index{operator+@{operator+}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color Color::operator+ (const Color \& {\em rk\-Color}) const}\label{classdg_1_1Color_a28}
+
+
+
+
+Definition at line 44 of file Color.cpp.
+
+References m\_\-ad\-C.\index{dg::Color@{dg::Color}!operator++@{operator++}}
+\index{operator++@{operator++}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Color::operator++ (void)}\label{classdg_1_1Color_a29}
+
+
+
+
+Definition at line 54 of file Color.cpp.\index{dg::Color@{dg::Color}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Color::operator+= (const Color \& {\em rk\-Color})}\label{classdg_1_1Color_a30}
+
+
+
+
+Definition at line 62 of file Color.cpp.
+
+References m\_\-ad\-C.\index{dg::Color@{dg::Color}!operator-@{operator-}}
+\index{operator-@{operator-}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color Color::operator- (const Color \& {\em rk\-Color}) const}\label{classdg_1_1Color_a32}
+
+
+
+
+Definition at line 80 of file Color.cpp.
+
+References m\_\-ad\-C.\index{dg::Color@{dg::Color}!operator-@{operator-}}
+\index{operator-@{operator-}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Color Color::operator- ()}\label{classdg_1_1Color_a31}
+
+
+
+
+Definition at line 70 of file Color.cpp.\index{dg::Color@{dg::Color}!operator--@{operator--}}
+\index{operator--@{operator--}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Color::operator-- (void)}\label{classdg_1_1Color_a33}
+
+
+
+
+Definition at line 90 of file Color.cpp.\index{dg::Color@{dg::Color}!operator-=@{operator-=}}
+\index{operator-=@{operator-=}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Color::operator-= (const Color \& {\em rk\-Color})}\label{classdg_1_1Color_a34}
+
+
+
+
+Definition at line 98 of file Color.cpp.
+
+References m\_\-ad\-C.\index{dg::Color@{dg::Color}!operator=@{operator=}}
+\index{operator=@{operator=}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Color::operator= (const Color \& {\em rk\-Color})}\label{classdg_1_1Color_a25}
+
+
+
+
+Definition at line 160 of file Color.cpp.
+
+References m\_\-ad\-C.\index{dg::Color@{dg::Color}!operator==@{operator==}}
+\index{operator==@{operator==}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Bool} Color::operator== (const Color \& {\em rk\-Color}) const}\label{classdg_1_1Color_a26}
+
+
+
+
+Definition at line 168 of file Color.cpp.
+
+References dg::Bool, and m\_\-ad\-C.\index{dg::Color@{dg::Color}!operator[]@{operator[]}}
+\index{operator[]@{operator[]}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Color::operator[$\,$] ({\bf UInt} {\em ui\-C})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a14}
+
+
+
+
+Definition at line 155 of file Color.h.\index{dg::Color@{dg::Color}!operator[]@{operator[]}}
+\index{operator[]@{operator[]}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Color::operator[$\,$] ({\bf UInt} {\em ui\-C}) const\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a12}
+
+
+
+
+Definition at line 139 of file Color.h.\index{dg::Color@{dg::Color}!r@{r}}
+\index{r@{r}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} \& dg::Color::r ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a7}
+
+
+
+
+Definition at line 119 of file Color.h.\index{dg::Color@{dg::Color}!r@{r}}
+\index{r@{r}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Color::r ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a3}
+
+
+
+
+Definition at line 99 of file Color.h.
+
+Referenced by dg::Clamp(), dg::Window::draw\-String(), dg::Visualizer::draw\-Text(), and dg::operator $\ast$().\index{dg::Color@{dg::Color}!set@{set}}
+\index{set@{set}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::set ({\bf Real} {\em r}, {\bf Real} {\em g}, {\bf Real} {\em b}, {\bf Real} {\em a} = 1.0)\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a19}
+
+
+
+
+Definition at line 197 of file Color.h.\index{dg::Color@{dg::Color}!set@{set}}
+\index{set@{set}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::set (const Color \& {\em v})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a18}
+
+
+
+
+Definition at line 189 of file Color.h.\index{dg::Color@{dg::Color}!setAlpha@{setAlpha}}
+\index{setAlpha@{setAlpha}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::set\-Alpha ({\bf Real} {\em a})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a23}
+
+
+
+
+Definition at line 220 of file Color.h.\index{dg::Color@{dg::Color}!setBlue@{setBlue}}
+\index{setBlue@{setBlue}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::set\-Blue ({\bf Real} {\em b})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a22}
+
+
+
+
+Definition at line 215 of file Color.h.\index{dg::Color@{dg::Color}!setComponent@{setComponent}}
+\index{setComponent@{setComponent}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::set\-Component ({\bf Real} {\em n}, {\bf UInt} {\em c})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a24}
+
+
+
+
+Definition at line 225 of file Color.h.\index{dg::Color@{dg::Color}!setGreen@{setGreen}}
+\index{setGreen@{setGreen}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::set\-Green ({\bf Real} {\em g})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a21}
+
+
+
+
+Definition at line 210 of file Color.h.\index{dg::Color@{dg::Color}!setRed@{setRed}}
+\index{setRed@{setRed}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::set\-Red ({\bf Real} {\em r})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a20}
+
+
+
+
+Definition at line 205 of file Color.h.\index{dg::Color@{dg::Color}!value@{value}}
+\index{value@{value}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const Color \& dg::Color::value ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a16}
+
+
+
+
+Definition at line 179 of file Color.h.\index{dg::Color@{dg::Color}!values@{values}}
+\index{values@{values}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} $\ast$ dg::Color::values ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a17}
+
+
+
+
+Definition at line 184 of file Color.h.\index{dg::Color@{dg::Color}!zero@{zero}}
+\index{zero@{zero}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Color::zero ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Color_a41}
+
+
+
+
+Definition at line 231 of file Color.h.
+
+\subsection{Member Data Documentation}
+\index{dg::Color@{dg::Color}!BLACK@{BLACK}}
+\index{BLACK@{BLACK}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const Color Color::BLACK = Color(0.0f, 0.0f, 0.0f)\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Color_p0}
+
+
+
+
+Definition at line 201 of file Color.cpp.\index{dg::Color@{dg::Color}!GRAY@{GRAY}}
+\index{GRAY@{GRAY}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const Color Color::GRAY = Color(0.5f, 0.5f, 0.5f)\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Color_p1}
+
+
+
+
+Definition at line 202 of file Color.cpp.\index{dg::Color@{dg::Color}!WHITE@{WHITE}}
+\index{WHITE@{WHITE}!dg::Color@{dg::Color}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const Color Color::WHITE = Color(1.0f, 1.0f, 1.0f)\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Color_p2}
+
+
+
+
+Definition at line 203 of file Color.cpp.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Color.h}\item 
+{\bf Color.cpp}\end{CompactItemize}

@@ -1,0 +1,1174 @@
+\section{}
+\label{namespaceSpark}\index{Spark@{Spark}}
+
+
+\subsection{Detailed Description}
+{\bf Sp\-Allocate.h}{\rm (p.\,\pageref{SpAllocate_8h})} : Custom Memory Allocation Routines for Multiple Dimensions. 
+
+
+
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf Spark::Sp\-Copy\-To\-Texture3d}
+\begin{CompactList}\small\item\em Sliced 3D Copy To Texture (CTT) feedback mechanism via Open\-GL. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Copy\-To\-Texture3d\-Fb}
+\begin{CompactList}\small\item\em Sliced 3D Copy To Texture (CTT) feedback mechanism via Open\-GL. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Copy\-To\-Texture\-Fb}
+\begin{CompactList}\small\item\em Copy To Texture (CTT) feedback mechanism via Open\-GL. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Gl\-Manager}
+\begin{CompactList}\small\item\em Static manager class for interfacing with Open\-GL. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Glsl\-Fragment\-Program}
+\begin{CompactList}\small\item\em Interface for a GLSL Fragment Program. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Glsl\-Manager}
+\begin{CompactList}\small\item\em Static manager class for interfacing with GLSL. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Glsl\-Vertex\-Program}
+\begin{CompactList}\small\item\em Interface for a GLSL Fragment Program. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Gpu\-Program}
+\begin{CompactList}\small\item\em Abstract base class for a GPU program. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Grid\-Sg}
+\begin{CompactList}\small\item\em Multi-resolution grid-based stream geometry. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Maths$<$ Real $>$}
+\begin{CompactList}\small\item\em Static utility class for mathematical constants. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Matrix$<$ N, Real $>$}
+\begin{CompactList}\small\item\em Nx\-N Matrix base class for vector algebra. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Matrix2$<$ Real $>$}
+\begin{CompactList}\small\item\em 2x2 p\-Matrix class for vector algebra \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Matrix3$<$ Real $>$}
+\begin{CompactList}\small\item\em 3x3 Matrix class for vector algebra \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Matrix4$<$ Real $>$}
+\begin{CompactList}\small\item\em 4x4 Matrix class for vector algebra \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Multi\-Textured\-Grid\-Sg}
+\begin{CompactList}\small\item\em Multi-resolution grid-based stream geometry w/ multi-texturing support. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg}
+\begin{CompactList}\small\item\em Quad-based stream geometry w/ multi-texturing support. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Parameter}
+\begin{CompactList}\small\item\em Storage class for multiple data types for use with GPU programs. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Parameter\-Set}
+\begin{CompactList}\small\item\em Container class for parameters used with GPU programs. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Quad\-Sg}
+\begin{CompactList}\small\item\em Quad-based stream geometry. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Reference$<$ Class\-Type $>$}
+\begin{CompactList}\small\item\em Reference class with garbage collection for supporting shared objects. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Resource\-Path}
+\begin{CompactList}\small\item\em Resource utility class for querying a file system and loading datafiles. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Stream\-Basis}
+\begin{CompactList}\small\item\em Abstract base class for a stream basis for spectral synthesis. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Stream\-Buffer}
+\begin{CompactList}\small\item\em A multi-format Open\-GL GPU resident data buffer and render-to-texture (RTT) interface. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Stream\-Feedback}
+\begin{CompactList}\small\item\em Abstract base class for a stream feedback mechanism for returning results. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Stream\-Geometry}
+\begin{CompactList}\small\item\em Abstract base class for generating a data stream by rendering geometry. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Stream\-Input}
+\begin{CompactList}\small\item\em Abstract base class for an input stream for loading/generating a data stream. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Stream\-Operator}
+\begin{CompactList}\small\item\em Abstract base class for a stream operator which modifies an input stream. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Stream\-Output}
+\begin{CompactList}\small\item\em Abstract base class for an output stream used fo saving/viewing stream data. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Stream\-Viewer}
+\begin{CompactList}\small\item\em Stream viewer output class for visualizing a data stream. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-String}
+\begin{CompactList}\small\item\em String utility class for character data. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Textured\-Grid\-Sg}
+\begin{CompactList}\small\item\em Multi-resolution grid-based stream geometry w/ texturing support. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Textured\-Quad\-Sg}
+\begin{CompactList}\small\item\em Quad-based stream geometry w/ texturing support. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Timer}
+\begin{CompactList}\small\item\em Basic Timer for profiling and retrieving performance/time info. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Tuple$<$ N, Real $>$}
+\begin{CompactList}\small\item\em N-Dimensional data class with support for vector mathematics. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Tuple2$<$ Real $>$}
+\begin{CompactList}\small\item\em 2D tuple data class with support for vector mathematics \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Tuple3$<$ Real $>$}
+\begin{CompactList}\small\item\em 3D tuple data class with support for vector mathematics \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Tuple4$<$ Real $>$}
+\begin{CompactList}\small\item\em 4D tuple data class with support for vector mathematics \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Turbulence\-Op}
+\begin{CompactList}\small\item\em Turbulence stream operator to be used with a stream basis class. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Vertex\-Noise\-Sb}
+\begin{CompactList}\small\item\em Noise generating stream basis which operates on vertex data. \item\end{CompactList}\item 
+class {\bf Spark::Sp\-Window}
+\begin{CompactList}\small\item\em Abstract base class for a graphical display window. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef {\bf Sp\-Reference}$<$ {\bf Sp\-Gpu\-Program} $>$ {\bf Sp\-Gpu\-Program\-Ptr}
+\item 
+typedef {\bf Sp\-Reference}$<$ {\bf Sp\-Parameter} $>$ {\bf Sp\-Parameter\-Ptr}
+\item 
+typedef std::string {\bf Sp\-String\-Base}
+\item 
+typedef std::stringstream {\bf Sp\-String\-Stream\-Type}
+\item 
+typedef std::vector$<$ {\bf Sp\-String} $>$ {\bf Sp\-String\-Array}
+\item 
+typedef std::list$<$ {\bf Sp\-String} $>$ {\bf Sp\-String\-List}
+\item 
+typedef std::pair$<$ {\bf Sp\-String}, {\bf Sp\-String} $>$ {\bf Sp\-String\-Pair}
+\item 
+typedef {\bf Sp\-Tuple2}$<$ float $>$ {\bf vec2}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ float $>$ {\bf vec3}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ float $>$ {\bf vec4}
+\item 
+typedef {\bf Sp\-Tuple2}$<$ int $>$ {\bf ivec2}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ int $>$ {\bf ivec3}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ int $>$ {\bf ivec4}
+\item 
+typedef {\bf Sp\-Tuple2}$<$ bool $>$ {\bf bvec2}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ bool $>$ {\bf bvec3}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ bool $>$ {\bf bvec4}
+\item 
+typedef {\bf Sp\-Tuple2}$<$ float $>$ {\bf float2}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ float $>$ {\bf float3}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ float $>$ {\bf float4}
+\item 
+typedef {\bf Sp\-Tuple2}$<$ float $>$ {\bf Sp\-Vector2f}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ float $>$ {\bf Sp\-Vector3f}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ float $>$ {\bf Sp\-Vector4f}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ char $>$ {\bf Sp\-Color3b}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ char $>$ {\bf Sp\-Color4b}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ unsigned char $>$ {\bf Sp\-Color3ub}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ unsigned char $>$ {\bf Sp\-Color4ub}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ int $>$ {\bf Sp\-Color3i}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ int $>$ {\bf Sp\-Color4i}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ unsigned int $>$ {\bf Sp\-Color3ui}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ unsigned int $>$ {\bf Sp\-Color4ui}
+\item 
+typedef {\bf Sp\-Tuple3}$<$ float $>$ {\bf Sp\-Color3f}
+\item 
+typedef {\bf Sp\-Tuple4}$<$ float $>$ {\bf Sp\-Color4f}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+template$<$class T$>$ void {\bf Allocate2D} (int i\-Cols, int i\-Rows, T $\ast$$\ast$\&raat\-Array)
+\item 
+template$<$class T$>$ void {\bf Deallocate2D} (T $\ast$$\ast$aat\-Array)
+\item 
+template$<$class T$>$ void {\bf Allocate3D} (int i\-Cols, int i\-Rows, int i\-Slices, T $\ast$$\ast$$\ast$\&raaat\-Array)
+\item 
+template$<$class T$>$ void {\bf Deallocate3D} (int i\-Rows, int i\-Slices, T $\ast$$\ast$$\ast$aaat\-Array)
+\item 
+template$<$class Real$>$ Real {\bf Erfc} (Real f\-X)
+\item 
+template$<$class Real$>$ Real {\bf Log\-Gamma} (Real f\-X)
+\item 
+template$<$class Real$>$ Real {\bf Radians} (Real f\-Deg)
+\item 
+template$<$class Real$>$ Real {\bf Degrees} (Real f\-Rad)
+\item 
+template$<$class Real$>$ Real {\bf Abs} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Ceil} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Clamp} (Real f\-V, Real f\-Min, Real f\-Max)
+\item 
+template$<$class Real$>$ Real {\bf Exp} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Floor} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Inv\-Sqrt} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Log} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Pow} (Real f\-Base, Real f\-Exponent)
+\item 
+template$<$class Real$>$ Real {\bf Cub} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Square} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Sqr} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Sqrt} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Sign} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Gamma} (Real f\-X)
+\item 
+template$<$class Real$>$ Real {\bf Gaussian} (Real f\-X, Real f\-Std\-Dev)
+\item 
+template$<$class Real$>$ Real {\bf Min} (Real f\-X, Real f\-A)
+\item 
+template$<$class Real$>$ Real {\bf Max} (Real f\-X, Real f\-A)
+\item 
+template$<$class Real$>$ Real {\bf Mod} (Real f\-X, Real f\-A)
+\item 
+template$<$class Real$>$ Real {\bf Frac} (const Real f\-X)
+\item 
+template$<$class Real$>$ Real {\bf Step} (Real f\-X, Real f\-A)
+\item 
+template$<$class Real$>$ Real {\bf Erf} (Real f\-X)
+\item 
+template$<$class Real$>$ Real {\bf Arc\-Cosine} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Arc\-Sine} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Arc\-Tangent} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Arc\-Tangent} (Real f\-Y, Real f\-X)
+\item 
+template$<$class Real$>$ Real {\bf Cosine} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Sine} (Real f\-Value)
+\item 
+template$<$class Real$>$ Real {\bf Tangent} (Real f\-Value)
+\item 
+bool {\bf Is\-Power\-Of\-Two} (int i\-Width, int i\-Height)
+\item 
+template$<$unsigned int N, class Real$>$ {\bf Sp\-Matrix}$<$ N, Real $>$ {\bf operator $\ast$} (Real f\-Scalar, const {\bf Sp\-Matrix}$<$ N, Real $>$ \&rk\-M)
+\item 
+template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ {\bf operator $\ast$} (const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-V, const {\bf Sp\-Matrix}$<$ N, Real $>$ \&rk\-M)
+\item 
+template$<$class Real$>$ Real {\bf Quadric} (Real f\-A, Real f\-B, Real f\-C)
+\item 
+template$<$class Real$>$ Real {\bf Spline} (Real f\-X, unsigned int ui\-Knots, Real $\ast$apk\-Knots, const Real af\-B[4][4]=Catmull\-Rom\-Basis)
+\item 
+template$<$class Real$>$ Real {\bf Cell\-Noise} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Gradient\-Noise} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Value\-Noise} (Real f\-X, Real f\-Y, Real f\-Z, const Real af\-B[4][4]=Catmull\-Rom\-Basis)
+\item 
+template$<$class Real$>$ Real {\bf Fractional\-Brownian\-Motion} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Increment=0.5f, Real f\-Lacunarity=2.0345f, Real f\-Octaves=4.0f)
+\item 
+template$<$class Real$>$ Real {\bf Turbulence} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Increment=0.5f, Real f\-Lacunarity=2.0345f, Real f\-Octaves=4.0f)
+\item 
+template$<$class Real$>$ Real {\bf Mono\-Fractal} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Increment=0.5f, Real f\-Lacunarity=2.0345f, Real f\-Octaves=4.0f)
+\item 
+template$<$class Real$>$ Real {\bf Multi\-Fractal} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Increment=0.5f, Real f\-Lacunarity=2.0345f, Real f\-Octaves=4.0f)
+\item 
+template$<$class Real$>$ Real {\bf Hybrid\-Multi\-Fractal} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Increment=0.25f, Real f\-Lacunarity=2.0345f, Real f\-Offset=0.7f, Real f\-Gain=1.0f, Real f\-Octaves=4.0f)
+\item 
+template$<$class Real$>$ Real {\bf Ridged\-Multi\-Fractal} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Increment=0.9f, Real f\-Lacunarity=2.0345f, Real f\-Threshold=0.5f, Real f\-Offset=1.0f, Real f\-Octaves=4.0f)
+\item 
+template$<$class Real$>$ Real {\bf Filtered\-Turbulence} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Filter\-Width, Real f\-Increment=0.5f, Real f\-Lacunarity=2.0345f, Real f\-Octaves=4.0f)
+\item 
+template$<$class Real$>$ Real {\bf Filtered\-FBM} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Filter\-Width, Real f\-Increment=0.5f, Real f\-Lacunarity=2.0345f, Real f\-Octaves=4.0f)
+\item 
+template$<$class Real$>$ Real {\bf Voronoi\-Noise} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Jitter, Real \&rf\-OX, Real \&rf\-OY, Real \&rf\-OZ)
+\item 
+template$<$class Real$>$ Real {\bf Default\-Turbulence} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Default\-FBM} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Default\-Mono\-Fractal} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Default\-Multi\-Fractal} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Default\-Ridged\-Multi\-Fractal} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf f\-Bm} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Increment=0.5f, Real f\-Lacunarity=2.0345f, Real f\-Octaves=4.0f)
+\item 
+int {\bf p} (int i\-X)
+\item 
+float {\bf r} (int i\-X)
+\item 
+template$<$class Real$>$ int {\bf Hash} (int i\-X, int i\-Y, int i\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Lattice} (int i\-X, int i\-Y, int i\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Gradient} (int i\-X, int i\-Y, int i\-Z, Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Bias} (Real f\-X, Real f\-A)
+\item 
+template$<$class Real$>$ Real {\bf Gain} (Real f\-X, Real f\-A)
+\item 
+template$<$class Real$>$ Real {\bf Cubic} (Real f\-T)
+\item 
+template$<$class Real$>$ Real {\bf Quintic} (Real f\-T)
+\item 
+template$<$class Real$>$ Real {\bf Lerp} (Real f\-T, Real f\-A, Real f\-B)
+\item 
+template$<$class Real$>$ Real {\bf Box\-Step} (Real f\-X, Real f\-A, Real f\-B)
+\item 
+template$<$class Real$>$ Real {\bf Smooth\-Step} (Real f\-A, Real f\-B, Real f\-X)
+\item 
+template$<$class Real$>$ Real {\bf Pulse} (Real f\-X, Real f\-A, Real f\-B)
+\item 
+template$<$class Real$>$ Real {\bf Box\-Pulse} (Real f\-X, Real f\-A, Real f\-B)
+\item 
+template$<$class Real$>$ Real {\bf Smooth\-Pulse} (Real f\-X, Real f\-A, Real f\-B)
+\item 
+template$<$class Real$>$ Real {\bf Filtered\-Abs} (Real f\-X, Real f\-DX)
+\item 
+template$<$class Real$>$ Real {\bf Catmull\-Rom\-Noise} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Hermite\-Noise} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Cardinal\-Noise} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf BSpline\-Noise} (Real f\-X, Real f\-Y, Real f\-Z)
+\item 
+template$<$class Real$>$ Real {\bf Filtered\-Gradient\-Noise} (Real f\-X, Real f\-Y, Real f\-Z, Real f\-Filter\-Width)
+\item 
+void {\bf Seed\-Random} (unsigned long seed)
+\begin{CompactList}\small\item\em Initializes the random number table. \item\end{CompactList}\item 
+unsigned int {\bf Random\-UInt} (void)
+\begin{CompactList}\small\item\em Generates a random 32bit unsigned int. \item\end{CompactList}\item 
+float {\bf Random\-Unit\-Float} (void)
+\begin{CompactList}\small\item\em Generates a random real number on [0,1]-real-interval. \item\end{CompactList}\item 
+float {\bf Random\-Unit\-Open\-Float} (void)
+\begin{CompactList}\small\item\em Generates a random real number on [0,1)-real-interval. \item\end{CompactList}\item 
+float {\bf Random\-Symmetric\-Float} (void)
+\begin{CompactList}\small\item\em Generates a random real number on [-1,1]. \item\end{CompactList}\item 
+float {\bf Random\-Interval\-Float} (float f\-Min, float f\-Max)
+\begin{CompactList}\small\item\em Generates a random real number on [-min, max]. \item\end{CompactList}\item 
+template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ {\bf operator $\ast$} (Real f\-Scalar, const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-V)
+\item 
+template$<$unsigned int N, class Real$>$ Real {\bf Length} (const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-V)
+\item 
+template$<$unsigned int N, class Real$>$ Real {\bf Length\-Squared} (const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-V)
+\item 
+template$<$unsigned int N, class Real$>$ Real {\bf Dot} (const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-A, const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-B)
+\item 
+template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ {\bf Normalize} (const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-V)
+\item 
+template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ {\bf Clamp} (const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-V, Real f\-Min, Real f\-Max)
+\item 
+template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ {\bf Offset} (const {\bf Sp\-Tuple}$<$ N, Real $>$ \&rk\-V, Real f\-Offset)
+\item 
+template$<$class Real$>$ {\bf Sp\-Tuple3}$<$ Real $>$ {\bf Normalize} (const {\bf Sp\-Tuple3}$<$ Real $>$ \&rk\-V)
+\item 
+template$<$class Real$>$ {\bf Sp\-Tuple3}$<$ Real $>$ {\bf Normalized\-Cross} (const {\bf Sp\-Tuple3}$<$ Real $>$ \&rk\-V1, const {\bf Sp\-Tuple3}$<$ Real $>$ \&rk\-V2)
+\item 
+template$<$class Real$>$ {\bf Sp\-Tuple3}$<$ Real $>$ {\bf Cross} (const {\bf Sp\-Tuple3}$<$ Real $>$ \&rk\-V1, const {\bf Sp\-Tuple3}$<$ Real $>$ \&rk\-V2)
+\item 
+template$<$class Real$>$ {\bf Sp\-Tuple4}$<$ Real $>$ {\bf Normalize} (const {\bf Sp\-Tuple4}$<$ Real $>$ \&rk\-V)
+\item 
+template$<$class Real$>$ {\bf Sp\-Tuple4}$<$ Real $>$ {\bf Normalized\-Cross} (const {\bf Sp\-Tuple4}$<$ Real $>$ \&rk\-V1, const {\bf Sp\-Tuple4}$<$ Real $>$ \&rk\-V2)
+\item 
+template$<$class Real$>$ {\bf Sp\-Tuple4}$<$ Real $>$ {\bf Cross} (const {\bf Sp\-Tuple4}$<$ Real $>$ \&rk\-V1, const {\bf Sp\-Tuple4}$<$ Real $>$ \&rk\-V2)
+\end{CompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{Spark@{Spark}!bvec2@{bvec2}}
+\index{bvec2@{bvec2}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple2}$<$bool$>$ {\bf Spark::bvec2}}\label{namespaceSpark_a13}
+
+
+Definition at line 715 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!bvec3@{bvec3}}
+\index{bvec3@{bvec3}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$bool$>$ {\bf Spark::bvec3}}\label{namespaceSpark_a14}
+
+
+Definition at line 716 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!bvec4@{bvec4}}
+\index{bvec4@{bvec4}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$bool$>$ {\bf Spark::bvec4}}\label{namespaceSpark_a15}
+
+
+Definition at line 717 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!float2@{float2}}
+\index{float2@{float2}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple2}$<$float$>$ {\bf Spark::float2}}\label{namespaceSpark_a16}
+
+
+Definition at line 719 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!float3@{float3}}
+\index{float3@{float3}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$float$>$ {\bf Spark::float3}}\label{namespaceSpark_a17}
+
+
+Definition at line 720 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!float4@{float4}}
+\index{float4@{float4}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$float$>$ {\bf Spark::float4}}\label{namespaceSpark_a18}
+
+
+Definition at line 721 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!ivec2@{ivec2}}
+\index{ivec2@{ivec2}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple2}$<$int$>$ {\bf Spark::ivec2}}\label{namespaceSpark_a10}
+
+
+Definition at line 711 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!ivec3@{ivec3}}
+\index{ivec3@{ivec3}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$int$>$ {\bf Spark::ivec3}}\label{namespaceSpark_a11}
+
+
+Definition at line 712 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!ivec4@{ivec4}}
+\index{ivec4@{ivec4}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$int$>$ {\bf Spark::ivec4}}\label{namespaceSpark_a12}
+
+
+Definition at line 713 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpColor3b@{SpColor3b}}
+\index{SpColor3b@{SpColor3b}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$char$>$ {\bf Spark::Sp\-Color3b}}\label{namespaceSpark_a22}
+
+
+Definition at line 727 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpColor3f@{SpColor3f}}
+\index{SpColor3f@{SpColor3f}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$float$>$ {\bf Spark::Sp\-Color3f}}\label{namespaceSpark_a30}
+
+
+Definition at line 739 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::values().\index{Spark@{Spark}!SpColor3i@{SpColor3i}}
+\index{SpColor3i@{SpColor3i}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$int$>$ {\bf Spark::Sp\-Color3i}}\label{namespaceSpark_a26}
+
+
+Definition at line 733 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpColor3ub@{SpColor3ub}}
+\index{SpColor3ub@{SpColor3ub}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$unsigned char$>$ {\bf Spark::Sp\-Color3ub}}\label{namespaceSpark_a24}
+
+
+Definition at line 730 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpColor3ui@{SpColor3ui}}
+\index{SpColor3ui@{SpColor3ui}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$unsigned int$>$ {\bf Spark::Sp\-Color3ui}}\label{namespaceSpark_a28}
+
+
+Definition at line 736 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::values().\index{Spark@{Spark}!SpColor4b@{SpColor4b}}
+\index{SpColor4b@{SpColor4b}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$char$>$ {\bf Spark::Sp\-Color4b}}\label{namespaceSpark_a23}
+
+
+Definition at line 728 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpColor4f@{SpColor4f}}
+\index{SpColor4f@{SpColor4f}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$float$>$ {\bf Spark::Sp\-Color4f}}\label{namespaceSpark_a31}
+
+
+Definition at line 740 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Window::draw\-Frame\-Rate(), Spark::Sp\-Window::draw\-String(), Spark::Sp\-Window::Sp\-Window(), and Spark::Sp\-Tuple$<$ N, Real $>$::values().\index{Spark@{Spark}!SpColor4i@{SpColor4i}}
+\index{SpColor4i@{SpColor4i}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$int$>$ {\bf Spark::Sp\-Color4i}}\label{namespaceSpark_a27}
+
+
+Definition at line 734 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpColor4ub@{SpColor4ub}}
+\index{SpColor4ub@{SpColor4ub}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$unsigned char$>$ {\bf Spark::Sp\-Color4ub}}\label{namespaceSpark_a25}
+
+
+Definition at line 731 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpColor4ui@{SpColor4ui}}
+\index{SpColor4ui@{SpColor4ui}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$unsigned int$>$ {\bf Spark::Sp\-Color4ui}}\label{namespaceSpark_a29}
+
+
+Definition at line 737 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::values().\index{Spark@{Spark}!SpGpuProgramPtr@{SpGpuProgramPtr}}
+\index{SpGpuProgramPtr@{SpGpuProgramPtr}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Reference}$<$ {\bf Sp\-Gpu\-Program} $>$ {\bf Spark::Sp\-Gpu\-Program\-Ptr}}\label{namespaceSpark_a0}
+
+
+Definition at line 152 of file Sp\-Gpu\-Program.h.
+
+Referenced by Spark::Sp\-Gpu\-Program::get\-Source().\index{Spark@{Spark}!SpParameterPtr@{SpParameterPtr}}
+\index{SpParameterPtr@{SpParameterPtr}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Reference}$<$ {\bf Sp\-Parameter} $>$ {\bf Spark::Sp\-Parameter\-Ptr}}\label{namespaceSpark_a1}
+
+
+Definition at line 375 of file Sp\-Parameter.h.
+
+Referenced by Spark::Sp\-Parameter::get\-Name(), and Spark::Sp\-Parameter\-Set::retrieve().\index{Spark@{Spark}!SpStringArray@{SpStringArray}}
+\index{SpStringArray@{SpStringArray}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef std::vector$<${\bf Sp\-String}$>$ {\bf Spark::Sp\-String\-Array}}\label{namespaceSpark_a4}
+
+
+Definition at line 49 of file Sp\-String.h.
+
+Referenced by Spark::Sp\-Resource\-Path::searchpath().\index{Spark@{Spark}!SpStringBase@{SpStringBase}}
+\index{SpStringBase@{SpStringBase}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef std::string {\bf Spark::Sp\-String\-Base}}\label{namespaceSpark_a2}
+
+
+Definition at line 44 of file Sp\-String.h.
+
+Referenced by Spark::Sp\-String::Sp\-String().\index{Spark@{Spark}!SpStringList@{SpStringList}}
+\index{SpStringList@{SpStringList}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef std::list$<${\bf Sp\-String}$>$ {\bf Spark::Sp\-String\-List}}\label{namespaceSpark_a5}
+
+
+Definition at line 50 of file Sp\-String.h.\index{Spark@{Spark}!SpStringPair@{SpStringPair}}
+\index{SpStringPair@{SpStringPair}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef std::pair$<${\bf Sp\-String}, {\bf Sp\-String}$>$ {\bf Spark::Sp\-String\-Pair}}\label{namespaceSpark_a6}
+
+
+Definition at line 51 of file Sp\-String.h.\index{Spark@{Spark}!SpStringStreamType@{SpStringStreamType}}
+\index{SpStringStreamType@{SpStringStreamType}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef std::stringstream {\bf Spark::Sp\-String\-Stream\-Type}}\label{namespaceSpark_a3}
+
+
+Definition at line 48 of file Sp\-String.h.\index{Spark@{Spark}!SpVector2f@{SpVector2f}}
+\index{SpVector2f@{SpVector2f}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple2}$<$float$>$ {\bf Spark::Sp\-Vector2f}}\label{namespaceSpark_a19}
+
+
+Definition at line 723 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpVector3f@{SpVector3f}}
+\index{SpVector3f@{SpVector3f}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$float$>$ {\bf Spark::Sp\-Vector3f}}\label{namespaceSpark_a20}
+
+
+Definition at line 724 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!SpVector4f@{SpVector4f}}
+\index{SpVector4f@{SpVector4f}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$float$>$ {\bf Spark::Sp\-Vector4f}}\label{namespaceSpark_a21}
+
+
+Definition at line 725 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Vertex\-Noise\-Sb::initialize(), and Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!vec2@{vec2}}
+\index{vec2@{vec2}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple2}$<$float$>$ {\bf Spark::vec2}}\label{namespaceSpark_a7}
+
+
+Definition at line 707 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!vec3@{vec3}}
+\index{vec3@{vec3}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple3}$<$float$>$ {\bf Spark::vec3}}\label{namespaceSpark_a8}
+
+
+Definition at line 708 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().\index{Spark@{Spark}!vec4@{vec4}}
+\index{vec4@{vec4}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Sp\-Tuple4}$<$float$>$ {\bf Spark::vec4}}\label{namespaceSpark_a9}
+
+
+Definition at line 709 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Tuple$<$ N, Real $>$::Sp\-Tuple().
+
+\subsection{Function Documentation}
+\index{Spark@{Spark}!Abs@{Abs}}
+\index{Abs@{Abs}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Abs (Real {\em f\-Value})}\label{namespaceSpark_a40}
+
+
+Definition at line 164 of file Sp\-Maths.h.
+
+Referenced by Ridged\-Multi\-Fractal(), and Turbulence().\index{Spark@{Spark}!Allocate2D@{Allocate2D}}
+\index{Allocate2D@{Allocate2D}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void Allocate2D (int {\em i\-Cols}, int {\em i\-Rows}, T $\ast$$\ast$\& {\em raat\-Array})}\label{namespaceSpark_a32}
+
+
+Definition at line 29 of file Sp\-Allocate.h.\index{Spark@{Spark}!Allocate3D@{Allocate3D}}
+\index{Allocate3D@{Allocate3D}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void Allocate3D (int {\em i\-Cols}, int {\em i\-Rows}, int {\em i\-Slices}, T $\ast$$\ast$$\ast$\& {\em raaat\-Array})}\label{namespaceSpark_a34}
+
+
+Definition at line 45 of file Sp\-Allocate.h.\index{Spark@{Spark}!ArcCosine@{ArcCosine}}
+\index{ArcCosine@{ArcCosine}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Arc\-Cosine (Real {\em f\-Value})}\label{namespaceSpark_a61}
+
+
+Definition at line 275 of file Sp\-Maths.h.\index{Spark@{Spark}!ArcSine@{ArcSine}}
+\index{ArcSine@{ArcSine}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Arc\-Sine (Real {\em f\-Value})}\label{namespaceSpark_a62}
+
+
+Definition at line 290 of file Sp\-Maths.h.\index{Spark@{Spark}!ArcTangent@{ArcTangent}}
+\index{ArcTangent@{ArcTangent}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Arc\-Tangent (Real {\em f\-Y}, Real {\em f\-X})}\label{namespaceSpark_a64}
+
+
+Definition at line 310 of file Sp\-Maths.h.\index{Spark@{Spark}!ArcTangent@{ArcTangent}}
+\index{ArcTangent@{ArcTangent}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Arc\-Tangent (Real {\em f\-Value})}\label{namespaceSpark_a63}
+
+
+Definition at line 305 of file Sp\-Maths.h.\index{Spark@{Spark}!Bias@{Bias}}
+\index{Bias@{Bias}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Bias (Real {\em f\-X}, Real {\em f\-A})}\label{namespaceSpark_a96}
+
+
+Definition at line 261 of file Sp\-Procedural.h.\index{Spark@{Spark}!BoxPulse@{BoxPulse}}
+\index{BoxPulse@{BoxPulse}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Box\-Pulse (Real {\em f\-X}, Real {\em f\-A}, Real {\em f\-B})}\label{namespaceSpark_a104}
+
+
+Definition at line 337 of file Sp\-Procedural.h.\index{Spark@{Spark}!BoxStep@{BoxStep}}
+\index{BoxStep@{BoxStep}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Box\-Step (Real {\em f\-X}, Real {\em f\-A}, Real {\em f\-B})}\label{namespaceSpark_a101}
+
+
+Definition at line 311 of file Sp\-Procedural.h.\index{Spark@{Spark}!BSplineNoise@{BSplineNoise}}
+\index{BSplineNoise@{BSplineNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::BSpline\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a110}
+
+
+Definition at line 362 of file Sp\-Procedural.h.\index{Spark@{Spark}!CardinalNoise@{CardinalNoise}}
+\index{CardinalNoise@{CardinalNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Cardinal\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a109}
+
+
+Definition at line 357 of file Sp\-Procedural.h.\index{Spark@{Spark}!CatmullRomNoise@{CatmullRomNoise}}
+\index{CatmullRomNoise@{CatmullRomNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Catmull\-Rom\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a107}
+
+
+Definition at line 347 of file Sp\-Procedural.h.\index{Spark@{Spark}!Ceil@{Ceil}}
+\index{Ceil@{Ceil}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Ceil (Real {\em f\-Value})}\label{namespaceSpark_a41}
+
+
+Definition at line 169 of file Sp\-Maths.h.\index{Spark@{Spark}!CellNoise@{CellNoise}}
+\index{CellNoise@{CellNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Cell\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a73}
+
+
+Definition at line 51 of file Sp\-Procedural.cpp.
+
+References Floor(), Hash(), and r().
+
+Referenced by Voronoi\-Noise().\index{Spark@{Spark}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ Spark::Clamp (const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-V}, Real {\em f\-Min}, Real {\em f\-Max})}\label{namespaceSpark_a123}
+
+
+Definition at line 594 of file Sp\-Tuple.h.\index{Spark@{Spark}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Clamp (Real {\em f\-V}, Real {\em f\-Min}, Real {\em f\-Max})}\label{namespaceSpark_a42}
+
+
+Definition at line 174 of file Sp\-Maths.h.
+
+Referenced by Ridged\-Multi\-Fractal(), and Spline().\index{Spark@{Spark}!Cosine@{Cosine}}
+\index{Cosine@{Cosine}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Cosine (Real {\em f\-Value})}\label{namespaceSpark_a65}
+
+
+Definition at line 315 of file Sp\-Maths.h.\index{Spark@{Spark}!Cross@{Cross}}
+\index{Cross@{Cross}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ {\bf Sp\-Tuple4}$<$ Real $>$ Spark::Cross (const Sp\-Tuple4$<$ Real $>$ \& {\em rk\-V1}, const Sp\-Tuple4$<$ Real $>$ \& {\em rk\-V2})}\label{namespaceSpark_a130}
+
+
+Definition at line 692 of file Sp\-Tuple.h.\index{Spark@{Spark}!Cross@{Cross}}
+\index{Cross@{Cross}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ {\bf Sp\-Tuple3}$<$ Real $>$ Spark::Cross (const Sp\-Tuple3$<$ Real $>$ \& {\em rk\-V1}, const Sp\-Tuple3$<$ Real $>$ \& {\em rk\-V2})}\label{namespaceSpark_a127}
+
+
+Definition at line 648 of file Sp\-Tuple.h.\index{Spark@{Spark}!Cub@{Cub}}
+\index{Cub@{Cub}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Cub (Real {\em f\-Value})}\label{namespaceSpark_a48}
+
+
+Definition at line 204 of file Sp\-Maths.h.\index{Spark@{Spark}!Cubic@{Cubic}}
+\index{Cubic@{Cubic}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Cubic (Real {\em f\-T})}\label{namespaceSpark_a98}
+
+
+Definition at line 291 of file Sp\-Procedural.h.
+
+Referenced by Gradient\-Noise().\index{Spark@{Spark}!Deallocate2D@{Deallocate2D}}
+\index{Deallocate2D@{Deallocate2D}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void Deallocate2D (T $\ast$$\ast$ {\em aat\-Array})}\label{namespaceSpark_a33}
+
+
+Definition at line 38 of file Sp\-Allocate.h.\index{Spark@{Spark}!Deallocate3D@{Deallocate3D}}
+\index{Deallocate3D@{Deallocate3D}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void Deallocate3D (int {\em i\-Rows}, int {\em i\-Slices}, T $\ast$$\ast$$\ast$ {\em aaat\-Array})}\label{namespaceSpark_a35}
+
+
+Definition at line 57 of file Sp\-Allocate.h.\index{Spark@{Spark}!DefaultFBM@{DefaultFBM}}
+\index{DefaultFBM@{DefaultFBM}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Default\-FBM (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a86}
+
+
+Definition at line 395 of file Sp\-Procedural.h.\index{Spark@{Spark}!DefaultMonoFractal@{DefaultMonoFractal}}
+\index{DefaultMonoFractal@{DefaultMonoFractal}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Default\-Mono\-Fractal (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a87}
+
+
+Definition at line 401 of file Sp\-Procedural.h.\index{Spark@{Spark}!DefaultMultiFractal@{DefaultMultiFractal}}
+\index{DefaultMultiFractal@{DefaultMultiFractal}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Default\-Multi\-Fractal (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a88}
+
+
+Definition at line 407 of file Sp\-Procedural.h.\index{Spark@{Spark}!DefaultRidgedMultiFractal@{DefaultRidgedMultiFractal}}
+\index{DefaultRidgedMultiFractal@{DefaultRidgedMultiFractal}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Default\-Ridged\-Multi\-Fractal (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a89}
+
+
+Definition at line 413 of file Sp\-Procedural.h.\index{Spark@{Spark}!DefaultTurbulence@{DefaultTurbulence}}
+\index{DefaultTurbulence@{DefaultTurbulence}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Default\-Turbulence (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a85}
+
+
+Definition at line 389 of file Sp\-Procedural.h.\index{Spark@{Spark}!Degrees@{Degrees}}
+\index{Degrees@{Degrees}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Degrees (Real {\em f\-Rad})}\label{namespaceSpark_a39}
+
+
+Definition at line 69 of file Sp\-Maths.h.\index{Spark@{Spark}!Dot@{Dot}}
+\index{Dot@{Dot}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ Real Spark::Dot (const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-A}, const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-B})}\label{namespaceSpark_a121}
+
+
+Definition at line 562 of file Sp\-Tuple.h.\index{Spark@{Spark}!Erf@{Erf}}
+\index{Erf@{Erf}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Erf (Real {\em f\-X})}\label{namespaceSpark_a60}
+
+
+Definition at line 270 of file Sp\-Maths.h.\index{Spark@{Spark}!Erfc@{Erfc}}
+\index{Erfc@{Erfc}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Erfc (Real {\em f\-X})}\label{namespaceSpark_a36}
+
+
+\index{Spark@{Spark}!Exp@{Exp}}
+\index{Exp@{Exp}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Exp (Real {\em f\-Value})}\label{namespaceSpark_a43}
+
+
+Definition at line 179 of file Sp\-Maths.h.\index{Spark@{Spark}!fBm@{fBm}}
+\index{fBm@{fBm}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::f\-Bm (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Increment} = {\tt 0.5f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a90}
+
+
+Definition at line 419 of file Sp\-Procedural.h.\index{Spark@{Spark}!FilteredAbs@{FilteredAbs}}
+\index{FilteredAbs@{FilteredAbs}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Filtered\-Abs (Real {\em f\-X}, Real {\em f\-DX})}\label{namespaceSpark_a106}
+
+
+Definition at line 367 of file Sp\-Procedural.h.
+
+Referenced by Filtered\-Turbulence().\index{Spark@{Spark}!FilteredFBM@{FilteredFBM}}
+\index{FilteredFBM@{FilteredFBM}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Filtered\-FBM (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Filter\-Width}, Real {\em f\-Increment} = {\tt 0.5f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a83}
+
+
+Definition at line 188 of file Sp\-Procedural.cpp.
+
+References Filtered\-Gradient\-Noise().\index{Spark@{Spark}!FilteredGradientNoise@{FilteredGradientNoise}}
+\index{FilteredGradientNoise@{FilteredGradientNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Filtered\-Gradient\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Filter\-Width})}\label{namespaceSpark_a111}
+
+
+Definition at line 382 of file Sp\-Procedural.h.
+
+Referenced by Filtered\-FBM(), and Filtered\-Turbulence().\index{Spark@{Spark}!FilteredTurbulence@{FilteredTurbulence}}
+\index{FilteredTurbulence@{FilteredTurbulence}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Filtered\-Turbulence (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Filter\-Width}, Real {\em f\-Increment} = {\tt 0.5f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a82}
+
+
+Definition at line 296 of file Sp\-Procedural.cpp.
+
+References Filtered\-Abs(), and Filtered\-Gradient\-Noise().\index{Spark@{Spark}!Floor@{Floor}}
+\index{Floor@{Floor}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Floor (Real {\em f\-Value})}\label{namespaceSpark_a44}
+
+
+Definition at line 184 of file Sp\-Maths.h.
+
+Referenced by Cell\-Noise(), Gradient\-Noise(), and Voronoi\-Noise().\index{Spark@{Spark}!Frac@{Frac}}
+\index{Frac@{Frac}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Frac (const Real {\em f\-X})}\label{namespaceSpark_a58}
+
+
+Definition at line 265 of file Sp\-Maths.h.\index{Spark@{Spark}!FractionalBrownianMotion@{FractionalBrownianMotion}}
+\index{FractionalBrownianMotion@{FractionalBrownianMotion}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Fractional\-Brownian\-Motion (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Increment} = {\tt 0.5f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a76}
+
+
+Definition at line 143 of file Sp\-Procedural.cpp.
+
+References Gradient\-Noise().\index{Spark@{Spark}!Gain@{Gain}}
+\index{Gain@{Gain}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Gain (Real {\em f\-X}, Real {\em f\-A})}\label{namespaceSpark_a97}
+
+
+Definition at line 270 of file Sp\-Procedural.h.\index{Spark@{Spark}!Gamma@{Gamma}}
+\index{Gamma@{Gamma}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Gamma (Real {\em f\-X})}\label{namespaceSpark_a53}
+
+
+Definition at line 235 of file Sp\-Maths.h.\index{Spark@{Spark}!Gaussian@{Gaussian}}
+\index{Gaussian@{Gaussian}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Gaussian (Real {\em f\-X}, Real {\em f\-Std\-Dev})}\label{namespaceSpark_a54}
+
+
+Definition at line 240 of file Sp\-Maths.h.\index{Spark@{Spark}!Gradient@{Gradient}}
+\index{Gradient@{Gradient}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Gradient (int {\em i\-X}, int {\em i\-Y}, int {\em i\-Z}, Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a95}
+
+
+Definition at line 241 of file Sp\-Procedural.h.
+
+Referenced by Gradient\-Noise().\index{Spark@{Spark}!GradientNoise@{GradientNoise}}
+\index{GradientNoise@{GradientNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Gradient\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a74}
+
+
+Definition at line 61 of file Sp\-Procedural.cpp.
+
+References Cubic(), Floor(), Gradient(), and Lerp().
+
+Referenced by Fractional\-Brownian\-Motion(), Hybrid\-Multi\-Fractal(), Mono\-Fractal(), Multi\-Fractal(), Ridged\-Multi\-Fractal(), and Turbulence().\index{Spark@{Spark}!Hash@{Hash}}
+\index{Hash@{Hash}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ int Spark::Hash (int {\em i\-X}, int {\em i\-Y}, int {\em i\-Z})}\label{namespaceSpark_a93}
+
+
+Definition at line 231 of file Sp\-Procedural.h.
+
+Referenced by Cell\-Noise().\index{Spark@{Spark}!HermiteNoise@{HermiteNoise}}
+\index{HermiteNoise@{HermiteNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Hermite\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z})}\label{namespaceSpark_a108}
+
+
+Definition at line 352 of file Sp\-Procedural.h.\index{Spark@{Spark}!HybridMultiFractal@{HybridMultiFractal}}
+\index{HybridMultiFractal@{HybridMultiFractal}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Hybrid\-Multi\-Fractal (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Increment} = {\tt 0.25f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Offset} = {\tt 0.7f}, Real {\em f\-Gain} = {\tt 1.0f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a80}
+
+
+Definition at line 456 of file Sp\-Procedural.cpp.
+
+References Gradient\-Noise().\index{Spark@{Spark}!InvSqrt@{InvSqrt}}
+\index{InvSqrt@{InvSqrt}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Inv\-Sqrt (Real {\em f\-Value})}\label{namespaceSpark_a45}
+
+
+Definition at line 189 of file Sp\-Maths.h.\index{Spark@{Spark}!IsPowerOfTwo@{IsPowerOfTwo}}
+\index{IsPowerOfTwo@{IsPowerOfTwo}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Spark::Is\-Power\-Of\-Two (int {\em i\-Width}, int {\em i\-Height})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceSpark_a68}
+
+
+Definition at line 330 of file Sp\-Maths.h.\index{Spark@{Spark}!Lattice@{Lattice}}
+\index{Lattice@{Lattice}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Lattice (int {\em i\-X}, int {\em i\-Y}, int {\em i\-Z})}\label{namespaceSpark_a94}
+
+
+Definition at line 236 of file Sp\-Procedural.h.
+
+Referenced by Value\-Noise().\index{Spark@{Spark}!Length@{Length}}
+\index{Length@{Length}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ Real Spark::Length (const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-V})}\label{namespaceSpark_a119}
+
+
+Definition at line 544 of file Sp\-Tuple.h.\index{Spark@{Spark}!LengthSquared@{LengthSquared}}
+\index{LengthSquared@{LengthSquared}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ Real Spark::Length\-Squared (const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-V})}\label{namespaceSpark_a120}
+
+
+Definition at line 553 of file Sp\-Tuple.h.\index{Spark@{Spark}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Lerp (Real {\em f\-T}, Real {\em f\-A}, Real {\em f\-B})}\label{namespaceSpark_a100}
+
+
+Definition at line 301 of file Sp\-Procedural.h.
+
+Referenced by Gradient\-Noise().\index{Spark@{Spark}!Log@{Log}}
+\index{Log@{Log}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Log (Real {\em f\-Value})}\label{namespaceSpark_a46}
+
+
+Definition at line 194 of file Sp\-Maths.h.\index{Spark@{Spark}!LogGamma@{LogGamma}}
+\index{LogGamma@{LogGamma}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Log\-Gamma (Real {\em f\-X})}\label{namespaceSpark_a37}
+
+
+\index{Spark@{Spark}!Max@{Max}}
+\index{Max@{Max}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Max (Real {\em f\-X}, Real {\em f\-A})}\label{namespaceSpark_a56}
+
+
+Definition at line 260 of file Sp\-Maths.h.\index{Spark@{Spark}!Min@{Min}}
+\index{Min@{Min}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Min (Real {\em f\-X}, Real {\em f\-A})}\label{namespaceSpark_a55}
+
+
+Definition at line 255 of file Sp\-Maths.h.\index{Spark@{Spark}!Mod@{Mod}}
+\index{Mod@{Mod}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Mod (Real {\em f\-X}, Real {\em f\-A})}\label{namespaceSpark_a57}
+
+
+Definition at line 245 of file Sp\-Maths.h.\index{Spark@{Spark}!MonoFractal@{MonoFractal}}
+\index{MonoFractal@{MonoFractal}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Mono\-Fractal (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Increment} = {\tt 0.5f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a78}
+
+
+Definition at line 356 of file Sp\-Procedural.cpp.
+
+References Gradient\-Noise().\index{Spark@{Spark}!MultiFractal@{MultiFractal}}
+\index{MultiFractal@{MultiFractal}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Multi\-Fractal (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Increment} = {\tt 0.5f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a79}
+
+
+Definition at line 407 of file Sp\-Procedural.cpp.
+
+References Gradient\-Noise().\index{Spark@{Spark}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ {\bf Sp\-Tuple4}$<$ Real $>$ Spark::Normalize (const Sp\-Tuple4$<$ Real $>$ \& {\em rk\-V})}\label{namespaceSpark_a128}
+
+
+Definition at line 660 of file Sp\-Tuple.h.\index{Spark@{Spark}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ {\bf Sp\-Tuple3}$<$ Real $>$ Spark::Normalize (const Sp\-Tuple3$<$ Real $>$ \& {\em rk\-V})}\label{namespaceSpark_a125}
+
+
+Definition at line 618 of file Sp\-Tuple.h.\index{Spark@{Spark}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ Spark::Normalize (const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-V})}\label{namespaceSpark_a122}
+
+
+Definition at line 571 of file Sp\-Tuple.h.
+
+Referenced by Spark::Sp\-Vertex\-Noise\-Sb::initialize().\index{Spark@{Spark}!NormalizedCross@{NormalizedCross}}
+\index{NormalizedCross@{NormalizedCross}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ {\bf Sp\-Tuple4}$<$ Real $>$ Spark::Normalized\-Cross (const Sp\-Tuple4$<$ Real $>$ \& {\em rk\-V1}, const Sp\-Tuple4$<$ Real $>$ \& {\em rk\-V2})}\label{namespaceSpark_a129}
+
+
+Definition at line 679 of file Sp\-Tuple.h.\index{Spark@{Spark}!NormalizedCross@{NormalizedCross}}
+\index{NormalizedCross@{NormalizedCross}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ {\bf Sp\-Tuple3}$<$ Real $>$ Spark::Normalized\-Cross (const Sp\-Tuple3$<$ Real $>$ \& {\em rk\-V1}, const Sp\-Tuple3$<$ Real $>$ \& {\em rk\-V2})}\label{namespaceSpark_a126}
+
+
+Definition at line 636 of file Sp\-Tuple.h.\index{Spark@{Spark}!Offset@{Offset}}
+\index{Offset@{Offset}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ Spark::Offset (const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-V}, Real {\em f\-Offset})}\label{namespaceSpark_a124}
+
+
+Definition at line 606 of file Sp\-Tuple.h.\index{Spark@{Spark}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$ N, Real $>$ Spark::operator $\ast$ (Real {\em f\-Scalar}, const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-V})}\label{namespaceSpark_a118}
+
+
+Definition at line 475 of file Sp\-Tuple.h.\index{Spark@{Spark}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ {\bf Sp\-Tuple}$<$N,Real$>$ operator $\ast$ (const Sp\-Tuple$<$ N, Real $>$ \& {\em rk\-V}, const Sp\-Matrix$<$ N, Real $>$ \& {\em rk\-M})}\label{namespaceSpark_a70}
+
+
+\index{Spark@{Spark}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$unsigned int N, class Real$>$ {\bf Sp\-Matrix}$<$N,Real$>$ operator $\ast$ (Real {\em f\-Scalar}, const Sp\-Matrix$<$ N, Real $>$ \& {\em rk\-M})}\label{namespaceSpark_a69}
+
+
+\index{Spark@{Spark}!p@{p}}
+\index{p@{p}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Spark::p (int {\em i\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceSpark_a91}
+
+
+Definition at line 225 of file Sp\-Procedural.h.\index{Spark@{Spark}!Pow@{Pow}}
+\index{Pow@{Pow}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Pow (Real {\em f\-Base}, Real {\em f\-Exponent})}\label{namespaceSpark_a47}
+
+
+Definition at line 199 of file Sp\-Maths.h.
+
+Referenced by Spark::Sp\-Turbulence\-Op::initialize().\index{Spark@{Spark}!Pulse@{Pulse}}
+\index{Pulse@{Pulse}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Pulse (Real {\em f\-X}, Real {\em f\-A}, Real {\em f\-B})}\label{namespaceSpark_a103}
+
+
+Definition at line 332 of file Sp\-Procedural.h.\index{Spark@{Spark}!Quadric@{Quadric}}
+\index{Quadric@{Quadric}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Quadric (Real {\em f\-A}, Real {\em f\-B}, Real {\em f\-C})}\label{namespaceSpark_a71}
+
+
+Definition at line 598 of file Sp\-Procedural.cpp.
+
+References Sqrt().\index{Spark@{Spark}!Quintic@{Quintic}}
+\index{Quintic@{Quintic}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Quintic (Real {\em f\-T})}\label{namespaceSpark_a99}
+
+
+Definition at line 296 of file Sp\-Procedural.h.\index{Spark@{Spark}!r@{r}}
+\index{r@{r}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float Spark::r (int {\em i\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceSpark_a92}
+
+
+Definition at line 219 of file Sp\-Procedural.h.
+
+Referenced by Cell\-Noise().\index{Spark@{Spark}!Radians@{Radians}}
+\index{Radians@{Radians}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Radians (Real {\em f\-Deg})}\label{namespaceSpark_a38}
+
+
+Definition at line 66 of file Sp\-Maths.h.\index{Spark@{Spark}!RandomIntervalFloat@{RandomIntervalFloat}}
+\index{RandomIntervalFloat@{RandomIntervalFloat}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float Random\-Interval\-Float (float {\em f\-Min}, float {\em f\-Max})\hspace{0.3cm}{\tt  [inline]}}\label{namespaceSpark_a117}
+
+
+Generates a random real number on [-min, max]. 
+
+Definition at line 88 of file Sp\-Random.h.
+
+References Random\-Unit\-Float().\index{Spark@{Spark}!RandomSymmetricFloat@{RandomSymmetricFloat}}
+\index{RandomSymmetricFloat@{RandomSymmetricFloat}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float Random\-Symmetric\-Float (void)\hspace{0.3cm}{\tt  [inline]}}\label{namespaceSpark_a116}
+
+
+Generates a random real number on [-1,1]. 
+
+Definition at line 80 of file Sp\-Random.h.
+
+References Random\-Unit\-Float().
+
+Referenced by Spark::Sp\-Vertex\-Noise\-Sb::initialize().\index{Spark@{Spark}!RandomUInt@{RandomUInt}}
+\index{RandomUInt@{RandomUInt}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Random\-UInt (void)}\label{namespaceSpark_a113}
+
+
+Generates a random 32bit unsigned int. 
+
+Definition at line 70 of file Sp\-Random.cpp.
+
+References LOWER\_\-MASK, M, MATRIX\_\-A, N, Seed\-Random(), and UPPER\_\-MASK.
+
+Referenced by Spark::Sp\-Vertex\-Noise\-Sb::initialize(), Random\-Unit\-Float(), and Random\-Unit\-Open\-Float().\index{Spark@{Spark}!RandomUnitFloat@{RandomUnitFloat}}
+\index{RandomUnitFloat@{RandomUnitFloat}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float Spark::Random\-Unit\-Float (void)}\label{namespaceSpark_a114}
+
+
+Generates a random real number on [0,1]-real-interval. 
+
+Definition at line 112 of file Sp\-Random.cpp.
+
+References Random\-UInt().
+
+Referenced by Random\-Interval\-Float(), and Random\-Symmetric\-Float().\index{Spark@{Spark}!RandomUnitOpenFloat@{RandomUnitOpenFloat}}
+\index{RandomUnitOpenFloat@{RandomUnitOpenFloat}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float Spark::Random\-Unit\-Open\-Float (void)}\label{namespaceSpark_a115}
+
+
+Generates a random real number on [0,1)-real-interval. 
+
+Definition at line 119 of file Sp\-Random.cpp.
+
+References Random\-UInt().\index{Spark@{Spark}!RidgedMultiFractal@{RidgedMultiFractal}}
+\index{RidgedMultiFractal@{RidgedMultiFractal}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Ridged\-Multi\-Fractal (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Increment} = {\tt 0.9f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Threshold} = {\tt 0.5f}, Real {\em f\-Offset} = {\tt 1.0f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a81}
+
+
+Definition at line 527 of file Sp\-Procedural.cpp.
+
+References Abs(), Clamp(), and Gradient\-Noise().\index{Spark@{Spark}!SeedRandom@{SeedRandom}}
+\index{SeedRandom@{SeedRandom}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Seed\-Random (unsigned long {\em seed})}\label{namespaceSpark_a112}
+
+
+Initializes the random number table. 
+
+Definition at line 51 of file Sp\-Random.cpp.
+
+References N.
+
+Referenced by Spark::Sp\-Vertex\-Noise\-Sb::initialize(), and Random\-UInt().\index{Spark@{Spark}!Sign@{Sign}}
+\index{Sign@{Sign}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Sign (Real {\em f\-Value})}\label{namespaceSpark_a52}
+
+
+Definition at line 224 of file Sp\-Maths.h.\index{Spark@{Spark}!Sine@{Sine}}
+\index{Sine@{Sine}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Sine (Real {\em f\-Value})}\label{namespaceSpark_a66}
+
+
+Definition at line 320 of file Sp\-Maths.h.\index{Spark@{Spark}!SmoothPulse@{SmoothPulse}}
+\index{SmoothPulse@{SmoothPulse}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Smooth\-Pulse (Real {\em f\-X}, Real {\em f\-A}, Real {\em f\-B})}\label{namespaceSpark_a105}
+
+
+Definition at line 342 of file Sp\-Procedural.h.\index{Spark@{Spark}!SmoothStep@{SmoothStep}}
+\index{SmoothStep@{SmoothStep}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Smooth\-Step (Real {\em f\-A}, Real {\em f\-B}, Real {\em f\-X})}\label{namespaceSpark_a102}
+
+
+Definition at line 316 of file Sp\-Procedural.h.\index{Spark@{Spark}!Spline@{Spline}}
+\index{Spline@{Spline}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Spline (Real {\em f\-X}, unsigned int {\em ui\-Knots}, Real $\ast$ {\em apk\-Knots}, const Real {\em af\-B}[4][4] = {\tt CatmullRomBasis})}\label{namespaceSpark_a72}
+
+
+Definition at line 28 of file Sp\-Procedural.cpp.
+
+References Clamp().
+
+Referenced by Value\-Noise().\index{Spark@{Spark}!Sqr@{Sqr}}
+\index{Sqr@{Sqr}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Sqr (Real {\em f\-Value})}\label{namespaceSpark_a50}
+
+
+Definition at line 214 of file Sp\-Maths.h.\index{Spark@{Spark}!Sqrt@{Sqrt}}
+\index{Sqrt@{Sqrt}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Sqrt (Real {\em f\-Value})}\label{namespaceSpark_a51}
+
+
+Definition at line 219 of file Sp\-Maths.h.
+
+Referenced by Quadric(), and Voronoi\-Noise().\index{Spark@{Spark}!Square@{Square}}
+\index{Square@{Square}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Square (Real {\em f\-Value})}\label{namespaceSpark_a49}
+
+
+Definition at line 209 of file Sp\-Maths.h.\index{Spark@{Spark}!Step@{Step}}
+\index{Step@{Step}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Step (Real {\em f\-X}, Real {\em f\-A})}\label{namespaceSpark_a59}
+
+
+Definition at line 306 of file Sp\-Procedural.h.\index{Spark@{Spark}!Tangent@{Tangent}}
+\index{Tangent@{Tangent}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Tangent (Real {\em f\-Value})}\label{namespaceSpark_a67}
+
+
+Definition at line 325 of file Sp\-Maths.h.\index{Spark@{Spark}!Turbulence@{Turbulence}}
+\index{Turbulence@{Turbulence}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Turbulence (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Increment} = {\tt 0.5f}, Real {\em f\-Lacunarity} = {\tt 2.0345f}, Real {\em f\-Octaves} = {\tt 4.0f})}\label{namespaceSpark_a77}
+
+
+Definition at line 238 of file Sp\-Procedural.cpp.
+
+References Abs(), and Gradient\-Noise().\index{Spark@{Spark}!ValueNoise@{ValueNoise}}
+\index{ValueNoise@{ValueNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Value\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, const Real {\em af\-B}[4][4] = {\tt CatmullRomBasis})}\label{namespaceSpark_a75}
+
+
+Definition at line 111 of file Sp\-Procedural.cpp.
+
+References Lattice(), and Spline().\index{Spark@{Spark}!VoronoiNoise@{VoronoiNoise}}
+\index{VoronoiNoise@{VoronoiNoise}!Spark@{Spark}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}template$<$class Real$>$ Real Spark::Voronoi\-Noise (Real {\em f\-X}, Real {\em f\-Y}, Real {\em f\-Z}, Real {\em f\-Jitter}, Real \& {\em rf\-OX}, Real \& {\em rf\-OY}, Real \& {\em rf\-OZ})}\label{namespaceSpark_a84}
+
+
+Definition at line 625 of file Sp\-Procedural.cpp.
+
+References Cell\-Noise(), Floor(), and Sqrt().

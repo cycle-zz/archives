@@ -1,0 +1,138 @@
+// -----------------------------------------------------------------------------------
+
+#define B  64       // table size
+#define B2 130      // B*2 + 2
+#define BR 0.015625 // 1 / B
+
+// -----------------------------------------------------------------------------------
+
+// Spectral weight for current octave
+uniform float Exponent;
+
+// Offset for noise value
+uniform float Offset;
+
+// Combined permutation/gradient table
+uniform vec4 pg[B2];            
+
+// Varying color value to pass through.
+varying vec4 FragmentColor;
+
+// -----------------------------------------------------------------------------------
+// 3D Polynomial smoothstep function without the normalization
+// -----------------------------------------------------------------------------------
+vec3 Smooth(vec3 kT)
+{
+	// f(t) = 6t^5 - 15t^4 + 10t^3 - Perlins "Improved" Noise Blending Function
+	// return kT * kT * kT * (kT * (kT * vec3(6,6,6) - vec3(15,15,15)) + vec3(10,10,10));
+	
+	// f(t) = 3t^2 - 2t^3
+	return kT*kT*( vec3(3.0, 3.0, 3.0) - vec3(2.0, 2.0, 2.0)*kT);
+}
+// -----------------------------------------------------------------------------------
+// 2D Polynomial smoothstep function without the normalization
+// -----------------------------------------------------------------------------------
+vec2 Smooth(vec2 t)
+{
+	// f(t) = 6t^5 - 15t^4 + 10t^3 - Perlins "Improved" Noise Blending Function
+	// return kT * kT * kT * (kT * (kT * vec2(6,6,6) - vec2(15,15,15)) + vec2(10,10,10));
+
+	// f(t) = 3t^2 - 2t^3, 
+    	return t*t*( vec2(3.0, 3.0) - vec2(2.0, 2.0)*t);
+}
+// -----------------------------------------------------------------------------------
+// 3D Noise
+// -----------------------------------------------------------------------------------
+float Noise(vec3 v, vec4 pg[])
+{
+	//v = v + vec3(100000.0, 100000.0, 100000.0);   // hack to avoid negative numbers
+
+	// get an index between 0 and B-1
+	vec3 i = fract(v * BR) * float(B);
+	
+	// get fractional position
+	vec3 f = fract(v);
+
+	// lookup in permutation table
+	vec2 p;
+	p.x = pg[ int(i[0])     ].w;
+	p.y = pg[ int(i[0]) + 1 ].w;
+	p = p + i[1];
+
+	vec4 b;
+	b.x = pg[ int(p[0]) ].w;
+	b.y = pg[ int(p[1]) ].w;
+	b.z = pg[ int(p[0]) + 1 ].w;
+	b.w = pg[ int(p[1]) + 1 ].w;
+	b = b + i[2];
+
+	// compute dot products between gradients and vectors
+	vec4 r;
+	r[0] = dot( pg[ int(b[0]) ].xyz, f );
+	r[1] = dot( pg[ int(b[1]) ].xyz, f - vec3(1.0, 0.0, 0.0) );
+	r[2] = dot( pg[ int(b[2]) ].xyz, f - vec3(0.0, 1.0, 0.0) );
+	r[3] = dot( pg[ int(b[3]) ].xyz, f - vec3(1.0, 1.0, 0.0) );
+
+	vec4 r1;
+	r1[0] = dot( pg[ int(b[0]) + 1 ].xyz, f - vec3(0.0, 0.0, 1.0) );
+	r1[1] = dot( pg[ int(b[1]) + 1 ].xyz, f - vec3(1.0, 0.0, 1.0) );
+	r1[2] = dot( pg[ int(b[2]) + 1 ].xyz, f - vec3(0.0, 1.0, 1.0) );
+	r1[3] = dot( pg[ int(b[3]) + 1 ].xyz, f - vec3(1.0, 1.0, 1.0) );
+
+	// interpolate
+	f = Smooth(f);
+	r = mix( r, r1, f[2] );
+	r = mix( r.xyyy, r.zwww, f[1] );
+	return mix( r.x, r.y, f[0] );
+}
+// -----------------------------------------------------------------------------------
+// 2D Noise
+// -----------------------------------------------------------------------------------
+float Noise(vec2 v, vec4 pg[])
+{
+	//v = v + vec2(10000.0, 10000.0);
+
+	// get an index between 0 and B-1
+	vec2 i = fract(v * BR) * float(B);   
+	
+	// get fractional position
+	vec2 f = fract(v);
+
+	// lookup in permutation table
+	vec2 p;
+	p[0] = pg[ int(i[0])   ].w;
+	p[1] = pg[ int(i[0]) + 1 ].w;
+	p = p + i[1];
+
+	// compute dot products between gradients and vectors
+	vec4 r;
+	r[0] = dot( pg[ int(p[0]) ].xy,   f);
+	r[1] = dot( pg[ int(p[1]) ].xy,   f - vec2(1.0, 0.0) );
+	r[2] = dot( pg[ int(p[0]) + 1 ].xy, f - vec2(0.0, 1.0) );
+	r[3] = dot( pg[ int(p[1]) + 1 ].xy, f - vec2(1.0, 1.0) );
+
+	// interpolate
+	f = Smooth(f);
+	r = mix( r.xyyy, r.zwww, f[1] );
+	return mix( r.x, r.y, f[0] );
+}
+// -----------------------------------------------------------------------------------
+// Vertex Program
+// -----------------------------------------------------------------------------------
+void main()
+{
+	// change kN to vec3 for 3D Noise
+	vec3 kN = gl_TextureMatrix[0] * gl_Vertex;
+		
+	// get the noise value and weight it accordingly
+	float fValue = (Noise(kN, pg) + Offset) * Exponent;
+
+	// apply value to rgb color output
+	FragmentColor = vec4(fValue, fValue, fValue, 1.0);
+	gl_FrontColor = vec4(fValue, fValue, fValue, 1.0);
+	gl_BackColor = vec4(fValue, fValue, fValue, 1.0);
+	
+	// perform standard vertex transform
+	gl_Position = ftransform();
+}
+// -----------------------------------------------------------------------------------

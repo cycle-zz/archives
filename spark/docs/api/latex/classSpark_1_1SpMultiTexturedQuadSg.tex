@@ -1,0 +1,204 @@
+\section{Spark::Sp\-Multi\-Textured\-Quad\-Sg Class Reference}
+\label{classSpark_1_1SpMultiTexturedQuadSg}\index{Spark::SpMultiTexturedQuadSg@{Spark::SpMultiTexturedQuadSg}}
+{\tt \#include $<$Sp\-Multi\-Textured\-Quad\-Sg.h$>$}
+
+Inheritance diagram for Spark::Sp\-Multi\-Textured\-Quad\-Sg:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=97pt]{classSpark_1_1SpMultiTexturedQuadSg__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for Spark::Sp\-Multi\-Textured\-Quad\-Sg:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=97pt]{classSpark_1_1SpMultiTexturedQuadSg__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Quad-based stream geometry w/ multi-texturing support. 
+
+Definition at line 34 of file Sp\-Multi\-Textured\-Quad\-Sg.h.\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Multi\-Textured\-Quad\-Sg} (float f\-Min\-X=0.0f, float f\-Min\-Y=0.0f, float f\-Max\-X=1.0f, float f\-Max\-Y=1.0f, float f\-Z=0.5f, float f\-Min\-S=0.0f, float f\-Min\-T=0.0f, float f\-Max\-S=1.0f, float f\-Max\-T=1.0f)
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+virtual {\bf $\sim$Sp\-Multi\-Textured\-Quad\-Sg} ()
+\item 
+virtual void {\bf render} ()
+\begin{CompactList}\small\item\em Operations:. \item\end{CompactList}\item 
+void {\bf set\-Tex\-Coord\-Rect} (float f\-Min\-S, float f\-Min\-T, float f\-Max\-S, float f\-Max\-T)
+\item 
+void {\bf set\-Vertex\-Coord\-Rect} (float f\-Min\-X, float f\-Min\-Y, float f\-Max\-X, float f\-Max\-Y, float f\-Z=0.5f)
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf set\-Single\-Tex\-Coord\-Rect} (int i\-Tex\-Unit, float f\-Min\-S, float f\-Min\-T, float f\-Max\-S, float f\-Max\-T)
+\begin{CompactList}\small\item\em Internal Methods:. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf m\_\-i\-Texture\-Unit\-Count}
+\begin{CompactList}\small\item\em Internal Data:. \item\end{CompactList}\item 
+float {\bf m\_\-f\-Min\-X}
+\item 
+float {\bf m\_\-f\-Min\-Y}
+\item 
+float {\bf m\_\-f\-Max\-X}
+\item 
+float {\bf m\_\-f\-Max\-Y}
+\item 
+float {\bf m\_\-f\-Z}
+\item 
+float $\ast$ {\bf m\_\-af\-Min\-S}
+\item 
+float $\ast$ {\bf m\_\-af\-Max\-S}
+\item 
+float $\ast$ {\bf m\_\-af\-Min\-T}
+\item 
+float $\ast$ {\bf m\_\-af\-Max\-T}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!SpMultiTexturedQuadSg@{SpMultiTexturedQuadSg}}
+\index{SpMultiTexturedQuadSg@{SpMultiTexturedQuadSg}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Spark::Sp\-Multi\-Textured\-Quad\-Sg::Sp\-Multi\-Textured\-Quad\-Sg (float {\em f\-Min\-X} = {\tt 0.0f}, float {\em f\-Min\-Y} = {\tt 0.0f}, float {\em f\-Max\-X} = {\tt 1.0f}, float {\em f\-Max\-Y} = {\tt 1.0f}, float {\em f\-Z} = {\tt 0.5f}, float {\em f\-Min\-S} = {\tt 0.0f}, float {\em f\-Min\-T} = {\tt 0.0f}, float {\em f\-Max\-S} = {\tt 1.0f}, float {\em f\-Max\-T} = {\tt 1.0f})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpMultiTexturedQuadSg_a0}
+
+
+Construction:. 
+
+Definition at line 40 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+References m\_\-af\-Max\-S, m\_\-af\-Max\-T, m\_\-af\-Min\-S, m\_\-af\-Min\-T, m\_\-f\-Max\-X, m\_\-f\-Max\-Y, m\_\-f\-Min\-X, m\_\-f\-Min\-Y, m\_\-f\-Z, m\_\-i\-Texture\-Unit\-Count, and set\-Tex\-Coord\-Rect().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!~SpMultiTexturedQuadSg@{$\sim$SpMultiTexturedQuadSg}}
+\index{~SpMultiTexturedQuadSg@{$\sim$SpMultiTexturedQuadSg}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual Spark::Sp\-Multi\-Textured\-Quad\-Sg::$\sim${\bf Sp\-Multi\-Textured\-Quad\-Sg} ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSpark_1_1SpMultiTexturedQuadSg_a1}
+
+
+Definition at line 59 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+References m\_\-af\-Max\-S, m\_\-af\-Max\-T, m\_\-af\-Min\-S, and m\_\-af\-Min\-T.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!render@{render}}
+\index{render@{render}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void Spark::Sp\-Multi\-Textured\-Quad\-Sg::render ()\hspace{0.3cm}{\tt  [inline, virtual]}}\label{classSpark_1_1SpMultiTexturedQuadSg_a2}
+
+
+Operations:. 
+
+
+
+Implements {\bf Spark::Sp\-Stream\-Geometry} {\rm (p.\,\pageref{classSpark_1_1SpStreamGeometry_a0})}.
+
+Definition at line 70 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+References m\_\-af\-Max\-S, m\_\-af\-Max\-T, m\_\-af\-Min\-S, m\_\-af\-Min\-T, m\_\-f\-Max\-X, m\_\-f\-Max\-Y, m\_\-f\-Min\-X, m\_\-f\-Min\-Y, m\_\-f\-Z, and m\_\-i\-Texture\-Unit\-Count.\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!setSingleTexCoordRect@{setSingleTexCoordRect}}
+\index{setSingleTexCoordRect@{setSingleTexCoordRect}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Multi\-Textured\-Quad\-Sg::set\-Single\-Tex\-Coord\-Rect (int {\em i\-Tex\-Unit}, float {\em f\-Min\-S}, float {\em f\-Min\-T}, float {\em f\-Max\-S}, float {\em f\-Max\-T})\hspace{0.3cm}{\tt  [inline, protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_b0}
+
+
+Internal Methods:. 
+
+Definition at line 123 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+References m\_\-af\-Max\-S, m\_\-af\-Max\-T, m\_\-af\-Min\-S, and m\_\-af\-Min\-T.
+
+Referenced by set\-Tex\-Coord\-Rect().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!setTexCoordRect@{setTexCoordRect}}
+\index{setTexCoordRect@{setTexCoordRect}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Multi\-Textured\-Quad\-Sg::set\-Tex\-Coord\-Rect (float {\em f\-Min\-S}, float {\em f\-Min\-T}, float {\em f\-Max\-S}, float {\em f\-Max\-T})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpMultiTexturedQuadSg_a3}
+
+
+Definition at line 102 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+References m\_\-i\-Texture\-Unit\-Count, and set\-Single\-Tex\-Coord\-Rect().
+
+Referenced by Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!setVertexCoordRect@{setVertexCoordRect}}
+\index{setVertexCoordRect@{setVertexCoordRect}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Multi\-Textured\-Quad\-Sg::set\-Vertex\-Coord\-Rect (float {\em f\-Min\-X}, float {\em f\-Min\-Y}, float {\em f\-Max\-X}, float {\em f\-Max\-Y}, float {\em f\-Z} = {\tt 0.5f})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpMultiTexturedQuadSg_a4}
+
+
+Definition at line 111 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+References m\_\-f\-Max\-X, m\_\-f\-Max\-Y, m\_\-f\-Min\-X, m\_\-f\-Min\-Y, and m\_\-f\-Z.
+
+\subsection{Member Data Documentation}
+\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_afMaxS@{m\_\-afMaxS}}
+\index{m_afMaxS@{m\_\-afMaxS}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-af\-Max\-S}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p7}
+
+
+Definition at line 144 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Single\-Tex\-Coord\-Rect(), Sp\-Multi\-Textured\-Quad\-Sg(), and $\sim$Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_afMaxT@{m\_\-afMaxT}}
+\index{m_afMaxT@{m\_\-afMaxT}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-af\-Max\-T}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p9}
+
+
+Definition at line 146 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Single\-Tex\-Coord\-Rect(), Sp\-Multi\-Textured\-Quad\-Sg(), and $\sim$Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_afMinS@{m\_\-afMinS}}
+\index{m_afMinS@{m\_\-afMinS}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-af\-Min\-S}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p6}
+
+
+Definition at line 143 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Single\-Tex\-Coord\-Rect(), Sp\-Multi\-Textured\-Quad\-Sg(), and $\sim$Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_afMinT@{m\_\-afMinT}}
+\index{m_afMinT@{m\_\-afMinT}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-af\-Min\-T}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p8}
+
+
+Definition at line 145 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Single\-Tex\-Coord\-Rect(), Sp\-Multi\-Textured\-Quad\-Sg(), and $\sim$Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_fMaxX@{m\_\-fMaxX}}
+\index{m_fMaxX@{m\_\-fMaxX}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-f\-Max\-X}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p3}
+
+
+Definition at line 138 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Vertex\-Coord\-Rect(), and Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_fMaxY@{m\_\-fMaxY}}
+\index{m_fMaxY@{m\_\-fMaxY}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-f\-Max\-Y}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p4}
+
+
+Definition at line 139 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Vertex\-Coord\-Rect(), and Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_fMinX@{m\_\-fMinX}}
+\index{m_fMinX@{m\_\-fMinX}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-f\-Min\-X}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p1}
+
+
+Definition at line 136 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Vertex\-Coord\-Rect(), and Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_fMinY@{m\_\-fMinY}}
+\index{m_fMinY@{m\_\-fMinY}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-f\-Min\-Y}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p2}
+
+
+Definition at line 137 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Vertex\-Coord\-Rect(), and Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_fZ@{m\_\-fZ}}
+\index{m_fZ@{m\_\-fZ}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-f\-Z}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p5}
+
+
+Definition at line 141 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Vertex\-Coord\-Rect(), and Sp\-Multi\-Textured\-Quad\-Sg().\index{Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}!m_iTextureUnitCount@{m\_\-iTextureUnitCount}}
+\index{m_iTextureUnitCount@{m\_\-iTextureUnitCount}!Spark::SpMultiTexturedQuadSg@{Spark::Sp\-Multi\-Textured\-Quad\-Sg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Multi\-Textured\-Quad\-Sg::m\_\-i\-Texture\-Unit\-Count}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpMultiTexturedQuadSg_p0}
+
+
+Internal Data:. 
+
+Definition at line 134 of file Sp\-Multi\-Textured\-Quad\-Sg.h.
+
+Referenced by render(), set\-Tex\-Coord\-Rect(), and Sp\-Multi\-Textured\-Quad\-Sg().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+{\bf Sp\-Multi\-Textured\-Quad\-Sg.h}\end{CompactItemize}

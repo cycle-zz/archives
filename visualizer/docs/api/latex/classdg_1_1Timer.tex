@@ -1,0 +1,210 @@
+\section{dg::Timer Class Reference}
+\label{classdg_1_1Timer}\index{dg::Timer@{dg::Timer}}
+{\tt \#include $<$Timer.h$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum {\bf Timer\-State} \{ {\bf TS\_\-OFF}, 
+{\bf TS\_\-ON}, 
+{\bf TS\_\-HOLD}, 
+{\bf TS\_\-COUNT}
+ \}
+\end{CompactItemize}
+\subsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+{\bf Timer} ()
+\item 
+{\bf $\sim$Timer} ()
+\item 
+void {\bf start} ()
+\item 
+void {\bf stop} ()
+\item 
+void {\bf suspend} ()
+\item 
+void {\bf resume} ()
+\item 
+void {\bf reset} ()
+\item 
+void {\bf count} ()
+\item 
+{\bf Real} {\bf elapsed\-Time} ()
+\item 
+{\bf UInt} {\bf elapsed\-Count} ()
+\item 
+{\bf UInt} {\bf elapsed\-Hours} ()
+\item 
+{\bf UInt} {\bf elapsed\-Minutes} ()
+\item 
+{\bf UInt} {\bf elapsed\-Seconds} ()
+\item 
+{\bf UInt} {\bf elapsed\-Milliseconds} ()
+\item 
+{\bf UInt} {\bf seconds} ()
+\item 
+{\bf UInt} {\bf milliseconds} ()
+\end{CompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\index{dg::Timer@{dg::Timer}!TimerState@{TimerState}}
+\index{TimerState@{TimerState}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum dg::Timer::Timer\-State}\label{classdg_1_1Timer_s4}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{TS_OFF@{TS\_\-OFF}!dg::Timer@{dg::Timer}}\index{dg::Timer@{dg::Timer}!TS_OFF@{TS\_\-OFF}}\item[{\em 
+{\em TS\_\-OFF}\label{classdg_1_1Timer_s4s0}
+}]\index{TS_ON@{TS\_\-ON}!dg::Timer@{dg::Timer}}\index{dg::Timer@{dg::Timer}!TS_ON@{TS\_\-ON}}\item[{\em 
+{\em TS\_\-ON}\label{classdg_1_1Timer_s4s1}
+}]\index{TS_HOLD@{TS\_\-HOLD}!dg::Timer@{dg::Timer}}\index{dg::Timer@{dg::Timer}!TS_HOLD@{TS\_\-HOLD}}\item[{\em 
+{\em TS\_\-HOLD}\label{classdg_1_1Timer_s4s2}
+}]\index{TS_COUNT@{TS\_\-COUNT}!dg::Timer@{dg::Timer}}\index{dg::Timer@{dg::Timer}!TS_COUNT@{TS\_\-COUNT}}\item[{\em 
+{\em TS\_\-COUNT}\label{classdg_1_1Timer_s4s3}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 38 of file Timer.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{dg::Timer@{dg::Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Timer::Timer ()}\label{classdg_1_1Timer_a0}
+
+
+
+
+Definition at line 36 of file Timer.cpp.
+
+References reset().\index{dg::Timer@{dg::Timer}!~Timer@{$\sim$Timer}}
+\index{~Timer@{$\sim$Timer}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}dg::Timer::$\sim$Timer ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a1}
+
+
+
+
+Definition at line 110 of file Timer.h.
+
+\subsection{Member Function Documentation}
+\index{dg::Timer@{dg::Timer}!count@{count}}
+\index{count@{count}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Timer::count ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a7}
+
+
+
+
+Definition at line 161 of file Timer.h.\index{dg::Timer@{dg::Timer}!elapsedCount@{elapsedCount}}
+\index{elapsedCount@{elapsedCount}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Timer::elapsed\-Count ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a9}
+
+
+
+
+Definition at line 234 of file Timer.h.\index{dg::Timer@{dg::Timer}!elapsedHours@{elapsedHours}}
+\index{elapsedHours@{elapsedHours}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Timer::elapsed\-Hours ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a10}
+
+
+
+
+Definition at line 183 of file Timer.h.
+
+Referenced by dg::Visualizer::update\-Calc\-Timer().\index{dg::Timer@{dg::Timer}!elapsedMilliseconds@{elapsedMilliseconds}}
+\index{elapsedMilliseconds@{elapsedMilliseconds}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Timer::elapsed\-Milliseconds ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a13}
+
+
+
+
+Definition at line 213 of file Timer.h.
+
+Referenced by dg::Visualizer::update\-Calc\-Timer().\index{dg::Timer@{dg::Timer}!elapsedMinutes@{elapsedMinutes}}
+\index{elapsedMinutes@{elapsedMinutes}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Timer::elapsed\-Minutes ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a11}
+
+
+
+
+Definition at line 188 of file Timer.h.
+
+Referenced by dg::Visualizer::update\-Calc\-Timer().\index{dg::Timer@{dg::Timer}!elapsedSeconds@{elapsedSeconds}}
+\index{elapsedSeconds@{elapsedSeconds}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Timer::elapsed\-Seconds ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a12}
+
+
+
+
+Definition at line 193 of file Timer.h.
+
+Referenced by dg::Window::draw\-Frame\-Rate(), and dg::Visualizer::update\-Calc\-Timer().\index{dg::Timer@{dg::Timer}!elapsedTime@{elapsedTime}}
+\index{elapsedTime@{elapsedTime}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Timer::elapsed\-Time ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a8}
+
+
+
+
+Definition at line 166 of file Timer.h.\index{dg::Timer@{dg::Timer}!milliseconds@{milliseconds}}
+\index{milliseconds@{milliseconds}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Timer::milliseconds ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a15}
+
+
+
+
+Definition at line 244 of file Timer.h.\index{dg::Timer@{dg::Timer}!reset@{reset}}
+\index{reset@{reset}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Timer::reset ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a6}
+
+
+
+
+Definition at line 152 of file Timer.h.
+
+Referenced by dg::Visualizer::start\-Calc\-Timer(), and Timer().\index{dg::Timer@{dg::Timer}!resume@{resume}}
+\index{resume@{resume}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Timer::resume ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a5}
+
+
+
+
+Definition at line 137 of file Timer.h.\index{dg::Timer@{dg::Timer}!seconds@{seconds}}
+\index{seconds@{seconds}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Timer::seconds ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a14}
+
+
+
+
+Definition at line 239 of file Timer.h.\index{dg::Timer@{dg::Timer}!start@{start}}
+\index{start@{start}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Timer::start ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a2}
+
+
+
+
+Definition at line 115 of file Timer.h.
+
+Referenced by dg::Visualizer::start\-Calc\-Timer().\index{dg::Timer@{dg::Timer}!stop@{stop}}
+\index{stop@{stop}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Timer::stop ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a3}
+
+
+
+
+Definition at line 122 of file Timer.h.\index{dg::Timer@{dg::Timer}!suspend@{suspend}}
+\index{suspend@{suspend}!dg::Timer@{dg::Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Timer::suspend ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Timer_a4}
+
+
+
+
+Definition at line 128 of file Timer.h.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Timer.h}\item 
+{\bf Timer.cpp}\end{CompactItemize}

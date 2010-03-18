@@ -1,0 +1,368 @@
+\section{dg::Tracer Class Reference}
+\label{classdg_1_1Tracer}\index{dg::Tracer@{dg::Tracer}}
+{\tt \#include $<$Tracer.h$>$}
+
+Collaboration diagram for dg::Tracer:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classdg_1_1Tracer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef {\bf Real}($\ast$ {\bf Function} )({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\end{CompactItemize}
+\subsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+{\bf Tracer} ({\bf Function} pv\-Function=NULL, {\bf Camera} $\ast$pk\-Camera=NULL)
+\item 
+{\bf $\sim$Tracer} ()
+\item 
+void {\bf set\-Camera} ({\bf Camera} $\ast$pk\-Camera)
+\item 
+const {\bf Camera} $\ast$ {\bf get\-Camera} () const
+\item 
+void {\bf set\-Function} ({\bf Function} pv\-Function)
+\item 
+{\bf Vector} {\bf get\-Light\-Direction} () const
+\item 
+void {\bf set\-Light\-Direction} (const {\bf Vector} \&rk\-Light)
+\item 
+{\bf Color} {\bf get\-Light\-Color} () const
+\item 
+void {\bf set\-Light\-Color} (const {\bf Color} \&rk\-Light)
+\item 
+void {\bf set\-Normal\-Epsilon} ({\bf Real} f\-Epsilon)
+\item 
+{\bf Real} {\bf get\-Normal\-Epsilon} () const
+\item 
+void {\bf set\-Ray\-Epsilon} ({\bf Real} f\-Epsilon)
+\item 
+{\bf Real} {\bf get\-Ray\-Epsilon} () const
+\item 
+void {\bf set\-Iso\-Level} ({\bf Real} f\-Level)
+\item 
+{\bf Real} {\bf get\-Iso\-Level} () const
+\item 
+void {\bf set\-Samples} ({\bf UInt} ui\-Samples)
+\item 
+{\bf UInt} {\bf get\-Samples} () const
+\item 
+{\bf UInt} {\bf get\-Ray\-Hits} () const
+\item 
+void {\bf set\-Blur} (bool b\-Blur)
+\item 
+bool {\bf get\-Blur} () const
+\item 
+void {\bf set\-Background} (const {\bf Color} \&rk\-Color)
+\item 
+{\bf Color} {\bf get\-Background} () const
+\item 
+{\bf Real} {\bf get\-Ambient} () const
+\item 
+void {\bf set\-Ambient} ({\bf Real} f\-Ambient)
+\item 
+{\bf Real} {\bf get\-Diffuse} () const
+\item 
+void {\bf set\-Diffuse} ({\bf Real} f\-Diffuse)
+\item 
+{\bf Real} {\bf get\-Specular} () const
+\item 
+void {\bf set\-Specular} ({\bf Real} f\-Specular)
+\item 
+{\bf Real} {\bf get\-Roughness} () const
+\item 
+void {\bf set\-Roughness} ({\bf Real} f\-Roughness)
+\item 
+{\bf Color} {\bf get\-Base\-Color} () const
+\item 
+void {\bf set\-Base\-Color} (const {\bf Color} \&rk\-Base)
+\item 
+void {\bf render} ()
+\item 
+void {\bf render} ({\bf UInt} ui\-Start\-Line, {\bf UInt} ui\-End\-Line)
+\end{CompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{dg::Tracer@{dg::Tracer}!Function@{Function}}
+\index{Function@{Function}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Real}($\ast$ dg::Tracer::Function)({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)}\label{classdg_1_1Tracer_s0}
+
+
+
+
+Definition at line 18 of file Tracer.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{dg::Tracer@{dg::Tracer}!Tracer@{Tracer}}
+\index{Tracer@{Tracer}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Tracer::Tracer ({\bf Function} {\em pv\-Function} = NULL, {\bf Camera} $\ast$ {\em pk\-Camera} = NULL)}\label{classdg_1_1Tracer_a0}
+
+
+
+
+Definition at line 8 of file Tracer.cpp.\index{dg::Tracer@{dg::Tracer}!~Tracer@{$\sim$Tracer}}
+\index{~Tracer@{$\sim$Tracer}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Tracer::$\sim$Tracer ()}\label{classdg_1_1Tracer_a1}
+
+
+
+
+Definition at line 26 of file Tracer.cpp.
+
+\subsection{Member Function Documentation}
+\index{dg::Tracer@{dg::Tracer}!getAmbient@{getAmbient}}
+\index{getAmbient@{getAmbient}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tracer::get\-Ambient ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a22}
+
+
+
+
+Definition at line 259 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getBackground@{getBackground}}
+\index{getBackground@{getBackground}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} dg::Tracer::get\-Background ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a21}
+
+
+
+
+Definition at line 231 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getBaseColor@{getBaseColor}}
+\index{getBaseColor@{getBaseColor}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} dg::Tracer::get\-Base\-Color ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a30}
+
+
+
+
+Definition at line 221 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getBlur@{getBlur}}
+\index{getBlur@{getBlur}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool dg::Tracer::get\-Blur ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a19}
+
+
+
+
+Definition at line 211 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getCamera@{getCamera}}
+\index{getCamera@{getCamera}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf Camera} $\ast$ dg::Tracer::get\-Camera ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a3}
+
+
+
+
+Definition at line 241 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getDiffuse@{getDiffuse}}
+\index{getDiffuse@{getDiffuse}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tracer::get\-Diffuse ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a24}
+
+
+
+
+Definition at line 269 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getIsoLevel@{getIsoLevel}}
+\index{getIsoLevel@{getIsoLevel}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tracer::get\-Iso\-Level ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a14}
+
+
+
+
+Definition at line 181 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getLightColor@{getLightColor}}
+\index{getLightColor@{getLightColor}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} dg::Tracer::get\-Light\-Color ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a7}
+
+
+
+
+Definition at line 156 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getLightDirection@{getLightDirection}}
+\index{getLightDirection@{getLightDirection}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} dg::Tracer::get\-Light\-Direction ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a5}
+
+
+
+
+Definition at line 141 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getNormalEpsilon@{getNormalEpsilon}}
+\index{getNormalEpsilon@{getNormalEpsilon}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tracer::get\-Normal\-Epsilon ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a10}
+
+
+
+
+Definition at line 161 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getRayEpsilon@{getRayEpsilon}}
+\index{getRayEpsilon@{getRayEpsilon}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tracer::get\-Ray\-Epsilon ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a12}
+
+
+
+
+Definition at line 171 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getRayHits@{getRayHits}}
+\index{getRayHits@{getRayHits}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Tracer::get\-Ray\-Hits ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a17}
+
+
+
+
+Definition at line 201 of file Tracer.h.
+
+Referenced by dg::Visualizer::draw\-Text().\index{dg::Tracer@{dg::Tracer}!getRoughness@{getRoughness}}
+\index{getRoughness@{getRoughness}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tracer::get\-Roughness ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a28}
+
+
+
+
+Definition at line 289 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getSamples@{getSamples}}
+\index{getSamples@{getSamples}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Tracer::get\-Samples ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a16}
+
+
+
+
+Definition at line 191 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!getSpecular@{getSpecular}}
+\index{getSpecular@{getSpecular}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tracer::get\-Specular ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a26}
+
+
+
+
+Definition at line 279 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!render@{render}}
+\index{render@{render}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Tracer::render ({\bf UInt} {\em ui\-Start\-Line}, {\bf UInt} {\em ui\-End\-Line})}\label{classdg_1_1Tracer_a33}
+
+
+
+
+Definition at line 47 of file Tracer.cpp.
+
+References dg::Camera::get\-Direction(), dg::Camera::get\-Far(), dg::Camera::get\-Half\-Height(), dg::Camera::get\-Half\-Width(), dg::Camera::get\-Image(), dg::Camera::get\-Near(), dg::Camera::get\-Position(), dg::Camera::get\-Right(), dg::Camera::get\-Up(), dg::Image::height(), dg::Normalize(), dg::Real, dg::Image::set\-Color(), dg::UInt, and dg::Image::width().\index{dg::Tracer@{dg::Tracer}!render@{render}}
+\index{render@{render}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Tracer::render ()}\label{classdg_1_1Tracer_a32}
+
+
+
+
+Definition at line 31 of file Tracer.cpp.
+
+References dg::Image::blur(), dg::Camera::get\-Image(), and dg::Image::height().
+
+Referenced by dg::Visualizer::draw\-Raytraced().\index{dg::Tracer@{dg::Tracer}!setAmbient@{setAmbient}}
+\index{setAmbient@{setAmbient}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Ambient ({\bf Real} {\em f\-Ambient})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a23}
+
+
+
+
+Definition at line 264 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!setBackground@{setBackground}}
+\index{setBackground@{setBackground}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Background (const {\bf Color} \& {\em rk\-Color})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a20}
+
+
+
+
+Definition at line 226 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!setBaseColor@{setBaseColor}}
+\index{setBaseColor@{setBaseColor}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Base\-Color (const {\bf Color} \& {\em rk\-Base})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a31}
+
+
+
+
+Definition at line 216 of file Tracer.h.
+
+Referenced by dg::Visualizer::setup\-Ray\-Tracer().\index{dg::Tracer@{dg::Tracer}!setBlur@{setBlur}}
+\index{setBlur@{setBlur}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Blur (bool {\em b\-Blur})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a18}
+
+
+
+
+Definition at line 206 of file Tracer.h.
+
+Referenced by dg::Visualizer::setup\-Ray\-Tracer().\index{dg::Tracer@{dg::Tracer}!setCamera@{setCamera}}
+\index{setCamera@{setCamera}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Camera ({\bf Camera} $\ast$ {\em pk\-Camera})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a2}
+
+
+
+
+Definition at line 236 of file Tracer.h.
+
+Referenced by dg::Visualizer::on\-Startup().\index{dg::Tracer@{dg::Tracer}!setDiffuse@{setDiffuse}}
+\index{setDiffuse@{setDiffuse}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Diffuse ({\bf Real} {\em f\-Diffuse})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a25}
+
+
+
+
+Definition at line 274 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!setFunction@{setFunction}}
+\index{setFunction@{setFunction}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Function ({\bf Function} {\em pv\-Function})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a4}
+
+
+
+
+Definition at line 246 of file Tracer.h.
+
+Referenced by dg::Visualizer::on\-Key\-Down(), dg::Visualizer::on\-Startup(), and dg::Visualizer::setup\-Ray\-Tracer().\index{dg::Tracer@{dg::Tracer}!setIsoLevel@{setIsoLevel}}
+\index{setIsoLevel@{setIsoLevel}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Iso\-Level ({\bf Real} {\em f\-Level})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a13}
+
+
+
+
+Definition at line 186 of file Tracer.h.
+
+Referenced by dg::Visualizer::setup\-Ray\-Tracer().\index{dg::Tracer@{dg::Tracer}!setLightColor@{setLightColor}}
+\index{setLightColor@{setLightColor}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Light\-Color (const {\bf Color} \& {\em rk\-Light})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a8}
+
+
+
+
+Definition at line 151 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!setLightDirection@{setLightDirection}}
+\index{setLightDirection@{setLightDirection}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Light\-Direction (const {\bf Vector} \& {\em rk\-Light})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a6}
+
+
+
+
+Definition at line 146 of file Tracer.h.
+
+Referenced by dg::Visualizer::on\-Startup(), and dg::Visualizer::setup\-Ray\-Tracer().\index{dg::Tracer@{dg::Tracer}!setNormalEpsilon@{setNormalEpsilon}}
+\index{setNormalEpsilon@{setNormalEpsilon}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Normal\-Epsilon ({\bf Real} {\em f\-Epsilon})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a9}
+
+
+
+
+Definition at line 166 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!setRayEpsilon@{setRayEpsilon}}
+\index{setRayEpsilon@{setRayEpsilon}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Ray\-Epsilon ({\bf Real} {\em f\-Epsilon})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a11}
+
+
+
+
+Definition at line 176 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!setRoughness@{setRoughness}}
+\index{setRoughness@{setRoughness}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Roughness ({\bf Real} {\em f\-Roughness})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a29}
+
+
+
+
+Definition at line 294 of file Tracer.h.\index{dg::Tracer@{dg::Tracer}!setSamples@{setSamples}}
+\index{setSamples@{setSamples}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Samples ({\bf UInt} {\em ui\-Samples})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a15}
+
+
+
+
+Definition at line 196 of file Tracer.h.
+
+Referenced by dg::Visualizer::setup\-Ray\-Tracer().\index{dg::Tracer@{dg::Tracer}!setSpecular@{setSpecular}}
+\index{setSpecular@{setSpecular}!dg::Tracer@{dg::Tracer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Tracer::set\-Specular ({\bf Real} {\em f\-Specular})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Tracer_a27}
+
+
+
+
+Definition at line 284 of file Tracer.h.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Tracer.h}\item 
+{\bf Tracer.cpp}\end{CompactItemize}

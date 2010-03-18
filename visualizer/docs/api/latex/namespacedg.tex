@@ -1,0 +1,1809 @@
+\section{dg Namespace Reference}
+\label{namespacedg}\index{dg@{dg}}
+
+
+\subsection*{Compounds}
+\begin{CompactItemize}
+\item 
+class {\bf Camera}
+\item 
+class {\bf Color}
+\item 
+class {\bf Hypertexture}
+\item 
+class {\bf Image}
+\item 
+struct {\bf Light}
+\item 
+class {\bf Matrix}
+\item 
+struct {\bf Operator\-Spec}
+\item 
+class {\bf Polygonizer}
+\item 
+class {\bf Ray\-Tracer}
+\item 
+class {\bf Set}
+\item 
+class {\bf Timer}
+\item 
+class {\bf Vector}
+\begin{CompactList}\small\item\em {\bf Vector} {\rm (p.\,\pageref{classdg_1_1Vector})} - Generic 3D mathematical {\bf Vector} {\rm (p.\,\pageref{classdg_1_1Vector})} class.\item\end{CompactList}\item 
+class {\bf Visualizer}
+\item 
+class {\bf Window}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef bool {\bf Bool}
+\item 
+typedef char {\bf Char}
+\item 
+typedef unsigned char {\bf UChar}
+\item 
+typedef signed short {\bf Short}
+\item 
+typedef unsigned short {\bf UShort}
+\item 
+typedef signed int {\bf Int}
+\item 
+typedef unsigned int {\bf UInt}
+\item 
+typedef signed long {\bf Long}
+\item 
+typedef unsigned long {\bf ULong}
+\item 
+typedef float {\bf Float}
+\item 
+typedef double {\bf Double}
+\item 
+typedef signed char {\bf Int8}
+\item 
+typedef signed short {\bf Int16}
+\item 
+typedef signed long {\bf Int32}
+\item 
+typedef unsigned char {\bf UInt8}
+\item 
+typedef unsigned short {\bf UInt16}
+\item 
+typedef unsigned long {\bf UInt32}
+\item 
+typedef float {\bf Real32}
+\item 
+typedef double {\bf Real64}
+\item 
+typedef float {\bf Real}
+\item 
+typedef {\bf Real}($\ast$ {\bf Operator} )({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+typedef {\bf Set}$<$ {\bf Light} $\ast$ $>$ {\bf Light\-Set}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf Error\-Type} \{ {\bf ERROR\_\-IGNORE}, 
+{\bf ERROR\_\-CONTINUE}, 
+{\bf ERROR\_\-ABORT}
+ \}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\bf Color} {\bf operator $\ast$} ({\bf Real} f\-Scalar, const {\bf Color} \&rk\-V)
+\item 
+{\bf Color} {\bf Clamp} (const {\bf Color} \&rk\-V, {\bf Real} f\-Min, {\bf Real} f\-Max)
+\item 
+bool {\bf Is\-Na\-N} ({\bf Real} f\-V)
+\item 
+bool {\bf Is\-Inf} ({\bf Real} f\-V)
+\item 
+{\bf Real} {\bf Validate} ({\bf Real} f\-V)
+\item 
+{\bf Real} {\bf Torus} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Sphere} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Blob} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Tri\-Blob} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Threads} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Cloth} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Quadric} ({\bf Real} f\-A, {\bf Real} f\-B, {\bf Real} f\-C)
+\item 
+{\bf Real} {\bf Super\-Ellipsoid} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-N1, {\bf Real} f\-N2)
+\item 
+{\bf Real} {\bf Heart} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Klein\-Bottle} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Tri\-Connect} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Quad\-Connect} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Ripples} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Voronoi\-Bumps} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Spherical\-Shell} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Spherical\-Falloff} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Egg\-Shell} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Egg\-Falloff} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Turbulent\-Space} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Turbulent\-Sphere} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Erfc} ({\bf Real} f\-X)
+\item 
+{\bf Real} {\bf Log\-Gamma} ({\bf Real} f\-X)
+\item 
+{\bf Real} {\bf Radians} ({\bf Real} f\-Deg)
+\item 
+{\bf Real} {\bf Degrees} ({\bf Real} f\-Rad)
+\item 
+{\bf Real} {\bf Abs} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Ceil} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Clamp} ({\bf Real} f\-V, {\bf Real} f\-Min, {\bf Real} f\-Max)
+\item 
+{\bf Real} {\bf Exp} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Floor} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Inv\-Sqrt} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Log} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Pow} ({\bf Real} f\-Base, {\bf Real} f\-Exponent)
+\item 
+{\bf Real} {\bf Cub} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Square} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Sqr} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Sqrt} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Sign} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Gamma} ({\bf Real} f\-X)
+\item 
+{\bf Real} {\bf Gaussian} ({\bf Real} f\-X, {\bf Real} f\-Std\-Dev)
+\item 
+{\bf Real} {\bf Min} ({\bf Real} f\-X, {\bf Real} f\-A)
+\item 
+{\bf Real} {\bf Max} ({\bf Real} f\-X, {\bf Real} f\-A)
+\item 
+{\bf Real} {\bf Mod} ({\bf Real} f\-X, {\bf Real} f\-A)
+\item 
+{\bf Real} {\bf Frac} (const {\bf Real} f\-X)
+\item 
+{\bf Real} {\bf Step} ({\bf Real} f\-X, {\bf Real} f\-A)
+\item 
+{\bf Real} {\bf Erf} ({\bf Real} f\-X)
+\item 
+{\bf Real} {\bf Arc\-Cosine} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Arc\-Sine} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Arc\-Tangent} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Arc\-Tangent} ({\bf Real} f\-Y, {\bf Real} f\-X)
+\item 
+{\bf Real} {\bf Cosine} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Sine} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Tangent} ({\bf Real} f\-Value)
+\item 
+{\bf Real} {\bf Cubic\-Span} ({\bf Real} f\-X, const {\bf Real} af\-C[4], const {\bf Real} af\-M[4][4])
+\item 
+{\bf Real} {\bf Bicubic\-Span} ({\bf Real} f\-U, {\bf Real} f\-V, {\bf Real} af\-Basis[4][4])
+\item 
+void {\bf Make\-Bicubic\-Matrix} ({\bf Real} af\-G[4][4], {\bf Real} af\-M[4][4], {\bf Real} af\-C[4][4])
+\item 
+void {\bf Info} (const char $\ast$ac\-Message,...) PRINT\_\-FUNC
+\item 
+void {\bf Notice} (const char $\ast$ac\-Message,...) PRINT\_\-FUNC
+\item 
+void {\bf Warning} (const char $\ast$ac\-Message,...) PRINT\_\-FUNC
+\item 
+void {\bf Error} (const char $\ast$ac\-Message,...) PRINT\_\-FUNC
+\item 
+void {\bf Severe} (const char $\ast$ac\-Message,...) PRINT\_\-FUNC
+\item 
+{\bf Real} {\bf Spline} ({\bf Real} f\-X, {\bf UInt} ui\-Knots, {\bf Real} $\ast$apk\-Knots, const {\bf Real} af\-B[4][4]=Catmull\-Rom\-Basis)
+\item 
+{\bf Real} {\bf Cell\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Gradient\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Value\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, const {\bf Real} af\-B[4][4]=Catmull\-Rom\-Basis)
+\item 
+{\bf Real} {\bf Fractional\-Brownian\-Motion} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Increment=0.5f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf Turbulence} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Increment=0.5f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf Mono\-Fractal} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Increment=0.5f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf Multi\-Fractal} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Increment=0.5f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf Hybrid\-Multi\-Fractal} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Increment=0.25f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Offset=0.7f, {\bf Real} f\-Gain=1.0f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf Ridged\-Multi\-Fractal} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Increment=0.9f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Threshold=0.5f, {\bf Real} f\-Offset=1.0f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf Filtered\-Turbulence} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Filter\-Width, {\bf Real} f\-Increment=0.5f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf Filtered\-FBM} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Filter\-Width, {\bf Real} f\-Increment=0.5f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf Voronoi\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Jitter, {\bf Real} \&rf\-OX, {\bf Real} \&rf\-OY, {\bf Real} \&rf\-OZ)
+\item 
+{\bf Real} {\bf Default\-Turbulence} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Default\-FBM} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Default\-Mono\-Fractal} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Default\-Multi\-Fractal} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Default\-Ridged\-Multi\-Fractal} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf f\-Bm} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Increment=0.5f, {\bf Real} f\-Lacunarity=2.0345f, {\bf Real} f\-Octaves=4.0f)
+\item 
+{\bf Real} {\bf r} ({\bf Int} i\-X)
+\item 
+{\bf Int} {\bf p} ({\bf Int} i\-X)
+\item 
+{\bf Int} {\bf Hash} ({\bf Int} i\-X, {\bf Int} i\-Y, {\bf Int} i\-Z)
+\item 
+{\bf Real} {\bf Lattice} ({\bf Int} i\-X, {\bf Int} i\-Y, {\bf Int} i\-Z)
+\item 
+{\bf Real} {\bf Gradient} ({\bf Int} i\-X, {\bf Int} i\-Y, {\bf Int} i\-Z, {\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Bias} ({\bf Real} f\-X, {\bf Real} f\-A)
+\item 
+{\bf Real} {\bf Gain} ({\bf Real} f\-X, {\bf Real} f\-A)
+\item 
+{\bf Real} {\bf Cubic} ({\bf Real} f\-T)
+\item 
+{\bf Real} {\bf Quintic} ({\bf Real} f\-T)
+\item 
+{\bf Real} {\bf Lerp} ({\bf Real} f\-T, {\bf Real} f\-A, {\bf Real} f\-B)
+\item 
+{\bf Real} {\bf Box\-Step} ({\bf Real} f\-X, {\bf Real} f\-A, {\bf Real} f\-B)
+\item 
+{\bf Real} {\bf Smooth\-Step} ({\bf Real} f\-A, {\bf Real} f\-B, {\bf Real} f\-X)
+\item 
+{\bf Real} {\bf Pulse} ({\bf Real} f\-X, {\bf Real} f\-A, {\bf Real} f\-B)
+\item 
+{\bf Real} {\bf Box\-Pulse} ({\bf Real} f\-X, {\bf Real} f\-A, {\bf Real} f\-B)
+\item 
+{\bf Real} {\bf Smooth\-Pulse} ({\bf Real} f\-X, {\bf Real} f\-A, {\bf Real} f\-B)
+\item 
+{\bf Real} {\bf Filtered\-Abs} ({\bf Real} f\-X, {\bf Real} f\-DX)
+\item 
+{\bf Real} {\bf Catmull\-Rom\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Hermite\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Cardinal\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf BSpline\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Filtered\-Gradient\-Noise} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Filter\-Width)
+\item 
+void {\bf Seed\-Random} ({\bf ULong} seed)
+\item 
+{\bf UInt} {\bf Random\-Int} (void)
+\item 
+{\bf Real} {\bf Random\-Unit\-Real} (void)
+\item 
+{\bf Real} {\bf Random\-Unit\-Open\-Real} (void)
+\item 
+{\bf Real} {\bf Random\-Symmetric\-Real} (void)
+\item 
+{\bf Real} {\bf Random\-Interval\-Real} ({\bf Real} f\-Min, {\bf Real} f\-Max)
+\item 
+{\bf Color} {\bf Ambient} (const {\bf Color} \&rk\-Light\-Color)
+\item 
+{\bf Color} {\bf Diffuse} (const {\bf Vector} \&rk\-Surface\-Normal, const {\bf Vector} \&rk\-Light\-Dir, const {\bf Color} \&rk\-Light\-Color)
+\item 
+{\bf Color} {\bf Specular} (const {\bf Vector} \&rk\-Surface\-Normal, const {\bf Vector} \&rk\-View\-Dir, const {\bf Vector} \&rk\-Light\-Dir, const {\bf Color} \&rk\-Light\-Color, {\bf Real} f\-Roughness)
+\item 
+{\bf Color} {\bf Lambertian} (const {\bf Vector} \&rk\-Surface\-Normal, const {\bf Vector} \&rk\-Light\-Dir, const {\bf Color} \&rk\-Light\-Color, const {\bf Color} \&rk\-Base\-Color, {\bf Real} f\-Ambient=1.0, {\bf Real} f\-Diffuse=0.8)
+\item 
+{\bf Color} {\bf Phong} (const {\bf Vector} \&rk\-Surface\-Normal, const {\bf Vector} \&rk\-View\-Dir, const {\bf Vector} \&rk\-Light\-Dir, const {\bf Color} \&rk\-Light\-Color, const {\bf Color} \&rk\-Base\-Color, {\bf Real} f\-Ambient=1.0, {\bf Real} f\-Diffuse=0.8, {\bf Real} f\-Specular=0.5, {\bf Real} f\-Roughness=0.1)
+\item 
+{\bf Real} {\bf Ray\-Sphere} ({\bf Real} f\-EX, {\bf Real} f\-EY, {\bf Real} f\-EZ, {\bf Real} f\-IX, {\bf Real} f\-IY, {\bf Real} f\-IZ, {\bf Real} f\-Radius, {\bf Real} f\-Epsilon, {\bf Real} \&rf\-T0, {\bf Real} \&rf\-T1)
+\item 
+{\bf Real} {\bf Ray\-Sphere} (const {\bf Vector} \&rk\-Pos, const {\bf Vector} \&rk\-Ray\-Dir, {\bf Real} f\-Radius, {\bf Real} f\-Epsilon, {\bf Real} \&rf\-T0, {\bf Real} \&rf\-T1)
+\item 
+{\bf Vector} {\bf Face\-Forward} (const {\bf Vector} \&rk\-N, const {\bf Vector} \&rk\-I)
+\item 
+{\bf Vector} {\bf Face\-Forward} (const {\bf Vector} \&rk\-N, const {\bf Vector} \&rk\-I, const {\bf Vector} \&rk\-Ref)
+\item 
+{\bf Vector} {\bf operator $\ast$} ({\bf Real} f\-Scalar, const {\bf Vector} \&rk\-V)
+\item 
+{\bf Real} {\bf Dot} (const {\bf Vector} \&rk\-A, const {\bf Vector} \&rk\-B)
+\item 
+{\bf Vector} {\bf Cross} (const {\bf Vector} \&rk\-LHS, const {\bf Vector} \&rk\-RHS)
+\item 
+{\bf Vector} {\bf Min} (const {\bf Vector} \&rk\-A, const {\bf Vector} \&rk\-B)
+\item 
+{\bf Vector} {\bf Max} (const {\bf Vector} \&rk\-A, const {\bf Vector} \&rk\-B)
+\item 
+{\bf Vector} {\bf Normalize} (const {\bf Vector} \&rk\-V)
+\item 
+{\bf Vector} {\bf Min} (const {\bf Vector} \&rk\-V)
+\item 
+{\bf Vector} {\bf Max} (const {\bf Vector} \&rk\-V)
+\item 
+{\bf Color} {\bf Filtered\-Clown\-Color\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Step\-Size)
+\item 
+{\bf Real} {\bf Clown\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Cloud\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Cumulus\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Cell\-Cloud\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Spherical\-Shell\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Spherical\-Falloff\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Egg\-Shell\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Egg\-Falloff\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Turbulent\-Space\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Turbulent\-Sphere\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Cloth\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+{\bf Real} {\bf Filtered\-Clown\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Step\-Size=0.1)
+\item 
+{\bf Real} {\bf Filtered\-Cloud\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Step\-Size=0.1)
+\item 
+{\bf Real} {\bf Filtered\-Cumulus\-Density\-Volume} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z, {\bf Real} f\-Step\-Size=0.1)
+\end{CompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{dg@{dg}!Bool@{Bool}}
+\index{Bool@{Bool}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef bool dg::Bool}\label{namespacedg_a9}
+
+
+
+
+Definition at line 36 of file Data\-Types.h.
+
+Referenced by dg::Window::on\-Initialize(), dg::Visualizer::on\-Initialize(), dg::Window::on\-Startup(), dg::Visualizer::on\-Startup(), dg::Color::operator!=(), and dg::Color::operator==().\index{dg@{dg}!Char@{Char}}
+\index{Char@{Char}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef char dg::Char}\label{namespacedg_a10}
+
+
+
+
+Definition at line 37 of file Data\-Types.h.
+
+Referenced by dg::Window::draw\-String(), and dg::Visualizer::draw\-Text().\index{dg@{dg}!Double@{Double}}
+\index{Double@{Double}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef double dg::Double}\label{namespacedg_a19}
+
+
+
+
+Definition at line 46 of file Data\-Types.h.\index{dg@{dg}!Float@{Float}}
+\index{Float@{Float}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef float dg::Float}\label{namespacedg_a18}
+
+
+
+
+Definition at line 45 of file Data\-Types.h.\index{dg@{dg}!Int@{Int}}
+\index{Int@{Int}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef signed int dg::Int}\label{namespacedg_a14}
+
+
+
+
+Definition at line 41 of file Data\-Types.h.
+
+Referenced by dg::Window::draw\-Frame\-Rate(), dg::Window::draw\-String(), dg::Visualizer::draw\-Text(), dg::Polygonizer::evaluate(), Gradient\-Noise(), dg::Matrix::inverse(), dg::Window::on\-Key\-Down(), dg::Visualizer::on\-Key\-Down(), dg::Window::on\-Key\-Up(), dg::Window::on\-Mouse\-Click(), dg::Visualizer::on\-Mouse\-Click(), dg::Window::on\-Mouse\-Motion(), dg::Visualizer::on\-Mouse\-Motion(), dg::Window::on\-Move(), dg::Window::on\-Passive\-Motion(), dg::Window::on\-Reshape(), dg::Visualizer::on\-Reshape(), dg::Window::on\-Special\-Key\-Down(), dg::Visualizer::on\-Special\-Key\-Down(), dg::Window::on\-Special\-Key\-Up(), dg::Window::on\-Update(), dg::Color::operator $\ast$(), dg::Color::operator $\ast$=(), dg::Polygonizer::Polygonizer(), dg::Visualizer::setup\-Frustum(), Spline(), Value\-Noise(), and dg::Window::Window().\index{dg@{dg}!Int16@{Int16}}
+\index{Int16@{Int16}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef signed short dg::Int16}\label{namespacedg_a21}
+
+
+
+
+Definition at line 50 of file Data\-Types.h.\index{dg@{dg}!Int32@{Int32}}
+\index{Int32@{Int32}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef signed long dg::Int32}\label{namespacedg_a22}
+
+
+
+
+Definition at line 51 of file Data\-Types.h.\index{dg@{dg}!Int8@{Int8}}
+\index{Int8@{Int8}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef signed char dg::Int8}\label{namespacedg_a20}
+
+
+
+
+Definition at line 49 of file Data\-Types.h.\index{dg@{dg}!LightSet@{LightSet}}
+\index{LightSet@{LightSet}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Set}$<${\bf Light}$\ast$$>$ dg::Light\-Set}\label{namespacedg_a60}
+
+
+
+
+Definition at line 21 of file Shading.h.\index{dg@{dg}!Long@{Long}}
+\index{Long@{Long}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef signed long dg::Long}\label{namespacedg_a16}
+
+
+
+
+Definition at line 43 of file Data\-Types.h.\index{dg@{dg}!Operator@{Operator}}
+\index{Operator@{Operator}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Real}($\ast$ dg::Operator)({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)}\label{namespacedg_a49}
+
+
+
+
+Definition at line 14 of file Operators.h.\index{dg@{dg}!Real@{Real}}
+\index{Real@{Real}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef float dg::Real}\label{namespacedg_a28}
+
+
+
+
+Definition at line 58 of file Data\-Types.h.
+
+Referenced by dg::Vector::angle(), Bicubic\-Span(), Blob(), dg::Image::blur(), dg::Matrix::build\-Rotation(), dg::Camera::Camera(), Cell\-Noise(), Clamp(), Cloth(), dg::Color::Color(), Cubic\-Span(), Degrees(), Dot(), dg::Vector::dot(), dg::Window::draw\-Frame\-Rate(), dg::Window::draw\-Image(), Egg\-Falloff(), Egg\-Shell(), Erfc(), Filtered\-FBM(), Filtered\-Turbulence(), Fractional\-Brownian\-Motion(), dg::Matrix::from\-Axis\-To\-Angle(), dg::Camera::get\-Horizontal\-Fov(), dg::Polygonizer::get\-Normal(), dg::Camera::get\-Vertical\-Fov(), Gradient\-Noise(), Heart(), Hybrid\-Multi\-Fractal(), dg::Image::Image(), dg::Matrix::inverse(), Is\-Inf(), Is\-Na\-N(), Klein\-Bottle(), Lambertian(), dg::Vector::length(), dg::Vector::length\-Squared(), Log\-Gamma(), Make\-Bicubic\-Matrix(), dg::Polygonizer::march\-Cube(), dg::Polygonizer::march\-Tetra(), dg::Polygonizer::march\-Tetra\-Cube(), dg::Matrix::Matrix(), Max(), Min(), Mono\-Fractal(), Multi\-Fractal(), Normalize(), dg::Vector::normalize(), dg::Vector::operator $\ast$(), dg::Matrix::operator $\ast$(), operator $\ast$(), dg::Color::operator $\ast$(), dg::Vector::operator $\ast$=(), dg::Color::operator $\ast$=(), dg::Matrix::operator Real $\ast$$\ast$(), dg::Matrix::operator/(), Phong(), dg::Polygonizer::Polygonizer(), Quad\-Connect(), Quadric(), Radians(), Random\-Interval\-Real(), Random\-Symmetric\-Real(), Ray\-Sphere(), dg::Ray\-Tracer::render(), dg::Hypertexture::render(), dg::Image::resize(), Ridged\-Multi\-Fractal(), Ripples(), dg::Visualizer::set\-Background(), dg::Camera::set\-Horizontal\-Fov(), dg::Visualizer::set\-Lights(), dg::Visualizer::set\-Materials(), dg::Camera::setup(), dg::Visualizer::setup\-Camera(), dg::Visualizer::setup\-Frustum(), dg::Camera::set\-Vertical\-Fov(), Specular(), Sphere(), Spherical\-Falloff(), Spherical\-Shell(), Spline(), Super\-Ellipsoid(), Threads(), Torus(), Tri\-Blob(), Tri\-Connect(), Turbulence(), Turbulent\-Space(), Turbulent\-Sphere(), dg::Visualizer::update(), Validate(), Value\-Noise(), dg::Vector::Vector(), Voronoi\-Bumps(), Voronoi\-Noise(), and dg::Vector::x().\index{dg@{dg}!Real32@{Real32}}
+\index{Real32@{Real32}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef float dg::Real32}\label{namespacedg_a26}
+
+
+
+
+Definition at line 56 of file Data\-Types.h.\index{dg@{dg}!Real64@{Real64}}
+\index{Real64@{Real64}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef double dg::Real64}\label{namespacedg_a27}
+
+
+
+
+Definition at line 57 of file Data\-Types.h.\index{dg@{dg}!Short@{Short}}
+\index{Short@{Short}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef signed short dg::Short}\label{namespacedg_a12}
+
+
+
+
+Definition at line 39 of file Data\-Types.h.\index{dg@{dg}!UChar@{UChar}}
+\index{UChar@{UChar}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char dg::UChar}\label{namespacedg_a11}
+
+
+
+
+Definition at line 38 of file Data\-Types.h.
+
+Referenced by dg::Window::draw\-Image(), dg::Window::on\-Key\-Down(), dg::Visualizer::on\-Key\-Down(), and dg::Window::on\-Key\-Up().\index{dg@{dg}!UInt@{UInt}}
+\index{UInt@{UInt}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned int dg::UInt}\label{namespacedg_a15}
+
+
+
+
+Definition at line 42 of file Data\-Types.h.
+
+Referenced by dg::Image::blur(), dg::Matrix::build\-Rotation(), Cell\-Noise(), dg::Visualizer::draw\-Hypertexture(), dg::Window::draw\-Image(), dg::Visualizer::draw\-Polygons(), dg::Visualizer::draw\-Raytraced(), dg::Window::draw\-String(), dg::Visualizer::draw\-Text(), Filtered\-FBM(), Filtered\-Turbulence(), Fractional\-Brownian\-Motion(), dg::Matrix::get\-Column(), dg::Camera::get\-Ray\-Dir(), dg::Matrix::get\-Row(), dg::Matrix::get\-Transpose(), Hybrid\-Multi\-Fractal(), dg::Image::Image(), dg::Matrix::inverse(), Make\-Bicubic\-Matrix(), Mono\-Fractal(), Multi\-Fractal(), dg::Visualizer::on\-Key\-Down(), dg::Window::on\-Mouse\-Click(), dg::Visualizer::on\-Mouse\-Click(), dg::Window::on\-Mouse\-Motion(), dg::Visualizer::on\-Mouse\-Motion(), dg::Matrix::operator $\ast$(), dg::Matrix::operator $\ast$=(), dg::Matrix::operator+(), dg::Matrix::operator+=(), dg::Matrix::operator-(), dg::Matrix::operator-=(), dg::Matrix::operator/(), Random\-Int(), dg::Ray\-Tracer::render(), dg::Hypertexture::render(), dg::Image::resize(), Ridged\-Multi\-Fractal(), dg::Visualizer::setup\-Ray\-Tracer(), Spline(), dg::Matrix::transpose(), and Turbulence().\index{dg@{dg}!UInt16@{UInt16}}
+\index{UInt16@{UInt16}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short dg::UInt16}\label{namespacedg_a24}
+
+
+
+
+Definition at line 53 of file Data\-Types.h.\index{dg@{dg}!UInt32@{UInt32}}
+\index{UInt32@{UInt32}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long dg::UInt32}\label{namespacedg_a25}
+
+
+
+
+Definition at line 54 of file Data\-Types.h.\index{dg@{dg}!UInt8@{UInt8}}
+\index{UInt8@{UInt8}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned char dg::UInt8}\label{namespacedg_a23}
+
+
+
+
+Definition at line 52 of file Data\-Types.h.\index{dg@{dg}!ULong@{ULong}}
+\index{ULong@{ULong}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long dg::ULong}\label{namespacedg_a17}
+
+
+
+
+Definition at line 44 of file Data\-Types.h.
+
+Referenced by Seed\-Random().\index{dg@{dg}!UShort@{UShort}}
+\index{UShort@{UShort}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned short dg::UShort}\label{namespacedg_a13}
+
+
+
+
+Definition at line 40 of file Data\-Types.h.
+
+\subsection{Enumeration Type Documentation}
+\index{dg@{dg}!ErrorType@{ErrorType}}
+\index{ErrorType@{ErrorType}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum dg::Error\-Type}\label{namespacedg_a204}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{ERROR_IGNORE@{ERROR\_\-IGNORE}!dg@{dg}}\index{dg@{dg}!ERROR_IGNORE@{ERROR\_\-IGNORE}}\item[{\em 
+{\em ERROR\_\-IGNORE}\label{namespacedg_a204a46}
+}]\index{ERROR_CONTINUE@{ERROR\_\-CONTINUE}!dg@{dg}}\index{dg@{dg}!ERROR_CONTINUE@{ERROR\_\-CONTINUE}}\item[{\em 
+{\em ERROR\_\-CONTINUE}\label{namespacedg_a204a47}
+}]\index{ERROR_ABORT@{ERROR\_\-ABORT}!dg@{dg}}\index{dg@{dg}!ERROR_ABORT@{ERROR\_\-ABORT}}\item[{\em 
+{\em ERROR\_\-ABORT}\label{namespacedg_a204a48}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 40 of file Messages.h.
+
+\subsection{Function Documentation}
+\index{dg@{dg}!Abs@{Abs}}
+\index{Abs@{Abs}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Abs ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a90}
+
+
+
+
+Definition at line 127 of file Maths.h.
+
+Referenced by dg::Matrix::build\-Rotation(), Erfc(), dg::Matrix::inverse(), Ridged\-Multi\-Fractal(), Threads(), and Turbulence().\index{dg@{dg}!Ambient@{Ambient}}
+\index{Ambient@{Ambient}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Ambient (const {\bf Color} \& {\em rk\-Light\-Color})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a172}
+
+
+
+
+Definition at line 26 of file Shading.h.
+
+Referenced by Lambertian(), and Phong().\index{dg@{dg}!ArcCosine@{ArcCosine}}
+\index{ArcCosine@{ArcCosine}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Arc\-Cosine ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a111}
+
+
+
+
+Definition at line 237 of file Maths.h.
+
+Referenced by dg::Matrix::build\-Rotation().\index{dg@{dg}!ArcSine@{ArcSine}}
+\index{ArcSine@{ArcSine}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Arc\-Sine ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a112}
+
+
+
+
+Definition at line 252 of file Maths.h.\index{dg@{dg}!ArcTangent@{ArcTangent}}
+\index{ArcTangent@{ArcTangent}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Arc\-Tangent ({\bf Real} {\em f\-Y}, {\bf Real} {\em f\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a114}
+
+
+
+
+Definition at line 272 of file Maths.h.\index{dg@{dg}!ArcTangent@{ArcTangent}}
+\index{ArcTangent@{ArcTangent}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Arc\-Tangent ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a113}
+
+
+
+
+Definition at line 267 of file Maths.h.
+
+Referenced by dg::Camera::get\-Horizontal\-Fov(), and dg::Camera::get\-Vertical\-Fov().\index{dg@{dg}!Bias@{Bias}}
+\index{Bias@{Bias}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Bias ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a150}
+
+
+
+
+Definition at line 193 of file Procedural.h.
+
+Referenced by Threads().\index{dg@{dg}!BicubicSpan@{BicubicSpan}}
+\index{BicubicSpan@{BicubicSpan}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Bicubic\-Span ({\bf Real} {\em f\-U}, {\bf Real} {\em f\-V}, {\bf Real} {\em af\-Basis}[4][4])}\label{namespacedg_a119}
+
+
+
+
+Definition at line 78 of file Maths.cpp.
+
+References Real.\index{dg@{dg}!Blob@{Blob}}
+\index{Blob@{Blob}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Blob ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a68}
+
+
+
+
+Definition at line 28 of file Implicits.cpp.
+
+References Exp(), Real, and Sqr().\index{dg@{dg}!BoxPulse@{BoxPulse}}
+\index{BoxPulse@{BoxPulse}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Box\-Pulse ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A}, {\bf Real} {\em f\-B})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a158}
+
+
+
+
+Definition at line 269 of file Procedural.h.\index{dg@{dg}!BoxStep@{BoxStep}}
+\index{BoxStep@{BoxStep}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Box\-Step ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A}, {\bf Real} {\em f\-B})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a155}
+
+
+
+
+Definition at line 243 of file Procedural.h.\index{dg@{dg}!BSplineNoise@{BSplineNoise}}
+\index{BSplineNoise@{BSplineNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::BSpline\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a164}
+
+
+
+
+Definition at line 294 of file Procedural.h.\index{dg@{dg}!CardinalNoise@{CardinalNoise}}
+\index{CardinalNoise@{CardinalNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cardinal\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a163}
+
+
+
+
+Definition at line 289 of file Procedural.h.\index{dg@{dg}!CatmullRomNoise@{CatmullRomNoise}}
+\index{CatmullRomNoise@{CatmullRomNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Catmull\-Rom\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a161}
+
+
+
+
+Definition at line 279 of file Procedural.h.\index{dg@{dg}!Ceil@{Ceil}}
+\index{Ceil@{Ceil}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Ceil ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a91}
+
+
+
+
+Definition at line 132 of file Maths.h.\index{dg@{dg}!CellCloudDensityVolume@{CellCloudDensityVolume}}
+\index{CellCloudDensityVolume@{CellCloudDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cell\-Cloud\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a193}
+
+
+
+
+Definition at line 84 of file Volumes.h.\index{dg@{dg}!CellNoise@{CellNoise}}
+\index{CellNoise@{CellNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cell\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a127}
+
+
+
+
+Definition at line 52 of file Procedural.cpp.
+
+References Floor(), Hash(), r(), Real, and UInt.
+
+Referenced by Voronoi\-Noise().\index{dg@{dg}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Clamp ({\bf Real} {\em f\-V}, {\bf Real} {\em f\-Min}, {\bf Real} {\em f\-Max})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a92}
+
+
+
+
+Definition at line 137 of file Maths.h.\index{dg@{dg}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} dg::Clamp (const {\bf Color} \& {\em rk\-V}, {\bf Real} {\em f\-Min}, {\bf Real} {\em f\-Max})}\label{namespacedg_a62}
+
+
+
+
+Definition at line 191 of file Color.cpp.
+
+References dg::Color::b(), dg::Color::g(), dg::Color::r(), and Real.
+
+Referenced by Ridged\-Multi\-Fractal(), Spline(), and Tri\-Connect().\index{dg@{dg}!Cloth@{Cloth}}
+\index{Cloth@{Cloth}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cloth ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a71}
+
+
+
+
+Definition at line 241 of file Implicits.cpp.
+
+References Real, and Threads().\index{dg@{dg}!ClothDensityVolume@{ClothDensityVolume}}
+\index{ClothDensityVolume@{ClothDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cloth\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a200}
+
+
+
+
+Definition at line 126 of file Volumes.h.\index{dg@{dg}!CloudDensityVolume@{CloudDensityVolume}}
+\index{CloudDensityVolume@{CloudDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cloud\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a191}
+
+
+
+
+Definition at line 38 of file Volumes.h.\index{dg@{dg}!ClownDensityVolume@{ClownDensityVolume}}
+\index{ClownDensityVolume@{ClownDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Clown\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a190}
+
+
+
+
+Definition at line 33 of file Volumes.h.\index{dg@{dg}!Cosine@{Cosine}}
+\index{Cosine@{Cosine}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cosine ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a115}
+
+
+
+
+Definition at line 277 of file Maths.h.
+
+Referenced by dg::Matrix::build\-Rotation(), dg::Matrix::from\-Axis\-To\-Angle(), Ripples(), and Threads().\index{dg@{dg}!Cross@{Cross}}
+\index{Cross@{Cross}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} dg::Cross (const {\bf Vector} \& {\em rk\-LHS}, const {\bf Vector} \& {\em rk\-RHS})}\label{namespacedg_a183}
+
+
+
+
+Definition at line 228 of file Vector.cpp.
+
+References dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg@{dg}!Cub@{Cub}}
+\index{Cub@{Cub}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cub ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a98}
+
+
+
+
+Definition at line 167 of file Maths.h.
+
+Referenced by Heart().\index{dg@{dg}!Cubic@{Cubic}}
+\index{Cubic@{Cubic}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cubic ({\bf Real} {\em f\-T})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a152}
+
+
+
+
+Definition at line 223 of file Procedural.h.
+
+Referenced by Gradient\-Noise().\index{dg@{dg}!CubicSpan@{CubicSpan}}
+\index{CubicSpan@{CubicSpan}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cubic\-Span ({\bf Real} {\em f\-X}, const {\bf Real} {\em af\-C}[4], const {\bf Real} {\em af\-M}[4][4])}\label{namespacedg_a118}
+
+
+
+
+Definition at line 61 of file Maths.cpp.
+
+References Real.
+
+Referenced by Spline().\index{dg@{dg}!CumulusDensityVolume@{CumulusDensityVolume}}
+\index{CumulusDensityVolume@{CumulusDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Cumulus\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a192}
+
+
+
+
+Definition at line 43 of file Volumes.h.\index{dg@{dg}!DefaultFBM@{DefaultFBM}}
+\index{DefaultFBM@{DefaultFBM}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Default\-FBM ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a140}
+
+
+
+
+Definition at line 327 of file Procedural.h.\index{dg@{dg}!DefaultMonoFractal@{DefaultMonoFractal}}
+\index{DefaultMonoFractal@{DefaultMonoFractal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Default\-Mono\-Fractal ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a141}
+
+
+
+
+Definition at line 333 of file Procedural.h.\index{dg@{dg}!DefaultMultiFractal@{DefaultMultiFractal}}
+\index{DefaultMultiFractal@{DefaultMultiFractal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Default\-Multi\-Fractal ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a142}
+
+
+
+
+Definition at line 339 of file Procedural.h.\index{dg@{dg}!DefaultRidgedMultiFractal@{DefaultRidgedMultiFractal}}
+\index{DefaultRidgedMultiFractal@{DefaultRidgedMultiFractal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Default\-Ridged\-Multi\-Fractal ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a143}
+
+
+
+
+Definition at line 345 of file Procedural.h.\index{dg@{dg}!DefaultTurbulence@{DefaultTurbulence}}
+\index{DefaultTurbulence@{DefaultTurbulence}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Default\-Turbulence ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a139}
+
+
+
+
+Definition at line 321 of file Procedural.h.
+
+Referenced by Turbulent\-Space().\index{dg@{dg}!Degrees@{Degrees}}
+\index{Degrees@{Degrees}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Degrees ({\bf Real} {\em f\-Rad})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a89}
+
+
+
+
+Definition at line 28 of file Maths.h.
+
+References Real.
+
+Referenced by dg::Camera::get\-Horizontal\-Fov(), and dg::Camera::get\-Vertical\-Fov().\index{dg@{dg}!Diffuse@{Diffuse}}
+\index{Diffuse@{Diffuse}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Diffuse (const {\bf Vector} \& {\em rk\-Surface\-Normal}, const {\bf Vector} \& {\em rk\-Light\-Dir}, const {\bf Color} \& {\em rk\-Light\-Color})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a173}
+
+
+
+
+Definition at line 32 of file Shading.h.
+
+References Dot(), and Max().
+
+Referenced by Lambertian(), and Phong().\index{dg@{dg}!Dot@{Dot}}
+\index{Dot@{Dot}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Dot (const {\bf Vector} \& {\em rk\-A}, const {\bf Vector} \& {\em rk\-B})}\label{namespacedg_a182}
+
+
+
+
+Definition at line 219 of file Vector.cpp.
+
+References Real, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().
+
+Referenced by Diffuse(), Ray\-Sphere(), and Specular().\index{dg@{dg}!EggFalloff@{EggFalloff}}
+\index{EggFalloff@{EggFalloff}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Egg\-Falloff ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a83}
+
+
+
+
+Definition at line 177 of file Implicits.cpp.
+
+References Real.\index{dg@{dg}!EggFalloffDensityVolume@{EggFalloffDensityVolume}}
+\index{EggFalloffDensityVolume@{EggFalloffDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Egg\-Falloff\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a197}
+
+
+
+
+Definition at line 111 of file Volumes.h.\index{dg@{dg}!EggShell@{EggShell}}
+\index{EggShell@{EggShell}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Egg\-Shell ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a82}
+
+
+
+
+Definition at line 155 of file Implicits.cpp.
+
+References Real.\index{dg@{dg}!EggShellDensityVolume@{EggShellDensityVolume}}
+\index{EggShellDensityVolume@{EggShellDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Egg\-Shell\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a196}
+
+
+
+
+Definition at line 106 of file Volumes.h.\index{dg@{dg}!Erf@{Erf}}
+\index{Erf@{Erf}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Erf ({\bf Real} {\em f\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a110}
+
+
+
+
+Definition at line 232 of file Maths.h.\index{dg@{dg}!Erfc@{Erfc}}
+\index{Erfc@{Erfc}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Erfc ({\bf Real} {\em f\-X})}\label{namespacedg_a86}
+
+
+
+
+Definition at line 33 of file Maths.cpp.
+
+References Abs(), Exp(), and Real.\index{dg@{dg}!Error@{Error}}
+\index{Error@{Error}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Error (const char $\ast$ {\em ac\-Message}, ...)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a124}
+
+
+
+
+Definition at line 96 of file Messages.cpp.
+
+References ERROR\_\-CONTINUE.\index{dg@{dg}!Exp@{Exp}}
+\index{Exp@{Exp}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Exp ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a93}
+
+
+
+
+Definition at line 142 of file Maths.h.
+
+Referenced by Blob(), and Erfc().\index{dg@{dg}!FaceForward@{FaceForward}}
+\index{FaceForward@{FaceForward}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} dg::Face\-Forward (const {\bf Vector} \& {\em rk\-N}, const {\bf Vector} \& {\em rk\-I}, const {\bf Vector} \& {\em rk\-Ref})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a180}
+
+
+
+
+Definition at line 115 of file Shading.h.\index{dg@{dg}!FaceForward@{FaceForward}}
+\index{FaceForward@{FaceForward}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} dg::Face\-Forward (const {\bf Vector} \& {\em rk\-N}, const {\bf Vector} \& {\em rk\-I})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a179}
+
+
+
+
+Definition at line 107 of file Shading.h.\index{dg@{dg}!fBm@{fBm}}
+\index{fBm@{fBm}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::f\-Bm ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Increment} = 0.5f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Octaves} = 4.0f)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a144}
+
+
+
+
+Definition at line 351 of file Procedural.h.\index{dg@{dg}!FilteredAbs@{FilteredAbs}}
+\index{FilteredAbs@{FilteredAbs}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Filtered\-Abs ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-DX})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a160}
+
+
+
+
+Definition at line 299 of file Procedural.h.
+
+Referenced by Filtered\-Turbulence().\index{dg@{dg}!FilteredCloudDensityVolume@{FilteredCloudDensityVolume}}
+\index{FilteredCloudDensityVolume@{FilteredCloudDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Filtered\-Cloud\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Step\-Size} = 0.1)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a202}
+
+
+
+
+Definition at line 66 of file Volumes.h.\index{dg@{dg}!FilteredClownColorVolume@{FilteredClownColorVolume}}
+\index{FilteredClownColorVolume@{FilteredClownColorVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} dg::Filtered\-Clown\-Color\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Step\-Size})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a189}
+
+
+
+
+Definition at line 48 of file Volumes.h.
+
+Referenced by dg::Visualizer::setup\-Hypertexture().\index{dg@{dg}!FilteredClownDensityVolume@{FilteredClownDensityVolume}}
+\index{FilteredClownDensityVolume@{FilteredClownDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Filtered\-Clown\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Step\-Size} = 0.1)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a201}
+
+
+
+
+Definition at line 57 of file Volumes.h.\index{dg@{dg}!FilteredCumulusDensityVolume@{FilteredCumulusDensityVolume}}
+\index{FilteredCumulusDensityVolume@{FilteredCumulusDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Filtered\-Cumulus\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Step\-Size} = 0.1)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a203}
+
+
+
+
+Definition at line 75 of file Volumes.h.\index{dg@{dg}!FilteredFBM@{FilteredFBM}}
+\index{FilteredFBM@{FilteredFBM}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Filtered\-FBM ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Filter\-Width}, {\bf Real} {\em f\-Increment} = 0.5f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Octaves} = 4.0f)}\label{namespacedg_a137}
+
+
+
+
+Definition at line 185 of file Procedural.cpp.
+
+References Filtered\-Gradient\-Noise(), Real, and UInt.\index{dg@{dg}!FilteredGradientNoise@{FilteredGradientNoise}}
+\index{FilteredGradientNoise@{FilteredGradientNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Filtered\-Gradient\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Filter\-Width})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a165}
+
+
+
+
+Definition at line 314 of file Procedural.h.
+
+Referenced by Filtered\-FBM(), and Filtered\-Turbulence().\index{dg@{dg}!FilteredTurbulence@{FilteredTurbulence}}
+\index{FilteredTurbulence@{FilteredTurbulence}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Filtered\-Turbulence ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Filter\-Width}, {\bf Real} {\em f\-Increment} = 0.5f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Octaves} = 4.0f)}\label{namespacedg_a136}
+
+
+
+
+Definition at line 291 of file Procedural.cpp.
+
+References Filtered\-Abs(), Filtered\-Gradient\-Noise(), Real, and UInt.\index{dg@{dg}!Floor@{Floor}}
+\index{Floor@{Floor}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Floor ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a94}
+
+
+
+
+Definition at line 147 of file Maths.h.
+
+Referenced by Cell\-Noise(), Gradient\-Noise(), and Voronoi\-Noise().\index{dg@{dg}!Frac@{Frac}}
+\index{Frac@{Frac}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Frac (const {\bf Real} {\em f\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a108}
+
+
+
+
+Definition at line 227 of file Maths.h.\index{dg@{dg}!FractionalBrownianMotion@{FractionalBrownianMotion}}
+\index{FractionalBrownianMotion@{FractionalBrownianMotion}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Fractional\-Brownian\-Motion ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Increment} = 0.5f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Octaves} = 4.0f)}\label{namespacedg_a130}
+
+
+
+
+Definition at line 141 of file Procedural.cpp.
+
+References Gradient\-Noise(), Real, and UInt.\index{dg@{dg}!Gain@{Gain}}
+\index{Gain@{Gain}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Gain ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a151}
+
+
+
+
+Definition at line 202 of file Procedural.h.
+
+Referenced by Threads().\index{dg@{dg}!Gamma@{Gamma}}
+\index{Gamma@{Gamma}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Gamma ({\bf Real} {\em f\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a103}
+
+
+
+
+Definition at line 197 of file Maths.h.\index{dg@{dg}!Gaussian@{Gaussian}}
+\index{Gaussian@{Gaussian}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Gaussian ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Std\-Dev})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a104}
+
+
+
+
+Definition at line 202 of file Maths.h.\index{dg@{dg}!Gradient@{Gradient}}
+\index{Gradient@{Gradient}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Gradient ({\bf Int} {\em i\-X}, {\bf Int} {\em i\-Y}, {\bf Int} {\em i\-Z}, {\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a149}
+
+
+
+
+Definition at line 173 of file Procedural.h.
+
+Referenced by Gradient\-Noise().\index{dg@{dg}!GradientNoise@{GradientNoise}}
+\index{GradientNoise@{GradientNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Gradient\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a128}
+
+
+
+
+Definition at line 61 of file Procedural.cpp.
+
+References Cubic(), Floor(), Gradient(), Int, Lerp(), and Real.
+
+Referenced by Fractional\-Brownian\-Motion(), Hybrid\-Multi\-Fractal(), Mono\-Fractal(), Multi\-Fractal(), Ridged\-Multi\-Fractal(), and Turbulence().\index{dg@{dg}!Hash@{Hash}}
+\index{Hash@{Hash}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Int} dg::Hash ({\bf Int} {\em i\-X}, {\bf Int} {\em i\-Y}, {\bf Int} {\em i\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a147}
+
+
+
+
+Definition at line 163 of file Procedural.h.
+
+Referenced by Cell\-Noise().\index{dg@{dg}!Heart@{Heart}}
+\index{Heart@{Heart}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Heart ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a74}
+
+
+
+
+Definition at line 44 of file Implicits.cpp.
+
+References Cub(), Real, and Sqr().\index{dg@{dg}!HermiteNoise@{HermiteNoise}}
+\index{HermiteNoise@{HermiteNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Hermite\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a162}
+
+
+
+
+Definition at line 284 of file Procedural.h.\index{dg@{dg}!HybridMultiFractal@{HybridMultiFractal}}
+\index{HybridMultiFractal@{HybridMultiFractal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Hybrid\-Multi\-Fractal ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Increment} = 0.25f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Offset} = 0.7f, {\bf Real} {\em f\-Gain} = 1.0f, {\bf Real} {\em f\-Octaves} = 4.0f)}\label{namespacedg_a134}
+
+
+
+
+Definition at line 448 of file Procedural.cpp.
+
+References Gradient\-Noise(), Real, and UInt.\index{dg@{dg}!Info@{Info}}
+\index{Info@{Info}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Info (const char $\ast$ {\em ac\-Message}, ...)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a121}
+
+
+
+
+Definition at line 72 of file Messages.cpp.
+
+References ERROR\_\-CONTINUE.\index{dg@{dg}!InvSqrt@{InvSqrt}}
+\index{InvSqrt@{InvSqrt}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Inv\-Sqrt ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a95}
+
+
+
+
+Definition at line 152 of file Maths.h.\index{dg@{dg}!IsInf@{IsInf}}
+\index{IsInf@{IsInf}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Is\-Inf ({\bf Real} {\em f\-V})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a64}
+
+
+
+
+Definition at line 77 of file Data\-Types.h.
+
+References Real.
+
+Referenced by Validate().\index{dg@{dg}!IsNaN@{IsNaN}}
+\index{IsNaN@{IsNaN}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Is\-Na\-N ({\bf Real} {\em f\-V})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a63}
+
+
+
+
+Definition at line 72 of file Data\-Types.h.
+
+References Real.
+
+Referenced by Validate().\index{dg@{dg}!KleinBottle@{KleinBottle}}
+\index{KleinBottle@{KleinBottle}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Klein\-Bottle ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a75}
+
+
+
+
+Definition at line 51 of file Implicits.cpp.
+
+References Real, and Sqr().\index{dg@{dg}!Lambertian@{Lambertian}}
+\index{Lambertian@{Lambertian}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Lambertian (const {\bf Vector} \& {\em rk\-Surface\-Normal}, const {\bf Vector} \& {\em rk\-Light\-Dir}, const {\bf Color} \& {\em rk\-Light\-Color}, const {\bf Color} \& {\em rk\-Base\-Color}, {\bf Real} {\em f\-Ambient} = 1.0, {\bf Real} {\em f\-Diffuse} = 0.8)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a175}
+
+
+
+
+Definition at line 54 of file Shading.h.
+
+References Ambient(), Diffuse(), and Real.\index{dg@{dg}!Lattice@{Lattice}}
+\index{Lattice@{Lattice}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Lattice ({\bf Int} {\em i\-X}, {\bf Int} {\em i\-Y}, {\bf Int} {\em i\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a148}
+
+
+
+
+Definition at line 168 of file Procedural.h.
+
+Referenced by Value\-Noise().\index{dg@{dg}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Lerp ({\bf Real} {\em f\-T}, {\bf Real} {\em f\-A}, {\bf Real} {\em f\-B})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a154}
+
+
+
+
+Definition at line 233 of file Procedural.h.
+
+Referenced by Gradient\-Noise().\index{dg@{dg}!Log@{Log}}
+\index{Log@{Log}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Log ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a96}
+
+
+
+
+Definition at line 157 of file Maths.h.
+
+Referenced by Log\-Gamma().\index{dg@{dg}!LogGamma@{LogGamma}}
+\index{LogGamma@{LogGamma}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Log\-Gamma ({\bf Real} {\em f\-X})}\label{namespacedg_a87}
+
+
+
+
+Definition at line 8 of file Maths.cpp.
+
+References Log(), and Real.\index{dg@{dg}!MakeBicubicMatrix@{MakeBicubicMatrix}}
+\index{MakeBicubicMatrix@{MakeBicubicMatrix}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Make\-Bicubic\-Matrix ({\bf Real} {\em af\-G}[4][4], {\bf Real} {\em af\-M}[4][4], {\bf Real} {\em af\-C}[4][4])}\label{namespacedg_a120}
+
+
+
+
+Definition at line 89 of file Maths.cpp.
+
+References Real, and UInt.\index{dg@{dg}!Max@{Max}}
+\index{Max@{Max}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Max (const {\bf Vector} \& {\em rk\-V})}\label{namespacedg_a188}
+
+
+\index{dg@{dg}!Max@{Max}}
+\index{Max@{Max}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} dg::Max (const {\bf Vector} \& {\em rk\-A}, const {\bf Vector} \& {\em rk\-B})}\label{namespacedg_a185}
+
+
+
+
+Definition at line 246 of file Vector.cpp.
+
+References Real, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg@{dg}!Max@{Max}}
+\index{Max@{Max}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Max ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a106}
+
+
+
+
+Definition at line 222 of file Maths.h.
+
+Referenced by Diffuse(), Specular(), and Turbulent\-Space().\index{dg@{dg}!Min@{Min}}
+\index{Min@{Min}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Min (const {\bf Vector} \& {\em rk\-V})}\label{namespacedg_a187}
+
+
+\index{dg@{dg}!Min@{Min}}
+\index{Min@{Min}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} dg::Min (const {\bf Vector} \& {\em rk\-A}, const {\bf Vector} \& {\em rk\-B})}\label{namespacedg_a184}
+
+
+
+
+Definition at line 237 of file Vector.cpp.
+
+References Real, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg@{dg}!Min@{Min}}
+\index{Min@{Min}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Min ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a105}
+
+
+
+
+Definition at line 217 of file Maths.h.
+
+Referenced by Turbulent\-Space().\index{dg@{dg}!Mod@{Mod}}
+\index{Mod@{Mod}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Mod ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a107}
+
+
+
+
+Definition at line 207 of file Maths.h.\index{dg@{dg}!MonoFractal@{MonoFractal}}
+\index{MonoFractal@{MonoFractal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Mono\-Fractal ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Increment} = 0.5f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Octaves} = 4.0f)}\label{namespacedg_a132}
+
+
+
+
+Definition at line 350 of file Procedural.cpp.
+
+References Gradient\-Noise(), Real, and UInt.\index{dg@{dg}!MultiFractal@{MultiFractal}}
+\index{MultiFractal@{MultiFractal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Multi\-Fractal ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Increment} = 0.5f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Octaves} = 4.0f)}\label{namespacedg_a133}
+
+
+
+
+Definition at line 400 of file Procedural.cpp.
+
+References Gradient\-Noise(), Real, and UInt.\index{dg@{dg}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} dg::Normalize (const {\bf Vector} \& {\em rk\-V})}\label{namespacedg_a186}
+
+
+
+
+Definition at line 255 of file Vector.cpp.
+
+References dg::Vector::length\-Squared(), Real, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().
+
+Referenced by Phong(), dg::Ray\-Tracer::render(), dg::Hypertexture::render(), and Specular().\index{dg@{dg}!Notice@{Notice}}
+\index{Notice@{Notice}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Notice (const char $\ast$ {\em ac\-Message}, ...)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a122}
+
+
+
+
+Definition at line 80 of file Messages.cpp.
+
+References ERROR\_\-CONTINUE.\index{dg@{dg}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} dg::operator $\ast$ ({\bf Real} {\em f\-Scalar}, const {\bf Vector} \& {\em rk\-V})}\label{namespacedg_a181}
+
+
+
+
+Definition at line 271 of file Vector.cpp.
+
+References Real, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg@{dg}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} dg::operator $\ast$ ({\bf Real} {\em f\-Scalar}, const {\bf Color} \& {\em rk\-V})}\label{namespacedg_a61}
+
+
+
+
+Definition at line 184 of file Color.cpp.
+
+References dg::Color::b(), dg::Color::g(), dg::Color::r(), and Real.\index{dg@{dg}!p@{p}}
+\index{p@{p}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Int} dg::p ({\bf Int} {\em i\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a146}
+
+
+
+
+Definition at line 158 of file Procedural.h.\index{dg@{dg}!Phong@{Phong}}
+\index{Phong@{Phong}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Phong (const {\bf Vector} \& {\em rk\-Surface\-Normal}, const {\bf Vector} \& {\em rk\-View\-Dir}, const {\bf Vector} \& {\em rk\-Light\-Dir}, const {\bf Color} \& {\em rk\-Light\-Color}, const {\bf Color} \& {\em rk\-Base\-Color}, {\bf Real} {\em f\-Ambient} = 1.0, {\bf Real} {\em f\-Diffuse} = 0.8, {\bf Real} {\em f\-Specular} = 0.5, {\bf Real} {\em f\-Roughness} = 0.1)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a176}
+
+
+
+
+Definition at line 66 of file Shading.h.
+
+References Ambient(), Diffuse(), Normalize(), Real, and Specular().\index{dg@{dg}!Pow@{Pow}}
+\index{Pow@{Pow}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Pow ({\bf Real} {\em f\-Base}, {\bf Real} {\em f\-Exponent})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a97}
+
+
+
+
+Definition at line 162 of file Maths.h.
+
+Referenced by Specular(), and Super\-Ellipsoid().\index{dg@{dg}!Pulse@{Pulse}}
+\index{Pulse@{Pulse}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Pulse ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A}, {\bf Real} {\em f\-B})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a157}
+
+
+
+
+Definition at line 264 of file Procedural.h.\index{dg@{dg}!QuadConnect@{QuadConnect}}
+\index{QuadConnect@{QuadConnect}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Quad\-Connect ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a77}
+
+
+
+
+Definition at line 71 of file Implicits.cpp.
+
+References Real.\index{dg@{dg}!Quadric@{Quadric}}
+\index{Quadric@{Quadric}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Quadric ({\bf Real} {\em f\-A}, {\bf Real} {\em f\-B}, {\bf Real} {\em f\-C})}\label{namespacedg_a72}
+
+
+
+
+Definition at line 588 of file Procedural.cpp.
+
+References Real.\index{dg@{dg}!Quintic@{Quintic}}
+\index{Quintic@{Quintic}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Quintic ({\bf Real} {\em f\-T})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a153}
+
+
+
+
+Definition at line 228 of file Procedural.h.\index{dg@{dg}!r@{r}}
+\index{r@{r}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::r ({\bf Int} {\em i\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a145}
+
+
+
+
+Definition at line 153 of file Procedural.h.
+
+Referenced by Cell\-Noise().\index{dg@{dg}!Radians@{Radians}}
+\index{Radians@{Radians}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Radians ({\bf Real} {\em f\-Deg})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a88}
+
+
+
+
+Definition at line 27 of file Maths.h.
+
+References Real.
+
+Referenced by dg::Matrix::build\-Rotation(), dg::Matrix::from\-Axis\-To\-Angle(), dg::Camera::set\-Horizontal\-Fov(), and dg::Camera::set\-Vertical\-Fov().\index{dg@{dg}!RandomInt@{RandomInt}}
+\index{RandomInt@{RandomInt}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf UInt} dg::Random\-Int (void)}\label{namespacedg_a167}
+
+
+
+
+Definition at line 64 of file Random.cpp.
+
+References LOWER\_\-MASK, M, MATRIX\_\-A, N, Seed\-Random(), UInt, and UPPER\_\-MASK.
+
+Referenced by dg::Visualizer::on\-Key\-Down(), Random\-Unit\-Open\-Real(), and Random\-Unit\-Real().\index{dg@{dg}!RandomIntervalReal@{RandomIntervalReal}}
+\index{RandomIntervalReal@{RandomIntervalReal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Random\-Interval\-Real ({\bf Real} {\em f\-Min}, {\bf Real} {\em f\-Max})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a171}
+
+
+
+
+Definition at line 82 of file Random.h.
+
+References Random\-Unit\-Real(), and Real.\index{dg@{dg}!RandomSymmetricReal@{RandomSymmetricReal}}
+\index{RandomSymmetricReal@{RandomSymmetricReal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Random\-Symmetric\-Real (void)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a170}
+
+
+
+
+Definition at line 76 of file Random.h.
+
+References Random\-Unit\-Real(), and Real.\index{dg@{dg}!RandomUnitOpenReal@{RandomUnitOpenReal}}
+\index{RandomUnitOpenReal@{RandomUnitOpenReal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float dg::Random\-Unit\-Open\-Real (void)}\label{namespacedg_a169}
+
+
+
+
+Definition at line 113 of file Random.cpp.
+
+References Random\-Int().\index{dg@{dg}!RandomUnitReal@{RandomUnitReal}}
+\index{RandomUnitReal@{RandomUnitReal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float dg::Random\-Unit\-Real (void)}\label{namespacedg_a168}
+
+
+
+
+Definition at line 106 of file Random.cpp.
+
+References Random\-Int().
+
+Referenced by Random\-Interval\-Real(), and Random\-Symmetric\-Real().\index{dg@{dg}!RaySphere@{RaySphere}}
+\index{RaySphere@{RaySphere}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Ray\-Sphere (const {\bf Vector} \& {\em rk\-Pos}, const {\bf Vector} \& {\em rk\-Ray\-Dir}, {\bf Real} {\em f\-Radius}, {\bf Real} {\em f\-Epsilon}, {\bf Real} \& {\em rf\-T0}, {\bf Real} \& {\em rf\-T1})}\label{namespacedg_a178}
+
+
+
+
+Definition at line 7 of file Shading.cpp.
+
+References Dot(), and Real.\index{dg@{dg}!RaySphere@{RaySphere}}
+\index{RaySphere@{RaySphere}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Ray\-Sphere ({\bf Real} {\em f\-EX}, {\bf Real} {\em f\-EY}, {\bf Real} {\em f\-EZ}, {\bf Real} {\em f\-IX}, {\bf Real} {\em f\-IY}, {\bf Real} {\em f\-IZ}, {\bf Real} {\em f\-Radius}, {\bf Real} {\em f\-Epsilon}, {\bf Real} \& {\em rf\-T0}, {\bf Real} \& {\em rf\-T1})}\label{namespacedg_a177}
+
+
+
+
+Definition at line 51 of file Shading.cpp.
+
+References Real.\index{dg@{dg}!RidgedMultiFractal@{RidgedMultiFractal}}
+\index{RidgedMultiFractal@{RidgedMultiFractal}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Ridged\-Multi\-Fractal ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Increment} = 0.9f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Threshold} = 0.5f, {\bf Real} {\em f\-Offset} = 1.0f, {\bf Real} {\em f\-Octaves} = 4.0f)}\label{namespacedg_a135}
+
+
+
+
+Definition at line 518 of file Procedural.cpp.
+
+References Abs(), Clamp(), Gradient\-Noise(), Real, and UInt.\index{dg@{dg}!Ripples@{Ripples}}
+\index{Ripples@{Ripples}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Ripples ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a78}
+
+
+
+
+Definition at line 94 of file Implicits.cpp.
+
+References Cosine(), Real, Sine(), and Sqrt().\index{dg@{dg}!SeedRandom@{SeedRandom}}
+\index{SeedRandom@{SeedRandom}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Seed\-Random ({\bf ULong} {\em seed})}\label{namespacedg_a166}
+
+
+
+
+Definition at line 46 of file Random.cpp.
+
+References N, and ULong.
+
+Referenced by Random\-Int().\index{dg@{dg}!Severe@{Severe}}
+\index{Severe@{Severe}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Severe (const char $\ast$ {\em ac\-Message}, ...)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a125}
+
+
+
+
+Definition at line 104 of file Messages.cpp.
+
+References ERROR\_\-ABORT.\index{dg@{dg}!Sign@{Sign}}
+\index{Sign@{Sign}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Sign ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a102}
+
+
+
+
+Definition at line 187 of file Maths.h.\index{dg@{dg}!Sine@{Sine}}
+\index{Sine@{Sine}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Sine ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a116}
+
+
+
+
+Definition at line 282 of file Maths.h.
+
+Referenced by dg::Matrix::build\-Rotation(), dg::Matrix::from\-Axis\-To\-Angle(), Ripples(), and dg::Visualizer::update().\index{dg@{dg}!SmoothPulse@{SmoothPulse}}
+\index{SmoothPulse@{SmoothPulse}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Smooth\-Pulse ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A}, {\bf Real} {\em f\-B})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a159}
+
+
+
+
+Definition at line 274 of file Procedural.h.\index{dg@{dg}!SmoothStep@{SmoothStep}}
+\index{SmoothStep@{SmoothStep}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Smooth\-Step ({\bf Real} {\em f\-A}, {\bf Real} {\em f\-B}, {\bf Real} {\em f\-X})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a156}
+
+
+
+
+Definition at line 248 of file Procedural.h.\index{dg@{dg}!Specular@{Specular}}
+\index{Specular@{Specular}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Specular (const {\bf Vector} \& {\em rk\-Surface\-Normal}, const {\bf Vector} \& {\em rk\-View\-Dir}, const {\bf Vector} \& {\em rk\-Light\-Dir}, const {\bf Color} \& {\em rk\-Light\-Color}, {\bf Real} {\em f\-Roughness})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a174}
+
+
+
+
+Definition at line 41 of file Shading.h.
+
+References Dot(), Max(), Normalize(), Pow(), and Real.
+
+Referenced by Phong().\index{dg@{dg}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Sphere ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a67}
+
+
+
+
+Definition at line 21 of file Implicits.cpp.
+
+References Real, and Validate().
+
+Referenced by Tri\-Blob(), and Tri\-Connect().\index{dg@{dg}!SphericalFalloff@{SphericalFalloff}}
+\index{SphericalFalloff@{SphericalFalloff}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Spherical\-Falloff ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a81}
+
+
+
+
+Definition at line 136 of file Implicits.cpp.
+
+References Real.
+
+Referenced by Turbulent\-Sphere().\index{dg@{dg}!SphericalFalloffDensityVolume@{SphericalFalloffDensityVolume}}
+\index{SphericalFalloffDensityVolume@{SphericalFalloffDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Spherical\-Falloff\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a195}
+
+
+
+
+Definition at line 101 of file Volumes.h.\index{dg@{dg}!SphericalShell@{SphericalShell}}
+\index{SphericalShell@{SphericalShell}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Spherical\-Shell ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a80}
+
+
+
+
+Definition at line 117 of file Implicits.cpp.
+
+References Real.\index{dg@{dg}!SphericalShellDensityVolume@{SphericalShellDensityVolume}}
+\index{SphericalShellDensityVolume@{SphericalShellDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Spherical\-Shell\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a194}
+
+
+
+
+Definition at line 96 of file Volumes.h.\index{dg@{dg}!Spline@{Spline}}
+\index{Spline@{Spline}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Spline ({\bf Real} {\em f\-X}, {\bf UInt} {\em ui\-Knots}, {\bf Real} $\ast$ {\em apk\-Knots}, const {\bf Real} {\em af\-B}[4][4] = Catmull\-Rom\-Basis)}\label{namespacedg_a126}
+
+
+
+
+Definition at line 30 of file Procedural.cpp.
+
+References Clamp(), Cubic\-Span(), Int, Real, and UInt.
+
+Referenced by Value\-Noise().\index{dg@{dg}!Sqr@{Sqr}}
+\index{Sqr@{Sqr}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Sqr ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a100}
+
+
+
+
+Definition at line 177 of file Maths.h.
+
+Referenced by Blob(), dg::Matrix::from\-Axis\-To\-Angle(), Heart(), and Klein\-Bottle().\index{dg@{dg}!Sqrt@{Sqrt}}
+\index{Sqrt@{Sqrt}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Sqrt ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a101}
+
+
+
+
+Definition at line 182 of file Maths.h.
+
+Referenced by Ripples().\index{dg@{dg}!Square@{Square}}
+\index{Square@{Square}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Square ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a99}
+
+
+
+
+Definition at line 172 of file Maths.h.\index{dg@{dg}!Step@{Step}}
+\index{Step@{Step}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Step ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-A})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a109}
+
+
+
+
+Definition at line 238 of file Procedural.h.\index{dg@{dg}!SuperEllipsoid@{SuperEllipsoid}}
+\index{SuperEllipsoid@{SuperEllipsoid}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Super\-Ellipsoid ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-N1}, {\bf Real} {\em f\-N2})}\label{namespacedg_a73}
+
+
+
+
+Definition at line 246 of file Implicits.cpp.
+
+References Pow(), and Real.\index{dg@{dg}!Tangent@{Tangent}}
+\index{Tangent@{Tangent}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tangent ({\bf Real} {\em f\-Value})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a117}
+
+
+
+
+Definition at line 287 of file Maths.h.
+
+Referenced by dg::Camera::set\-Horizontal\-Fov(), and dg::Camera::set\-Vertical\-Fov().\index{dg@{dg}!Threads@{Threads}}
+\index{Threads@{Threads}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Threads ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a70}
+
+
+
+
+Definition at line 219 of file Implicits.cpp.
+
+References Abs(), Bias(), Cosine(), Gain(), and Real.
+
+Referenced by Cloth().\index{dg@{dg}!Torus@{Torus}}
+\index{Torus@{Torus}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Torus ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a66}
+
+
+
+
+Definition at line 11 of file Implicits.cpp.
+
+References Real, and Validate().\index{dg@{dg}!TriBlob@{TriBlob}}
+\index{TriBlob@{TriBlob}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tri\-Blob ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a69}
+
+
+
+
+Definition at line 36 of file Implicits.cpp.
+
+References Real, Sphere(), and Validate().\index{dg@{dg}!TriConnect@{TriConnect}}
+\index{TriConnect@{TriConnect}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Tri\-Connect ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a76}
+
+
+
+
+Definition at line 61 of file Implicits.cpp.
+
+References Clamp(), Real, and Sphere().\index{dg@{dg}!Turbulence@{Turbulence}}
+\index{Turbulence@{Turbulence}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Turbulence ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Increment} = 0.5f, {\bf Real} {\em f\-Lacunarity} = 2.0345f, {\bf Real} {\em f\-Octaves} = 4.0f)}\label{namespacedg_a131}
+
+
+
+
+Definition at line 234 of file Procedural.cpp.
+
+References Abs(), Gradient\-Noise(), Real, and UInt.\index{dg@{dg}!TurbulentSpace@{TurbulentSpace}}
+\index{TurbulentSpace@{TurbulentSpace}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Turbulent\-Space ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a84}
+
+
+
+
+Definition at line 200 of file Implicits.cpp.
+
+References Default\-Turbulence(), Max(), Min(), and Real.
+
+Referenced by Turbulent\-Sphere().\index{dg@{dg}!TurbulentSpaceDensityVolume@{TurbulentSpaceDensityVolume}}
+\index{TurbulentSpaceDensityVolume@{TurbulentSpaceDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Turbulent\-Space\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a198}
+
+
+
+
+Definition at line 116 of file Volumes.h.\index{dg@{dg}!TurbulentSphere@{TurbulentSphere}}
+\index{TurbulentSphere@{TurbulentSphere}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Turbulent\-Sphere ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a85}
+
+
+
+
+Definition at line 209 of file Implicits.cpp.
+
+References Real, Spherical\-Falloff(), and Turbulent\-Space().\index{dg@{dg}!TurbulentSphereDensityVolume@{TurbulentSphereDensityVolume}}
+\index{TurbulentSphereDensityVolume@{TurbulentSphereDensityVolume}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Turbulent\-Sphere\-Density\-Volume ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a199}
+
+
+
+
+Definition at line 121 of file Volumes.h.\index{dg@{dg}!Validate@{Validate}}
+\index{Validate@{Validate}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} Validate ({\bf Real} {\em f\-V})\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a65}
+
+
+
+
+Definition at line 82 of file Data\-Types.h.
+
+References Is\-Inf(), Is\-Na\-N(), and Real.
+
+Referenced by Sphere(), Torus(), and Tri\-Blob().\index{dg@{dg}!ValueNoise@{ValueNoise}}
+\index{ValueNoise@{ValueNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Value\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, const {\bf Real} {\em af\-B}[4][4] = Catmull\-Rom\-Basis)}\label{namespacedg_a129}
+
+
+
+
+Definition at line 110 of file Procedural.cpp.
+
+References Int, Lattice(), Real, and Spline().\index{dg@{dg}!VoronoiBumps@{VoronoiBumps}}
+\index{VoronoiBumps@{VoronoiBumps}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Voronoi\-Bumps ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})}\label{namespacedg_a79}
+
+
+
+
+Definition at line 107 of file Implicits.cpp.
+
+References Real, and Voronoi\-Noise().\index{dg@{dg}!VoronoiNoise@{VoronoiNoise}}
+\index{VoronoiNoise@{VoronoiNoise}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} dg::Voronoi\-Noise ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z}, {\bf Real} {\em f\-Jitter}, {\bf Real} \& {\em rf\-OX}, {\bf Real} \& {\em rf\-OY}, {\bf Real} \& {\em rf\-OZ})}\label{namespacedg_a138}
+
+
+
+
+Definition at line 614 of file Procedural.cpp.
+
+References Cell\-Noise(), Floor(), and Real.
+
+Referenced by Voronoi\-Bumps().\index{dg@{dg}!Warning@{Warning}}
+\index{Warning@{Warning}!dg@{dg}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Warning (const char $\ast$ {\em ac\-Message}, ...)\hspace{0.3cm}{\tt  [inline]}}\label{namespacedg_a123}
+
+
+
+
+Definition at line 88 of file Messages.cpp.
+
+References ERROR\_\-CONTINUE.

@@ -1,0 +1,305 @@
+\section{Spark::Sp\-Glsl\-Fragment\-Program Class Reference}
+\label{classSpark_1_1SpGlslFragmentProgram}\index{Spark::SpGlslFragmentProgram@{Spark::SpGlslFragmentProgram}}
+{\tt \#include $<$Sp\-Glsl\-Fragment\-Program.h$>$}
+
+Inheritance diagram for Spark::Sp\-Glsl\-Fragment\-Program:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=98pt]{classSpark_1_1SpGlslFragmentProgram__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for Spark::Sp\-Glsl\-Fragment\-Program:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=98pt]{classSpark_1_1SpGlslFragmentProgram__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+Interface for a GLSL Fragment Program. 
+
+Definition at line 32 of file Sp\-Glsl\-Fragment\-Program.h.\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Glsl\-Fragment\-Program} (const char $\ast$ac\-Source)
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+virtual bool {\bf set\-Parameter1i} (const char $\ast$ac\-Name, int i\-X)
+\begin{CompactList}\small\item\em Parameter Methods:. \item\end{CompactList}\item 
+virtual bool {\bf set\-Parameter2i} (const char $\ast$ac\-Name, int i\-X, int i\-Y)
+\item 
+virtual bool {\bf set\-Parameter3i} (const char $\ast$ac\-Name, int i\-X, int i\-Y, int i\-Z)
+\item 
+virtual bool {\bf set\-Parameter4i} (const char $\ast$ac\-Name, int i\-X, int i\-Y, int i\-Z, int i\-W)
+\item 
+virtual bool {\bf set\-Parameter1iv} (const char $\ast$ac\-Name, const int $\ast$ai\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Parameter2iv} (const char $\ast$ac\-Name, const int $\ast$ai\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Parameter3iv} (const char $\ast$ac\-Name, const int $\ast$ai\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Parameter4iv} (const char $\ast$ac\-Name, const int $\ast$ai\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Parameter1f} (const char $\ast$ac\-Name, float f\-X)
+\item 
+virtual bool {\bf set\-Parameter2f} (const char $\ast$ac\-Name, float f\-X, float f\-Y)
+\item 
+virtual bool {\bf set\-Parameter3f} (const char $\ast$ac\-Name, float f\-X, float f\-Y, float f\-Z)
+\item 
+virtual bool {\bf set\-Parameter4f} (const char $\ast$ac\-Name, float f\-X, float f\-Y, float f\-Z, float f\-W)
+\item 
+virtual bool {\bf set\-Parameter1fv} (const char $\ast$ac\-Name, const float $\ast$af\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Parameter2fv} (const char $\ast$ac\-Name, const float $\ast$af\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Parameter3fv} (const char $\ast$ac\-Name, const float $\ast$af\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Parameter4fv} (const char $\ast$ac\-Name, const float $\ast$af\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Matrix\-Parameter2fv} (const char $\ast$ac\-Name, const float $\ast$af\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Matrix\-Parameter3fv} (const char $\ast$ac\-Name, const float $\ast$af\-Values, int i\-Count=1)
+\item 
+virtual bool {\bf set\-Matrix\-Parameter4fv} (const char $\ast$ac\-Name, const float $\ast$af\-Values, int i\-Count=1)
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Glsl\-Fragment\-Program} ()
+\begin{CompactList}\small\item\em Internal Data:. \item\end{CompactList}\item 
+int {\bf get\-Parameter\-Register} (const char $\ast$ac\-Name)
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!SpGlslFragmentProgram@{SpGlslFragmentProgram}}
+\index{SpGlslFragmentProgram@{SpGlslFragmentProgram}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Glsl\-Fragment\-Program::Sp\-Glsl\-Fragment\-Program (const char $\ast$ {\em ac\-Source})}\label{classSpark_1_1SpGlslFragmentProgram_a0}
+
+
+Construction:. 
+
+Definition at line 9 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References Spark::Sp\-Gpu\-Program::set\-Source().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!SpGlslFragmentProgram@{SpGlslFragmentProgram}}
+\index{SpGlslFragmentProgram@{SpGlslFragmentProgram}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Glsl\-Fragment\-Program::Sp\-Glsl\-Fragment\-Program ()\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpGlslFragmentProgram_b0}
+
+
+Internal Data:. 
+
+Definition at line 16 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!getParameterRegister@{getParameterRegister}}
+\index{getParameterRegister@{getParameterRegister}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Sp\-Glsl\-Fragment\-Program::get\-Parameter\-Register (const char $\ast$ {\em ac\-Name})\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpGlslFragmentProgram_b1}
+
+
+Definition at line 22 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References Spark::Sp\-Gpu\-Program::get\-User\-Data().
+
+Referenced by set\-Matrix\-Parameter2fv(), set\-Matrix\-Parameter3fv(), set\-Matrix\-Parameter4fv(), set\-Parameter1f(), set\-Parameter1fv(), set\-Parameter1i(), set\-Parameter1iv(), set\-Parameter2f(), set\-Parameter2fv(), set\-Parameter2i(), set\-Parameter2iv(), set\-Parameter3f(), set\-Parameter3fv(), set\-Parameter3i(), set\-Parameter3iv(), set\-Parameter4f(), set\-Parameter4fv(), set\-Parameter4i(), and set\-Parameter4iv().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setMatrixParameter2fv@{setMatrixParameter2fv}}
+\index{setMatrixParameter2fv@{setMatrixParameter2fv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Matrix\-Parameter2fv (const char $\ast$ {\em ac\-Name}, const float $\ast$ {\em af\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a17}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a28})}.
+
+Definition at line 232 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setMatrixParameter3fv@{setMatrixParameter3fv}}
+\index{setMatrixParameter3fv@{setMatrixParameter3fv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Matrix\-Parameter3fv (const char $\ast$ {\em ac\-Name}, const float $\ast$ {\em af\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a18}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a29})}.
+
+Definition at line 244 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setMatrixParameter4fv@{setMatrixParameter4fv}}
+\index{setMatrixParameter4fv@{setMatrixParameter4fv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Matrix\-Parameter4fv (const char $\ast$ {\em ac\-Name}, const float $\ast$ {\em af\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a19}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a30})}.
+
+Definition at line 256 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter1f@{setParameter1f}}
+\index{setParameter1f@{setParameter1f}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter1f (const char $\ast$ {\em ac\-Name}, float {\em f\-X})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a9}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a20})}.
+
+Definition at line 136 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter1fv@{setParameter1fv}}
+\index{setParameter1fv@{setParameter1fv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter1fv (const char $\ast$ {\em ac\-Name}, const float $\ast$ {\em af\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a13}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a24})}.
+
+Definition at line 184 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter1i@{setParameter1i}}
+\index{setParameter1i@{setParameter1i}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter1i (const char $\ast$ {\em ac\-Name}, int {\em i\-X})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a1}
+
+
+Parameter Methods:. 
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a12})}.
+
+Definition at line 40 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().
+
+Referenced by Spark::Sp\-Turbulence\-Op::update\-Output\-Stream().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter1iv@{setParameter1iv}}
+\index{setParameter1iv@{setParameter1iv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter1iv (const char $\ast$ {\em ac\-Name}, const int $\ast$ {\em ai\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a5}
+
+
+Definition at line 88 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter2f@{setParameter2f}}
+\index{setParameter2f@{setParameter2f}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter2f (const char $\ast$ {\em ac\-Name}, float {\em f\-X}, float {\em f\-Y})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a10}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a21})}.
+
+Definition at line 148 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter2fv@{setParameter2fv}}
+\index{setParameter2fv@{setParameter2fv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter2fv (const char $\ast$ {\em ac\-Name}, const float $\ast$ {\em af\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a14}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a25})}.
+
+Definition at line 196 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter2i@{setParameter2i}}
+\index{setParameter2i@{setParameter2i}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter2i (const char $\ast$ {\em ac\-Name}, int {\em i\-X}, int {\em i\-Y})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a2}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a13})}.
+
+Definition at line 52 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter2iv@{setParameter2iv}}
+\index{setParameter2iv@{setParameter2iv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter2iv (const char $\ast$ {\em ac\-Name}, const int $\ast$ {\em ai\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a6}
+
+
+Definition at line 100 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter3f@{setParameter3f}}
+\index{setParameter3f@{setParameter3f}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter3f (const char $\ast$ {\em ac\-Name}, float {\em f\-X}, float {\em f\-Y}, float {\em f\-Z})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a11}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a22})}.
+
+Definition at line 160 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter3fv@{setParameter3fv}}
+\index{setParameter3fv@{setParameter3fv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter3fv (const char $\ast$ {\em ac\-Name}, const float $\ast$ {\em af\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a15}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a26})}.
+
+Definition at line 208 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter3i@{setParameter3i}}
+\index{setParameter3i@{setParameter3i}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter3i (const char $\ast$ {\em ac\-Name}, int {\em i\-X}, int {\em i\-Y}, int {\em i\-Z})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a3}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a14})}.
+
+Definition at line 64 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter3iv@{setParameter3iv}}
+\index{setParameter3iv@{setParameter3iv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter3iv (const char $\ast$ {\em ac\-Name}, const int $\ast$ {\em ai\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a7}
+
+
+Definition at line 112 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter4f@{setParameter4f}}
+\index{setParameter4f@{setParameter4f}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter4f (const char $\ast$ {\em ac\-Name}, float {\em f\-X}, float {\em f\-Y}, float {\em f\-Z}, float {\em f\-W})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a12}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a23})}.
+
+Definition at line 172 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter4fv@{setParameter4fv}}
+\index{setParameter4fv@{setParameter4fv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter4fv (const char $\ast$ {\em ac\-Name}, const float $\ast$ {\em af\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a16}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a27})}.
+
+Definition at line 220 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter4i@{setParameter4i}}
+\index{setParameter4i@{setParameter4i}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter4i (const char $\ast$ {\em ac\-Name}, int {\em i\-X}, int {\em i\-Y}, int {\em i\-Z}, int {\em i\-W})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a4}
+
+
+
+
+Reimplemented from {\bf Spark::Sp\-Gpu\-Program} {\rm (p.\,\pageref{classSpark_1_1SpGpuProgram_a15})}.
+
+Definition at line 76 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().\index{Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}!setParameter4iv@{setParameter4iv}}
+\index{setParameter4iv@{setParameter4iv}!Spark::SpGlslFragmentProgram@{Spark::Sp\-Glsl\-Fragment\-Program}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Sp\-Glsl\-Fragment\-Program::set\-Parameter4iv (const char $\ast$ {\em ac\-Name}, const int $\ast$ {\em ai\-Values}, int {\em i\-Count} = {\tt 1})\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpGlslFragmentProgram_a8}
+
+
+Definition at line 124 of file Sp\-Glsl\-Fragment\-Program.cpp.
+
+References get\-Parameter\-Register().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Sp\-Glsl\-Fragment\-Program.h}\item 
+{\bf Sp\-Glsl\-Fragment\-Program.cpp}\end{CompactItemize}

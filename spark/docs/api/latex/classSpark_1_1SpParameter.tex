@@ -1,0 +1,580 @@
+\section{Spark::Sp\-Parameter Class Reference}
+\label{classSpark_1_1SpParameter}\index{Spark::SpParameter@{Spark::SpParameter}}
+{\tt \#include $<$Sp\-Parameter.h$>$}
+
+
+
+\subsection{Detailed Description}
+Storage class for multiple data types for use with GPU programs. 
+
+Definition at line 33 of file Sp\-Parameter.h.\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum {\bf Type} \{ \par
+{\bf PT\_\-NONE}, 
+{\bf PT\_\-BOOL}, 
+{\bf PT\_\-INT}, 
+{\bf PT\_\-IVEC2}, 
+\par
+{\bf PT\_\-IVEC3}, 
+{\bf PT\_\-IVEC4}, 
+{\bf PT\_\-FLOAT}, 
+{\bf PT\_\-VEC2}, 
+\par
+{\bf PT\_\-VEC3}, 
+{\bf PT\_\-VEC4}, 
+{\bf PT\_\-MAT2}, 
+{\bf PT\_\-MAT3}, 
+\par
+{\bf PT\_\-MAT4}, 
+{\bf PT\_\-MAX\_\-COUNT}
+ \}
+\begin{CompactList}\small\item\em Enumerations:. \item\end{CompactList}\item 
+enum {\bf Option} \{ {\bf PO\_\-NONE}, 
+{\bf PO\_\-COLOR}, 
+{\bf PO\_\-MAX\_\-COLOR}
+ \}
+\begin{CompactList}\small\item\em Valid {\bf Sp\-Parameter}{\rm (p.\,\pageref{classSpark_1_1SpParameter})} Options. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Parameter} ()
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, {\bf Sp\-Parameter::Type} e\-Type, unsigned int ui\-Register=0, int i\-Count=1, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, const float $\ast$af\-Data, int i\-Count, {\bf Sp\-Parameter::Type} e\-Type, unsigned int ui\-Register=0, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, bool b\-Enable, unsigned int ui\-Register=0, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, int i\-X, unsigned int ui\-Register=0, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, int i\-X, int i\-Y, unsigned int ui\-Register=0, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, int i\-X, int i\-Y, int i\-Z, unsigned int ui\-Register=0, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, float f\-X, unsigned int ui\-Register=0, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, float f\-X, float f\-Y, unsigned int ui\-Register=0, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const char $\ast$ac\-Name, float f\-X, float f\-Y, float f\-Z, unsigned int ui\-Register=0, {\bf Sp\-Parameter::Option} e\-Option=PO\_\-NONE)
+\item 
+{\bf Sp\-Parameter} (const {\bf Sp\-Parameter} $\ast$pk\-Sp\-Parameter)
+\item 
+{\bf Sp\-Parameter} (const {\bf Sp\-Parameter} \&rk\-Const)
+\item 
+virtual {\bf $\sim$Sp\-Parameter} ()
+\item 
+{\bf Sp\-Parameter} \& {\bf operator=} (const {\bf Sp\-Parameter} \&rk\-Const)
+\begin{CompactList}\small\item\em Assignment:. \item\end{CompactList}\item 
+const char $\ast$ {\bf get\-Name} () const
+\begin{CompactList}\small\item\em Access Methods:. \item\end{CompactList}\item 
+int {\bf get\-Size} () const
+\item 
+int {\bf get\-Size} ({\bf Sp\-Parameter::Type} e\-Type) const
+\item 
+int {\bf get\-Count} () const
+\item 
+{\bf Sp\-Parameter::Type} {\bf get\-Type} () const
+\item 
+{\bf Sp\-Parameter::Option} {\bf get\-Option} () const
+\item 
+void {\bf set\-Option} ({\bf Sp\-Parameter::Option} e\-Option)
+\item 
+unsigned int {\bf get\-Register} () const
+\item 
+void {\bf set\-Register} (unsigned int ui\-Register)
+\item 
+const void $\ast$ {\bf get\-Data} () const
+\item 
+void {\bf set\-Data} (bool b\-Enable)
+\item 
+void {\bf set\-Data} (int i\-X)
+\item 
+void {\bf set\-Data} (int i\-X, int i\-Y)
+\item 
+void {\bf set\-Data} (int i\-X, int i\-Y, int i\-Z)
+\item 
+void {\bf set\-Data} (int i\-X, int i\-Y, int i\-Z, int i\-W)
+\item 
+void {\bf set\-Data} (float f\-X)
+\item 
+void {\bf set\-Data} (float f\-X, float f\-Y)
+\item 
+void {\bf set\-Data} (float f\-X, float f\-Y, float f\-Z)
+\item 
+void {\bf set\-Data} (float f\-X, float f\-Y, float f\-Z, float f\-W)
+\item 
+void {\bf set\-Data} (const float ak\-Data[2][2])
+\item 
+void {\bf set\-Data} (const float ak\-Data[3][3])
+\item 
+void {\bf set\-Data} (const float ak\-Data[4][4])
+\item 
+void {\bf set\-Data} (const void $\ast$pv\-Data, int i\-Count, {\bf Sp\-Parameter::Type} e\-Type)
+\item 
+bool {\bf is\-Named} (const char $\ast$ac\-Name) const
+\item 
+bool {\bf is\-Boolean} () const
+\item 
+bool {\bf is\-Integer} () const
+\item 
+bool {\bf is\-Float} () const
+\item 
+bool {\bf has\-Changed} () const
+\item 
+void {\bf set\-Changed} (bool b\-Changed=false)
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Enable\-Referencing} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+unsigned int {\bf m\_\-ui\-Register}
+\begin{CompactList}\small\item\em Internal Data:. \item\end{CompactList}\item 
+void $\ast$ {\bf m\_\-pv\-Data}
+\item 
+int {\bf m\_\-i\-Size}
+\item 
+int {\bf m\_\-i\-Count}
+\item 
+{\bf Sp\-Parameter::Type} {\bf m\_\-e\-Type}
+\item 
+{\bf Sp\-Parameter::Option} {\bf m\_\-e\-Option}
+\item 
+char $\ast$ {\bf m\_\-ac\-Name}
+\item 
+bool {\bf m\_\-b\-Has\-Changed}
+\end{CompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\index{Spark::SpParameter@{Spark::Sp\-Parameter}!Option@{Option}}
+\index{Option@{Option}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Spark::Sp\-Parameter::Option}}\label{classSpark_1_1SpParameter_w18}
+
+
+Valid {\bf Sp\-Parameter}{\rm (p.\,\pageref{classSpark_1_1SpParameter})} Options. 
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{PO_NONE@{PO\_\-NONE}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PO_NONE@{PO\_\-NONE}}\item[{\em 
+PO\_\-NONE\label{classSpark_1_1SpParameter_w18w14}
+}]\index{PO_COLOR@{PO\_\-COLOR}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PO_COLOR@{PO\_\-COLOR}}\item[{\em 
+PO\_\-COLOR\label{classSpark_1_1SpParameter_w18w15}
+}]\index{PO_MAX_COLOR@{PO\_\-MAX\_\-COLOR}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PO_MAX_COLOR@{PO\_\-MAX\_\-COLOR}}\item[{\em 
+PO\_\-MAX\_\-COLOR\label{classSpark_1_1SpParameter_w18w16}
+}]\end{description}
+\end{Desc}
+
+Definition at line 59 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!Type@{Type}}
+\index{Type@{Type}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Spark::Sp\-Parameter::Type}}\label{classSpark_1_1SpParameter_w17}
+
+
+Enumerations:. 
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{PT_NONE@{PT\_\-NONE}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_NONE@{PT\_\-NONE}}\item[{\em 
+PT\_\-NONE\label{classSpark_1_1SpParameter_w17w0}
+}]\index{PT_BOOL@{PT\_\-BOOL}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_BOOL@{PT\_\-BOOL}}\item[{\em 
+PT\_\-BOOL\label{classSpark_1_1SpParameter_w17w1}
+}]\index{PT_INT@{PT\_\-INT}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_INT@{PT\_\-INT}}\item[{\em 
+PT\_\-INT\label{classSpark_1_1SpParameter_w17w2}
+}]\index{PT_IVEC2@{PT\_\-IVEC2}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_IVEC2@{PT\_\-IVEC2}}\item[{\em 
+PT\_\-IVEC2\label{classSpark_1_1SpParameter_w17w3}
+}]\index{PT_IVEC3@{PT\_\-IVEC3}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_IVEC3@{PT\_\-IVEC3}}\item[{\em 
+PT\_\-IVEC3\label{classSpark_1_1SpParameter_w17w4}
+}]\index{PT_IVEC4@{PT\_\-IVEC4}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_IVEC4@{PT\_\-IVEC4}}\item[{\em 
+PT\_\-IVEC4\label{classSpark_1_1SpParameter_w17w5}
+}]\index{PT_FLOAT@{PT\_\-FLOAT}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_FLOAT@{PT\_\-FLOAT}}\item[{\em 
+PT\_\-FLOAT\label{classSpark_1_1SpParameter_w17w6}
+}]\index{PT_VEC2@{PT\_\-VEC2}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_VEC2@{PT\_\-VEC2}}\item[{\em 
+PT\_\-VEC2\label{classSpark_1_1SpParameter_w17w7}
+}]\index{PT_VEC3@{PT\_\-VEC3}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_VEC3@{PT\_\-VEC3}}\item[{\em 
+PT\_\-VEC3\label{classSpark_1_1SpParameter_w17w8}
+}]\index{PT_VEC4@{PT\_\-VEC4}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_VEC4@{PT\_\-VEC4}}\item[{\em 
+PT\_\-VEC4\label{classSpark_1_1SpParameter_w17w9}
+}]\index{PT_MAT2@{PT\_\-MAT2}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_MAT2@{PT\_\-MAT2}}\item[{\em 
+PT\_\-MAT2\label{classSpark_1_1SpParameter_w17w10}
+}]\index{PT_MAT3@{PT\_\-MAT3}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_MAT3@{PT\_\-MAT3}}\item[{\em 
+PT\_\-MAT3\label{classSpark_1_1SpParameter_w17w11}
+}]\index{PT_MAT4@{PT\_\-MAT4}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_MAT4@{PT\_\-MAT4}}\item[{\em 
+PT\_\-MAT4\label{classSpark_1_1SpParameter_w17w12}
+}]\index{PT_MAX_COUNT@{PT\_\-MAX\_\-COUNT}!Spark::SpParameter@{Spark::SpParameter}}\index{Spark::SpParameter@{Spark::SpParameter}!PT_MAX_COUNT@{PT\_\-MAX\_\-COUNT}}\item[{\em 
+PT\_\-MAX\_\-COUNT\label{classSpark_1_1SpParameter_w17w13}
+}]\end{description}
+\end{Desc}
+
+Definition at line 40 of file Sp\-Parameter.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter ()}\label{classSpark_1_1SpParameter_a0}
+
+
+Construction:. 
+
+Definition at line 6 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, m\_\-ui\-Register, PO\_\-NONE, and PT\_\-NONE.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, {\bf Sp\-Parameter::Type} {\em e\-Type}, unsigned int {\em ui\-Register} = {\tt 0}, int {\em i\-Count} = {\tt 1}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a1}
+
+
+Definition at line 18 of file Sp\-Parameter.cpp.
+
+References get\-Size(), m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, const float $\ast$ {\em af\-Data}, int {\em i\-Count}, {\bf Sp\-Parameter::Type} {\em e\-Type}, unsigned int {\em ui\-Register} = {\tt 0}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a2}
+
+
+Definition at line 35 of file Sp\-Parameter.cpp.
+
+References get\-Size(), m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, bool {\em b\-Enable}, unsigned int {\em ui\-Register} = {\tt 0}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a3}
+
+
+Definition at line 57 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-e\-Type, m\_\-i\-Count, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, int {\em i\-X}, unsigned int {\em ui\-Register} = {\tt 0}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a4}
+
+
+Definition at line 76 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, int {\em i\-X}, int {\em i\-Y}, unsigned int {\em ui\-Register} = {\tt 0}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a5}
+
+
+Definition at line 93 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, int {\em i\-X}, int {\em i\-Y}, int {\em i\-Z}, unsigned int {\em ui\-Register} = {\tt 0}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a6}
+
+
+Definition at line 111 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, float {\em f\-X}, unsigned int {\em ui\-Register} = {\tt 0}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a7}
+
+
+Definition at line 130 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, float {\em f\-X}, float {\em f\-Y}, unsigned int {\em ui\-Register} = {\tt 0}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a8}
+
+
+Definition at line 147 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const char $\ast$ {\em ac\-Name}, float {\em f\-X}, float {\em f\-Y}, float {\em f\-Z}, unsigned int {\em ui\-Register} = {\tt 0}, {\bf Sp\-Parameter::Option} {\em e\-Option} = {\tt PO\_\-NONE})}\label{classSpark_1_1SpParameter_a9}
+
+
+Definition at line 165 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const {\bf Sp\-Parameter} $\ast$ {\em pk\-Sp\-Parameter})}\label{classSpark_1_1SpParameter_a10}
+
+
+Definition at line 184 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, and m\_\-pv\-Data.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!SpParameter@{SpParameter}}
+\index{SpParameter@{SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::Sp\-Parameter (const {\bf Sp\-Parameter} \& {\em rk\-Const})}\label{classSpark_1_1SpParameter_a11}
+
+
+Definition at line 194 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, and m\_\-pv\-Data.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!~SpParameter@{$\sim$SpParameter}}
+\index{~SpParameter@{$\sim$SpParameter}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Parameter::$\sim${\bf Sp\-Parameter} ()\hspace{0.3cm}{\tt  [virtual]}}\label{classSpark_1_1SpParameter_a12}
+
+
+Definition at line 225 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-i\-Count, and m\_\-pv\-Data.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpParameter@{Spark::Sp\-Parameter}!EnableReferencing@{EnableReferencing}}
+\index{EnableReferencing@{EnableReferencing}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Spark::Sp\-Parameter::Enable\-Referencing ()\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_b0}
+
+
+\index{Spark::SpParameter@{Spark::Sp\-Parameter}!getCount@{getCount}}
+\index{getCount@{getCount}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Spark::Sp\-Parameter::get\-Count () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a17}
+
+
+Definition at line 288 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!getData@{getData}}
+\index{getData@{getData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const void $\ast$ Spark::Sp\-Parameter::get\-Data () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a23}
+
+
+Definition at line 231 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!getName@{getName}}
+\index{getName@{getName}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Spark::Sp\-Parameter::get\-Name () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a14}
+
+
+Access Methods:. 
+
+Definition at line 211 of file Sp\-Parameter.h.
+
+References Spark::Sp\-Parameter\-Ptr.
+
+Referenced by Spark::Sp\-Parameter\-Set::insert().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!getOption@{getOption}}
+\index{getOption@{getOption}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-Parameter::Option} Spark::Sp\-Parameter::get\-Option () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a19}
+
+
+Definition at line 298 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!getRegister@{getRegister}}
+\index{getRegister@{getRegister}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Sp\-Parameter::get\-Register () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a21}
+
+
+Definition at line 216 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!getSize@{getSize}}
+\index{getSize@{getSize}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Spark::Sp\-Parameter::get\-Size ({\bf Sp\-Parameter::Type} {\em e\-Type}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a16}
+
+
+Definition at line 236 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!getSize@{getSize}}
+\index{getSize@{getSize}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int Spark::Sp\-Parameter::get\-Size () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a15}
+
+
+Definition at line 283 of file Sp\-Parameter.h.
+
+Referenced by set\-Data(), and Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!getType@{getType}}
+\index{getType@{getType}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-Parameter::Type} Spark::Sp\-Parameter::get\-Type () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a18}
+
+
+Definition at line 293 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!hasChanged@{hasChanged}}
+\index{hasChanged@{hasChanged}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Spark::Sp\-Parameter::has\-Changed () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a41}
+
+
+Definition at line 221 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!isBoolean@{isBoolean}}
+\index{isBoolean@{isBoolean}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Spark::Sp\-Parameter::is\-Boolean () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a38}
+
+
+Definition at line 321 of file Sp\-Parameter.h.
+
+Referenced by set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!isFloat@{isFloat}}
+\index{isFloat@{isFloat}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Spark::Sp\-Parameter::is\-Float () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a40}
+
+
+Definition at line 352 of file Sp\-Parameter.h.
+
+Referenced by set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!isInteger@{isInteger}}
+\index{isInteger@{isInteger}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Spark::Sp\-Parameter::is\-Integer () const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a39}
+
+
+Definition at line 335 of file Sp\-Parameter.h.
+
+Referenced by set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!isNamed@{isNamed}}
+\index{isNamed@{isNamed}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool Spark::Sp\-Parameter::is\-Named (const char $\ast$ {\em ac\-Name}) const\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a37}
+
+
+Definition at line 313 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!operator=@{operator=}}
+\index{operator=@{operator=}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-Parameter} \& Sp\-Parameter::operator= (const {\bf Sp\-Parameter} \& {\em rk\-Const})}\label{classSpark_1_1SpParameter_a13}
+
+
+Assignment:. 
+
+Definition at line 201 of file Sp\-Parameter.cpp.
+
+References m\_\-ac\-Name, m\_\-b\-Has\-Changed, m\_\-e\-Option, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, m\_\-ui\-Register, and set\-Data().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setChanged@{setChanged}}
+\index{setChanged@{setChanged}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Parameter::set\-Changed (bool {\em b\-Changed} = {\tt false})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a42}
+
+
+Definition at line 226 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (const void $\ast$ {\em pv\-Data}, int {\em i\-Count}, {\bf Sp\-Parameter::Type} {\em e\-Type})}\label{classSpark_1_1SpParameter_a36}
+
+
+Definition at line 237 of file Sp\-Parameter.cpp.
+
+References get\-Size(), is\-Boolean(), is\-Float(), is\-Integer(), m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, and m\_\-pv\-Data.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (const float {\em ak\-Data}[4][4])}\label{classSpark_1_1SpParameter_a35}
+
+
+Definition at line 344 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-MAT4.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (const float {\em ak\-Data}[3][3])}\label{classSpark_1_1SpParameter_a34}
+
+
+Definition at line 313 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-MAT3.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (const float {\em ak\-Data}[2][2])}\label{classSpark_1_1SpParameter_a33}
+
+
+Definition at line 288 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-MAT2.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (float {\em f\-X}, float {\em f\-Y}, float {\em f\-Z}, float {\em f\-W})}\label{classSpark_1_1SpParameter_a32}
+
+
+Definition at line 560 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-VEC4.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (float {\em f\-X}, float {\em f\-Y}, float {\em f\-Z})}\label{classSpark_1_1SpParameter_a31}
+
+
+Definition at line 537 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-VEC3.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (float {\em f\-X}, float {\em f\-Y})}\label{classSpark_1_1SpParameter_a30}
+
+
+Definition at line 515 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-VEC2.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (float {\em f\-X})}\label{classSpark_1_1SpParameter_a29}
+
+
+Definition at line 494 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-FLOAT.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (int {\em i\-X}, int {\em i\-Y}, int {\em i\-Z}, int {\em i\-W})}\label{classSpark_1_1SpParameter_a28}
+
+
+Definition at line 470 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-IVEC4.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (int {\em i\-X}, int {\em i\-Y}, int {\em i\-Z})}\label{classSpark_1_1SpParameter_a27}
+
+
+Definition at line 447 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-IVEC3.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (int {\em i\-X}, int {\em i\-Y})}\label{classSpark_1_1SpParameter_a26}
+
+
+Definition at line 425 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-IVEC2.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (int {\em i\-X})}\label{classSpark_1_1SpParameter_a25}
+
+
+Definition at line 404 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-INT.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setData@{setData}}
+\index{setData@{setData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Sp\-Parameter::set\-Data (bool {\em b\-Enable})}\label{classSpark_1_1SpParameter_a24}
+
+
+Definition at line 383 of file Sp\-Parameter.cpp.
+
+References m\_\-b\-Has\-Changed, m\_\-e\-Type, m\_\-i\-Count, m\_\-i\-Size, m\_\-pv\-Data, and PT\_\-BOOL.
+
+Referenced by operator=(), and Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setOption@{setOption}}
+\index{setOption@{setOption}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Parameter::set\-Option ({\bf Sp\-Parameter::Option} {\em e\-Option})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a20}
+
+
+Definition at line 308 of file Sp\-Parameter.h.\index{Spark::SpParameter@{Spark::Sp\-Parameter}!setRegister@{setRegister}}
+\index{setRegister@{setRegister}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Parameter::set\-Register (unsigned int {\em ui\-Register})\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpParameter_a22}
+
+
+Definition at line 303 of file Sp\-Parameter.h.
+
+\subsection{Member Data Documentation}
+\index{Spark::SpParameter@{Spark::Sp\-Parameter}!m_acName@{m\_\-acName}}
+\index{m_acName@{m\_\-acName}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf Spark::Sp\-Parameter::m\_\-ac\-Name}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_p6}
+
+
+Definition at line 202 of file Sp\-Parameter.h.
+
+Referenced by operator=(), Sp\-Parameter(), and $\sim$Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!m_bHasChanged@{m\_\-bHasChanged}}
+\index{m_bHasChanged@{m\_\-bHasChanged}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Spark::Sp\-Parameter::m\_\-b\-Has\-Changed}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_p7}
+
+
+Definition at line 203 of file Sp\-Parameter.h.
+
+Referenced by operator=(), set\-Data(), and Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!m_eOption@{m\_\-eOption}}
+\index{m_eOption@{m\_\-eOption}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-Parameter::Option} {\bf Spark::Sp\-Parameter::m\_\-e\-Option}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_p5}
+
+
+Definition at line 200 of file Sp\-Parameter.h.
+
+Referenced by operator=(), and Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!m_eType@{m\_\-eType}}
+\index{m_eType@{m\_\-eType}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Sp\-Parameter::Type} {\bf Spark::Sp\-Parameter::m\_\-e\-Type}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_p4}
+
+
+Definition at line 199 of file Sp\-Parameter.h.
+
+Referenced by operator=(), set\-Data(), and Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!m_iCount@{m\_\-iCount}}
+\index{m_iCount@{m\_\-iCount}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Parameter::m\_\-i\-Count}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_p3}
+
+
+Definition at line 197 of file Sp\-Parameter.h.
+
+Referenced by operator=(), set\-Data(), Sp\-Parameter(), and $\sim$Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!m_iSize@{m\_\-iSize}}
+\index{m_iSize@{m\_\-iSize}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf Spark::Sp\-Parameter::m\_\-i\-Size}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_p2}
+
+
+Definition at line 196 of file Sp\-Parameter.h.
+
+Referenced by operator=(), set\-Data(), and Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!m_pvData@{m\_\-pvData}}
+\index{m_pvData@{m\_\-pvData}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf Spark::Sp\-Parameter::m\_\-pv\-Data}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_p1}
+
+
+Definition at line 194 of file Sp\-Parameter.h.
+
+Referenced by operator=(), set\-Data(), Sp\-Parameter(), and $\sim$Sp\-Parameter().\index{Spark::SpParameter@{Spark::Sp\-Parameter}!m_uiRegister@{m\_\-uiRegister}}
+\index{m_uiRegister@{m\_\-uiRegister}!Spark::SpParameter@{Spark::Sp\-Parameter}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf Spark::Sp\-Parameter::m\_\-ui\-Register}\hspace{0.3cm}{\tt  [protected]}}\label{classSpark_1_1SpParameter_p0}
+
+
+Internal Data:. 
+
+Definition at line 192 of file Sp\-Parameter.h.
+
+Referenced by operator=(), and Sp\-Parameter().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Sp\-Parameter.h}\item 
+{\bf Sp\-Parameter.cpp}\end{CompactItemize}

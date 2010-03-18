@@ -1,0 +1,72 @@
+\section{Sp\-Reference.h File Reference}
+\label{SpReference_8h}\index{SpReference.h@{SpReference.h}}
+{\tt \#include \char`\"{}Sp\-Reference.inc\char`\"{}}\par
+
+
+Include dependency graph for Sp\-Reference.h:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=63pt]{SpReference_8h__incl}
+\end{center}
+\end{figure}
+
+
+This graph shows which files directly or indirectly include this file:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=116pt]{SpReference_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace {\bf Spark}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class {\bf Spark::Sp\-Reference$<$ Class\-Type $>$}
+\begin{CompactList}\small\item\em Reference class with garbage collection for supporting shared objects. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf Enable\-Referencing}()
+\item 
+\#define {\bf Sp\-Reference\-Cast}(type, reference)\ ((type$\ast$)(void$\ast$)(reference))
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{SpReference.h@{Sp\-Reference.h}!EnableReferencing@{EnableReferencing}}
+\index{EnableReferencing@{EnableReferencing}!SpReference.h@{Sp\-Reference.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define Enable\-Referencing()}\label{SpReference_8h_a0}
+
+
+{\bf Value:}
+
+\footnotesize\begin{verbatim}public: \
+    void addSpReference () \
+    { \
+        m_uiSpReferences++; \
+    } \
+    \
+    void removeSpReference () \
+    { \
+        if ( --m_uiSpReferences == 0 ) \
+            delete this; \
+    } \
+    \
+    unsigned int getSpReferenceCount () const \
+    { \
+        return m_uiSpReferences; \
+    } \
+    \
+private: \
+    unsigned int m_uiSpReferences
+\end{verbatim}\normalsize 
+Definition at line 175 of file Sp\-Reference.h.\index{SpReference.h@{Sp\-Reference.h}!SpReferenceCast@{SpReferenceCast}}
+\index{SpReferenceCast@{SpReferenceCast}!SpReference.h@{Sp\-Reference.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define Sp\-Reference\-Cast(type, reference)\ ((type$\ast$)(void$\ast$)(reference))}\label{SpReference_8h_a1}
+
+
+Definition at line 198 of file Sp\-Reference.h.

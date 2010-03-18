@@ -1,0 +1,181 @@
+\section{Spark::Sp\-Timer Class Reference}
+\label{classSpark_1_1SpTimer}\index{Spark::SpTimer@{Spark::SpTimer}}
+{\tt \#include $<$Sp\-Timer.h$>$}
+
+
+
+\subsection{Detailed Description}
+Basic Timer for profiling and retrieving performance/time info. 
+
+Definition at line 32 of file Sp\-Timer.h.\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum {\bf Timer\-State} \{ {\bf TS\_\-OFF}, 
+{\bf TS\_\-ON}, 
+{\bf TS\_\-HOLD}, 
+{\bf TS\_\-COUNT}
+ \}
+\begin{CompactList}\small\item\em Typedefs:. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Sp\-Timer} ()
+\begin{CompactList}\small\item\em Construction:. \item\end{CompactList}\item 
+{\bf $\sim$Sp\-Timer} ()
+\item 
+void {\bf start} ()
+\begin{CompactList}\small\item\em Operations:. \item\end{CompactList}\item 
+void {\bf stop} ()
+\item 
+void {\bf suspend} ()
+\item 
+void {\bf resume} ()
+\item 
+void {\bf reset} ()
+\item 
+void {\bf count} ()
+\item 
+float {\bf elapsed\-Time} ()
+\item 
+unsigned int {\bf elapsed\-Count} ()
+\item 
+unsigned int {\bf elapsed\-Hours} ()
+\item 
+unsigned int {\bf elapsed\-Minutes} ()
+\item 
+unsigned int {\bf elapsed\-Seconds} ()
+\item 
+unsigned int {\bf elapsed\-Milliseconds} ()
+\item 
+unsigned int {\bf seconds} ()
+\item 
+unsigned int {\bf milliseconds} ()
+\end{CompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\index{Spark::SpTimer@{Spark::Sp\-Timer}!TimerState@{TimerState}}
+\index{TimerState@{TimerState}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Spark::Sp\-Timer::Timer\-State}}\label{classSpark_1_1SpTimer_w4}
+
+
+Typedefs:. 
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{TS_OFF@{TS\_\-OFF}!Spark::SpTimer@{Spark::SpTimer}}\index{Spark::SpTimer@{Spark::SpTimer}!TS_OFF@{TS\_\-OFF}}\item[{\em 
+TS\_\-OFF\label{classSpark_1_1SpTimer_w4w0}
+}]\index{TS_ON@{TS\_\-ON}!Spark::SpTimer@{Spark::SpTimer}}\index{Spark::SpTimer@{Spark::SpTimer}!TS_ON@{TS\_\-ON}}\item[{\em 
+TS\_\-ON\label{classSpark_1_1SpTimer_w4w1}
+}]\index{TS_HOLD@{TS\_\-HOLD}!Spark::SpTimer@{Spark::SpTimer}}\index{Spark::SpTimer@{Spark::SpTimer}!TS_HOLD@{TS\_\-HOLD}}\item[{\em 
+TS\_\-HOLD\label{classSpark_1_1SpTimer_w4w2}
+}]\index{TS_COUNT@{TS\_\-COUNT}!Spark::SpTimer@{Spark::SpTimer}}\index{Spark::SpTimer@{Spark::SpTimer}!TS_COUNT@{TS\_\-COUNT}}\item[{\em 
+TS\_\-COUNT\label{classSpark_1_1SpTimer_w4w3}
+}]\end{description}
+\end{Desc}
+
+Definition at line 38 of file Sp\-Timer.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Spark::SpTimer@{Spark::Sp\-Timer}!SpTimer@{SpTimer}}
+\index{SpTimer@{SpTimer}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Sp\-Timer::Sp\-Timer ()}\label{classSpark_1_1SpTimer_a0}
+
+
+Construction:. 
+
+Definition at line 42 of file Sp\-Timer.cpp.
+
+References reset().\index{Spark::SpTimer@{Spark::Sp\-Timer}!~SpTimer@{$\sim$SpTimer}}
+\index{~SpTimer@{$\sim$SpTimer}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Spark::Sp\-Timer::$\sim${\bf Sp\-Timer} ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a1}
+
+
+Definition at line 119 of file Sp\-Timer.h.
+
+\subsection{Member Function Documentation}
+\index{Spark::SpTimer@{Spark::Sp\-Timer}!count@{count}}
+\index{count@{count}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Timer::count ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a7}
+
+
+Definition at line 170 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!elapsedCount@{elapsedCount}}
+\index{elapsedCount@{elapsedCount}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Sp\-Timer::elapsed\-Count ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a9}
+
+
+Definition at line 243 of file Sp\-Timer.h.
+
+Referenced by Spark::Sp\-Window::on\-Idle().\index{Spark::SpTimer@{Spark::Sp\-Timer}!elapsedHours@{elapsedHours}}
+\index{elapsedHours@{elapsedHours}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Sp\-Timer::elapsed\-Hours ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a10}
+
+
+Definition at line 192 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!elapsedMilliseconds@{elapsedMilliseconds}}
+\index{elapsedMilliseconds@{elapsedMilliseconds}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Sp\-Timer::elapsed\-Milliseconds ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a13}
+
+
+Definition at line 222 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!elapsedMinutes@{elapsedMinutes}}
+\index{elapsedMinutes@{elapsedMinutes}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Sp\-Timer::elapsed\-Minutes ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a11}
+
+
+Definition at line 197 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!elapsedSeconds@{elapsedSeconds}}
+\index{elapsedSeconds@{elapsedSeconds}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Sp\-Timer::elapsed\-Seconds ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a12}
+
+
+Definition at line 202 of file Sp\-Timer.h.
+
+Referenced by Spark::Sp\-Window::draw\-Frame\-Rate().\index{Spark::SpTimer@{Spark::Sp\-Timer}!elapsedTime@{elapsedTime}}
+\index{elapsedTime@{elapsedTime}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float Spark::Sp\-Timer::elapsed\-Time ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a8}
+
+
+Definition at line 175 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!milliseconds@{milliseconds}}
+\index{milliseconds@{milliseconds}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Sp\-Timer::milliseconds ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a15}
+
+
+Definition at line 253 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!reset@{reset}}
+\index{reset@{reset}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Timer::reset ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a6}
+
+
+Definition at line 161 of file Sp\-Timer.h.
+
+Referenced by Sp\-Timer().\index{Spark::SpTimer@{Spark::Sp\-Timer}!resume@{resume}}
+\index{resume@{resume}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Timer::resume ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a5}
+
+
+Definition at line 146 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!seconds@{seconds}}
+\index{seconds@{seconds}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}unsigned int Spark::Sp\-Timer::seconds ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a14}
+
+
+Definition at line 248 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!start@{start}}
+\index{start@{start}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Timer::start ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a2}
+
+
+Operations:. 
+
+Definition at line 124 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!stop@{stop}}
+\index{stop@{stop}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Timer::stop ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a3}
+
+
+Definition at line 131 of file Sp\-Timer.h.\index{Spark::SpTimer@{Spark::Sp\-Timer}!suspend@{suspend}}
+\index{suspend@{suspend}!Spark::SpTimer@{Spark::Sp\-Timer}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Spark::Sp\-Timer::suspend ()\hspace{0.3cm}{\tt  [inline]}}\label{classSpark_1_1SpTimer_a4}
+
+
+Definition at line 137 of file Sp\-Timer.h.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Sp\-Timer.h}\item 
+{\bf Sp\-Timer.cpp}\end{CompactItemize}

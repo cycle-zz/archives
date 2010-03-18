@@ -1,0 +1,483 @@
+\section{dg::Matrix Class Reference}
+\label{classdg_1_1Matrix}\index{dg::Matrix@{dg::Matrix}}
+{\tt \#include $<$Matrix.h$>$}
+
+\subsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+{\bf Matrix} ()
+\item 
+{\bf Matrix} ({\bf Real} f\-V00, {\bf Real} f\-V01, {\bf Real} f\-V02, {\bf Real} f\-V03, {\bf Real} f\-V10, {\bf Real} f\-V11, {\bf Real} f\-V12, {\bf Real} f\-V13, {\bf Real} f\-V20, {\bf Real} f\-V21, {\bf Real} f\-V22, {\bf Real} f\-V23, {\bf Real} f\-V30, {\bf Real} f\-V31, {\bf Real} f\-V32, {\bf Real} f\-V33)
+\item 
+{\bf Matrix} (const {\bf Real} af\-V[4][4])
+\item 
+{\bf Matrix::Matrix} ({\bf Real} af\-V[16])
+\item 
+{\bf Matrix} (const {\bf Vector} \&rk\-W, const {\bf Vector} \&rk\-V, const {\bf Vector} \&rk\-U)
+\item 
+{\bf operator Real $\ast$$\ast$} ()
+\item 
+const {\bf Real} $\ast$ {\bf values} () const
+\item 
+{\bf Real} $\ast$ {\bf values} ()
+\item 
+void {\bf set\-Values} (const {\bf Real} $\ast$$\ast$af\-V)
+\item 
+void {\bf set\-Values} (const {\bf Real} af\-V[16])
+\item 
+void {\bf set\-Base} (const {\bf Vector} \&rk\-W, const {\bf Vector} \&rk\-V, const {\bf Vector} \&rk\-U)
+\item 
+void {\bf get\-Base} ({\bf Vector} \&rk\-W, {\bf Vector} \&rk\-V, {\bf Vector} \&rk\-U) const
+\item 
+void {\bf get\-Row} ({\bf UInt} ui\-Row, {\bf Vector} \&rk\-V) const
+\item 
+void {\bf get\-Column} ({\bf UInt} ui\-Col, {\bf Vector} \&rk\-V) const
+\item 
+void {\bf get\-Transpose} (Matrix \&rk\-M) const
+\item 
+Matrix {\bf operator+} (const Matrix \&rk\-M) const
+\item 
+Matrix {\bf operator-} (const Matrix \&rk\-M) const
+\item 
+Matrix {\bf operator $\ast$} (const Matrix \&rk\-M) const
+\item 
+Matrix {\bf operator $\ast$} ({\bf Real} f\-Scalar) const
+\item 
+Matrix {\bf operator/} ({\bf Real} f\-Scalar) const
+\item 
+Matrix {\bf operator-} () const
+\item 
+Matrix \& {\bf operator+=} (const Matrix \&rk\-M)
+\item 
+Matrix \& {\bf operator-=} (const Matrix \&rk\-M)
+\item 
+Matrix \& {\bf operator $\ast$=} (const Matrix \&rk\-M)
+\item 
+Matrix \& {\bf operator $\ast$=} ({\bf Real} f\-Scalar)
+\item 
+Matrix \& {\bf operator/=} ({\bf Real} f\-Scalar)
+\item 
+{\bf Vector} {\bf operator $\ast$} (const {\bf Vector} \&rk\-V) const
+\item 
+void {\bf transpose} ()
+\item 
+void {\bf identity} ()
+\item 
+void {\bf zero} ()
+\item 
+Matrix {\bf inverse} () const
+\end{CompactItemize}
+\subsection*{Static Public Methods}
+\begin{CompactItemize}
+\item 
+Matrix {\bf build\-Identity} ()
+\item 
+Matrix {\bf build\-Scale} (const {\bf Vector} \&rk\-S)
+\item 
+Matrix {\bf build\-Rotation} ({\bf Real} f\-A, {\bf Vector} \&rk\-Dir)
+\item 
+Matrix {\bf build\-Rotation} ({\bf Real} f\-X, {\bf Real} f\-Y, {\bf Real} f\-Z)
+\item 
+Matrix {\bf build\-Rotation} (const {\bf Vector} \&rk\-From, const {\bf Vector} \&rk\-To)
+\item 
+Matrix {\bf build\-Rotation} (const {\bf Vector} \&rk\-A)
+\item 
+Matrix {\bf build\-Rotation} ({\bf Real} d\-A, {\bf UInt} e\-Axis)
+\item 
+Matrix {\bf build\-Translation} (const {\bf Vector} \&rk\-T)
+\item 
+Matrix {\bf build\-Transform} (const {\bf Vector} \&rk\-T, const Matrix \&rk\-R, const {\bf Vector} \&rk\-S)
+\item 
+Matrix {\bf from\-Axis\-To\-Angle} (const {\bf Vector} \&rk\-Axis, const {\bf Real} d\-Angle)
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+const Matrix {\bf ZERO}
+\item 
+const Matrix {\bf IDENTITY}
+\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{dg::Matrix@{dg::Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix::Matrix ()}\label{classdg_1_1Matrix_a0}
+
+
+
+
+Definition at line 26 of file Matrix.cpp.
+
+Referenced by inverse().\index{dg::Matrix@{dg::Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix::Matrix ({\bf Real} {\em f\-V00}, {\bf Real} {\em f\-V01}, {\bf Real} {\em f\-V02}, {\bf Real} {\em f\-V03}, {\bf Real} {\em f\-V10}, {\bf Real} {\em f\-V11}, {\bf Real} {\em f\-V12}, {\bf Real} {\em f\-V13}, {\bf Real} {\em f\-V20}, {\bf Real} {\em f\-V21}, {\bf Real} {\em f\-V22}, {\bf Real} {\em f\-V23}, {\bf Real} {\em f\-V30}, {\bf Real} {\em f\-V31}, {\bf Real} {\em f\-V32}, {\bf Real} {\em f\-V33})}\label{classdg_1_1Matrix_a1}
+
+
+
+
+Definition at line 55 of file Matrix.cpp.
+
+References dg::Real.\index{dg::Matrix@{dg::Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix::Matrix (const {\bf Real} {\em af\-V}[4][4])}\label{classdg_1_1Matrix_a2}
+
+
+
+
+Definition at line 79 of file Matrix.cpp.
+
+References dg::Real.\index{dg::Matrix@{dg::Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix::Matrix (const {\bf Vector} \& {\em rk\-W}, const {\bf Vector} \& {\em rk\-V}, const {\bf Vector} \& {\em rk\-U})}\label{classdg_1_1Matrix_a4}
+
+
+
+
+Definition at line 99 of file Matrix.cpp.
+
+References dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().
+
+\subsection{Member Function Documentation}
+\index{dg::Matrix@{dg::Matrix}!buildIdentity@{buildIdentity}}
+\index{buildIdentity@{buildIdentity}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Identity ()\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d0}
+
+
+
+
+Definition at line 474 of file Matrix.cpp.\index{dg::Matrix@{dg::Matrix}!buildRotation@{buildRotation}}
+\index{buildRotation@{buildRotation}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Rotation ({\bf Real} {\em d\-A}, {\bf UInt} {\em e\-Axis})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d6}
+
+
+
+
+Definition at line 558 of file Matrix.cpp.
+
+References dg::Cosine(), m\_\-af\-V, dg::Radians(), dg::Real, dg::Sine(), and dg::UInt.\index{dg::Matrix@{dg::Matrix}!buildRotation@{buildRotation}}
+\index{buildRotation@{buildRotation}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Rotation (const {\bf Vector} \& {\em rk\-A})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d5}
+
+
+
+
+Definition at line 511 of file Matrix.cpp.
+
+References build\-Rotation(), dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg::Matrix@{dg::Matrix}!buildRotation@{buildRotation}}
+\index{buildRotation@{buildRotation}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Rotation (const {\bf Vector} \& {\em rk\-From}, const {\bf Vector} \& {\em rk\-To})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d4}
+
+
+
+
+Definition at line 402 of file Matrix.cpp.
+
+References dg::Abs(), dg::Arc\-Cosine(), build\-Rotation(), dg::Vector::cross(), dg::Vector::dot(), dg::Vector::normalize(), dg::Real, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg::Matrix@{dg::Matrix}!buildRotation@{buildRotation}}
+\index{buildRotation@{buildRotation}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Rotation ({\bf Real} {\em f\-X}, {\bf Real} {\em f\-Y}, {\bf Real} {\em f\-Z})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d3}
+
+
+
+
+Definition at line 502 of file Matrix.cpp.
+
+References build\-Rotation(), and dg::Real.\index{dg::Matrix@{dg::Matrix}!buildRotation@{buildRotation}}
+\index{buildRotation@{buildRotation}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Rotation ({\bf Real} {\em f\-A}, {\bf Vector} \& {\em rk\-Dir})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d2}
+
+
+
+
+Definition at line 520 of file Matrix.cpp.
+
+References dg::Cosine(), m\_\-af\-V, dg::Vector::normalize(), dg::Radians(), dg::Real, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().
+
+Referenced by build\-Rotation().\index{dg::Matrix@{dg::Matrix}!buildScale@{buildScale}}
+\index{buildScale@{buildScale}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Scale (const {\bf Vector} \& {\em rk\-S})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d1}
+
+
+
+
+Definition at line 484 of file Matrix.cpp.
+
+References m\_\-af\-V, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg::Matrix@{dg::Matrix}!buildTransform@{buildTransform}}
+\index{buildTransform@{buildTransform}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Transform (const {\bf Vector} \& {\em rk\-T}, const Matrix \& {\em rk\-R}, const {\bf Vector} \& {\em rk\-S})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d8}
+
+
+
+
+Definition at line 460 of file Matrix.cpp.
+
+References m\_\-af\-V, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg::Matrix@{dg::Matrix}!buildTranslation@{buildTranslation}}
+\index{buildTranslation@{buildTranslation}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::build\-Translation (const {\bf Vector} \& {\em rk\-T})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d7}
+
+
+
+
+Definition at line 493 of file Matrix.cpp.
+
+References m\_\-af\-V, dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg::Matrix@{dg::Matrix}!fromAxisToAngle@{fromAxisToAngle}}
+\index{fromAxisToAngle@{fromAxisToAngle}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::from\-Axis\-To\-Angle (const {\bf Vector} \& {\em rk\-Axis}, const {\bf Real} {\em d\-Angle})\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_d9}
+
+
+
+
+Definition at line 684 of file Matrix.cpp.
+
+References dg::Cosine(), m\_\-af\-V, dg::Radians(), dg::Real, dg::Sine(), dg::Sqr(), dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg::Matrix@{dg::Matrix}!getBase@{getBase}}
+\index{getBase@{getBase}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Matrix::get\-Base ({\bf Vector} \& {\em rk\-W}, {\bf Vector} \& {\em rk\-V}, {\bf Vector} \& {\em rk\-U}) const\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a11}
+
+
+
+
+Definition at line 193 of file Matrix.h.\index{dg::Matrix@{dg::Matrix}!getColumn@{getColumn}}
+\index{getColumn@{getColumn}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Matrix::get\-Column ({\bf UInt} {\em ui\-Col}, {\bf Vector} \& {\em rk\-V}) const}\label{classdg_1_1Matrix_a13}
+
+
+
+
+Definition at line 140 of file Matrix.cpp.
+
+References dg::UInt.\index{dg::Matrix@{dg::Matrix}!getRow@{getRow}}
+\index{getRow@{getRow}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Matrix::get\-Row ({\bf UInt} {\em ui\-Row}, {\bf Vector} \& {\em rk\-V}) const}\label{classdg_1_1Matrix_a12}
+
+
+
+
+Definition at line 132 of file Matrix.cpp.
+
+References dg::UInt.\index{dg::Matrix@{dg::Matrix}!getTranspose@{getTranspose}}
+\index{getTranspose@{getTranspose}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Matrix::get\-Transpose (Matrix \& {\em rk\-M}) const}\label{classdg_1_1Matrix_a14}
+
+
+
+
+Definition at line 148 of file Matrix.cpp.
+
+References m\_\-af\-V, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!identity@{identity}}
+\index{identity@{identity}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Matrix::identity ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a28}
+
+
+
+
+Definition at line 133 of file Matrix.h.\index{dg::Matrix@{dg::Matrix}!inverse@{inverse}}
+\index{inverse@{inverse}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::inverse ()}\label{classdg_1_1Matrix_a30}
+
+
+
+
+Definition at line 162 of file Matrix.cpp.
+
+References dg::Abs(), dg::Int, Matrix(), dg::Real, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!Matrix::Matrix@{Matrix::Matrix}}
+\index{Matrix::Matrix@{Matrix::Matrix}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}dg::Matrix::Matrix::Matrix ({\bf Real} {\em af\-V}[16])}\label{classdg_1_1Matrix_a3}
+
+
+\index{dg::Matrix@{dg::Matrix}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Matrix::operator $\ast$ (const {\bf Vector} \& {\em rk\-V}) const}\label{classdg_1_1Matrix_a26}
+
+
+
+
+Definition at line 380 of file Matrix.cpp.
+
+References dg::Vector::x(), dg::Vector::y(), and dg::Vector::z().\index{dg::Matrix@{dg::Matrix}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::operator $\ast$ ({\bf Real} {\em f\-Scalar}) const}\label{classdg_1_1Matrix_a18}
+
+
+
+
+Definition at line 342 of file Matrix.cpp.
+
+References m\_\-af\-V, dg::Real, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::operator $\ast$ (const Matrix \& {\em rk\-M}) const}\label{classdg_1_1Matrix_a17}
+
+
+
+
+Definition at line 295 of file Matrix.cpp.
+
+References m\_\-af\-V, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix\& dg::Matrix::operator $\ast$= ({\bf Real} {\em f\-Scalar})}\label{classdg_1_1Matrix_a24}
+
+
+\index{dg::Matrix@{dg::Matrix}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix \& Matrix::operator $\ast$= (const Matrix \& {\em rk\-M})}\label{classdg_1_1Matrix_a23}
+
+
+
+
+Definition at line 246 of file Matrix.cpp.
+
+References m\_\-af\-V, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!operator Real **@{operator Real $\ast$$\ast$}}
+\index{operator Real **@{operator Real $\ast$$\ast$}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}dg::Matrix::operator {\bf Real} $\ast$$\ast$ ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a5}
+
+
+
+
+Definition at line 50 of file Matrix.h.
+
+References dg::Real.\index{dg::Matrix@{dg::Matrix}!operator+@{operator+}}
+\index{operator+@{operator+}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::operator+ (const Matrix \& {\em rk\-M}) const}\label{classdg_1_1Matrix_a15}
+
+
+
+
+Definition at line 265 of file Matrix.cpp.
+
+References m\_\-af\-V, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix \& Matrix::operator+= (const Matrix \& {\em rk\-M})}\label{classdg_1_1Matrix_a21}
+
+
+
+
+Definition at line 316 of file Matrix.cpp.
+
+References m\_\-af\-V, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!operator-@{operator-}}
+\index{operator-@{operator-}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix dg::Matrix::operator- ()}\label{classdg_1_1Matrix_a20}
+
+
+\index{dg::Matrix@{dg::Matrix}!operator-@{operator-}}
+\index{operator-@{operator-}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::operator- (const Matrix \& {\em rk\-M}) const}\label{classdg_1_1Matrix_a16}
+
+
+
+
+Definition at line 280 of file Matrix.cpp.
+
+References m\_\-af\-V, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!operator-=@{operator-=}}
+\index{operator-=@{operator-=}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix \& Matrix::operator-= (const Matrix \& {\em rk\-M})}\label{classdg_1_1Matrix_a22}
+
+
+
+
+Definition at line 329 of file Matrix.cpp.
+
+References m\_\-af\-V, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!operator/@{operator/}}
+\index{operator/@{operator/}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix Matrix::operator/ ({\bf Real} {\em f\-Scalar}) const}\label{classdg_1_1Matrix_a19}
+
+
+
+
+Definition at line 354 of file Matrix.cpp.
+
+References m\_\-af\-V, dg::Real, and dg::UInt.\index{dg::Matrix@{dg::Matrix}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}Matrix\& dg::Matrix::operator/= ({\bf Real} {\em f\-Scalar})}\label{classdg_1_1Matrix_a25}
+
+
+\index{dg::Matrix@{dg::Matrix}!setBase@{setBase}}
+\index{setBase@{setBase}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Matrix::set\-Base (const {\bf Vector} \& {\em rk\-W}, const {\bf Vector} \& {\em rk\-V}, const {\bf Vector} \& {\em rk\-U})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a10}
+
+
+
+
+Definition at line 182 of file Matrix.h.\index{dg::Matrix@{dg::Matrix}!setValues@{setValues}}
+\index{setValues@{setValues}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Matrix::set\-Values (const {\bf Real} {\em af\-V}[16])\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a9}
+
+
+
+
+Definition at line 162 of file Matrix.h.\index{dg::Matrix@{dg::Matrix}!setValues@{setValues}}
+\index{setValues@{setValues}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Matrix::set\-Values (const {\bf Real} $\ast$$\ast$ {\em af\-V})\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a8}
+
+
+
+
+Definition at line 142 of file Matrix.h.\index{dg::Matrix@{dg::Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void Matrix::transpose ()}\label{classdg_1_1Matrix_a27}
+
+
+
+
+Definition at line 155 of file Matrix.cpp.
+
+References dg::UInt.\index{dg::Matrix@{dg::Matrix}!values@{values}}
+\index{values@{values}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Real} $\ast$ dg::Matrix::values ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a7}
+
+
+
+
+Definition at line 128 of file Matrix.h.\index{dg::Matrix@{dg::Matrix}!values@{values}}
+\index{values@{values}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf Real} $\ast$ dg::Matrix::values ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a6}
+
+
+
+
+Definition at line 123 of file Matrix.h.\index{dg::Matrix@{dg::Matrix}!zero@{zero}}
+\index{zero@{zero}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void dg::Matrix::zero ()\hspace{0.3cm}{\tt  [inline]}}\label{classdg_1_1Matrix_a29}
+
+
+
+
+Definition at line 200 of file Matrix.h.
+
+\subsection{Member Data Documentation}
+\index{dg::Matrix@{dg::Matrix}!IDENTITY@{IDENTITY}}
+\index{IDENTITY@{IDENTITY}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const Matrix Matrix::IDENTITY\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_p1}
+
+
+{\bf Initial value:}
+
+\footnotesize\begin{verbatim}
+    Matrix(
+        1.0f, 0.0f, 0.0f, 0.0f,
+        0.0f, 1.0f, 0.0f, 0.0f,
+        0.0f, 0.0f, 1.0f, 0.0f,
+        0.0f, 0.0f, 0.0f, 1.0f
+    )\end{verbatim}\normalsize 
+
+
+Definition at line 742 of file Matrix.cpp.\index{dg::Matrix@{dg::Matrix}!ZERO@{ZERO}}
+\index{ZERO@{ZERO}!dg::Matrix@{dg::Matrix}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const Matrix Matrix::ZERO\hspace{0.3cm}{\tt  [static]}}\label{classdg_1_1Matrix_p0}
+
+
+{\bf Initial value:}
+
+\footnotesize\begin{verbatim}
+    Matrix(
+        0.0f, 0.0f, 0.0f, 0.0f,
+        0.0f, 0.0f, 0.0f, 0.0f,
+        0.0f, 0.0f, 0.0f, 0.0f,
+        0.0f, 0.0f, 0.0f, 0.0f
+    )\end{verbatim}\normalsize 
+
+
+Definition at line 734 of file Matrix.cpp.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf Matrix.h}\item 
+{\bf Matrix.cpp}\end{CompactItemize}
